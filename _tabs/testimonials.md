@@ -1,6 +1,7 @@
 ---
-title: Testimonials
-permalink: /testimonials/
+# the default layout is 'page'
+icon: fas fa-commenting
+order: 5
 ---
 
 # What Students Say
