@@ -4,9 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
----
-title: About
----
 
 Welcome to **Anant Kumar Classes**, a dedicated learning platform for students of **Physics** and **Mathematics** at the **higher secondary level**.
 
