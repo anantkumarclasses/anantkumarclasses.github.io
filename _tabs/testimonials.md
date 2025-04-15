@@ -62,11 +62,12 @@ Over the years, students from various batches have shared their experiences of l
 
 These are just a few of the heartfelt words from our students. If you'd like to read more or leave your own review, please visit our **[Google Business Page](https://g.page/r/CQihtPgXGNEcEBM/review)**.
 Or you can scan the following QR code:
-
-![image](https://github.com/user-attachments/assets/3805bef7-8a21-469c-9f5f-623b8fe04f41)
+<p align="center">
+  <img src="../assets/img/review_qr.png" alt="Scan QR for review" width="132">
+</p>
 
 
 ---
 
-> *We teach not just to improve scores — but to build thinkers, doers, and dreamers.*  
+> *I teach not just to improve scores — but to build thinkers, doers, and dreamers.*  
 > — **Anant Kumar**
