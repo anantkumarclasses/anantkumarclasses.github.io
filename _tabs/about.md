@@ -8,21 +8,21 @@ order: 4
 title: About
 ---
 
-# About Anant Kumar Classes
-
 Welcome to **Anant Kumar Classes**, a dedicated learning platform for students of **Physics** and **Mathematics** at the **higher secondary level**.
 
-Founded with the mission of making complex concepts simple and engaging, Anant Kumar Classes provides a blend of strong theoretical foundation and practical problem-solving techniques. We believe in empowering students not just to score well, but to truly understand the "why" and "how" behind every concept.
+Founded with the mission of making complex concepts simple and engaging, Anant Kumar Classes provides a blend of strong theoretical foundation and 
+practical problem-solving techniques. Here the emphasis is not only in empowering students to score well, but also to truly understand the "why" 
+and "how" behind every concept.
 
-## What We Offer
+## What Is On Offer
 
-- **Expert Guidance**: Classes are conducted by **Anant Kumar**, an experienced educator with a deep passion for Physics and Mathematics.
+- **Expert Guidance**: Classes are conducted by **Anant Kumar**, a highly experienced educator with a deep passion for Physics and Mathematics.
 - **Conceptual Clarity**: Emphasis on building a strong foundation through intuitive explanations and real-life analogies.
-- **Digital Learning Tools**: Access to **animations**, **notes**, **assignments**, and **progress tracking** via our online platform.
+- **Digital Learning Tools**: Access to **animations**, **notes**, **assignments**, and **progress tracking** via online platform.
 - **Personalized Attention**: Small batches ensure that each student receives the attention they need to thrive.
-- **Flexible Learning**: Online payment, downloadable notes, and interactive simulations to support anytime, anywhere learning.
+- **Flexible Learning**: Online classes, downloadable notes, and interactive simulations to support anytime, anywhere learning.
 
-## Our Vision
+## Vision
 
 To create an environment where students develop a genuine interest in learning, cultivate curiosity, and grow into confident problem solvers.
 
@@ -30,11 +30,21 @@ To create an environment where students develop a genuine interest in learning, 
 
 # Testimonials
 
-> "Sir is very friendly to the students and one can feel free to ask doubts any time. He goes to the depth of any topic and simplifies the complex ones. He kept me motivated during my JEE prep and is one of the reasons I’m in IIT Kharagpur today." 
+> "Sir is very friendly to the students and one can feel free to ask doubts any time. He goes to the depth of any topic and simplifies the complex ones.
+> He kept me motivated during my JEE prep and is one of the reasons I’m in IIT Kharagpur today." 
 > — **Nilabrata Mondal**, IIT KGP (2023–27)
+
+> "It is very difficult to pen down the beautiful experience that I had during my two years of 10+2 studies here. Sir used to explain physics with the help of
+> real life incidents and small experiments that made us learn concepts by heart.  Sir inspired me a lot."
+> — **Dhrubajyoti Gupta**
 
 > "Anant Sir changed the way of visualizing any problem in Math and Physics. His teaching impacted not just exams but how I think in engineering too. Forever grateful." 
 > — **Saidutt**, JEE 2014 Batch
+
+> "Academics has never been boring for a single day - learning newer approaches to the same problem,
+> exciting quizzes and assignments, unlimited doubt solving and cracking the most difficult olympiad problems.  I have conversed with many friends in IITR and not
+> everyone was as lucky as me to have such a teacher. Thanks to Anant Sir for being a constant source of guidance."
+> — **Sutirtha Biswas**, IIT Roorkee Graduate
 
 > "I think I never really learnt much in college, but the zeal Sir ignited in me during school pushes me forward even today. That is why I pursued a PhD at IIT Madras." 
 > — **Niladri Satpathi**, PhD Scholar, IIT Madras
