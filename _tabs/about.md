@@ -4,22 +4,21 @@ icon: fas fa-info-circle
 order: 4
 ---
 
+# About Anant Kumar Classes
 
 Welcome to **Anant Kumar Classes**, a dedicated learning platform for students of **Physics** and **Mathematics** at the **higher secondary level**.
 
-Founded with the mission of making complex concepts simple and engaging, Anant Kumar Classes provides a blend of strong theoretical foundation and 
-practical problem-solving techniques. Here the emphasis is not only in empowering students to score well, but also to truly understand the "why" 
-and "how" behind every concept.
+Founded with the mission of making complex concepts simple and engaging, Anant Kumar Classes provides a blend of strong theoretical foundation and practical problem-solving techniques. We believe in empowering students not just to score well, but to truly understand the "why" and "how" behind every concept.
 
-## What Is On Offer
+## What We Offer
 
-- **Expert Guidance**: Classes are conducted by **Anant Kumar**, a highly experienced educator with a deep passion for Physics and Mathematics.
+- **Expert Guidance**: Classes are conducted by **Anant Kumar**, an experienced educator with a deep passion for Physics and Mathematics.
 - **Conceptual Clarity**: Emphasis on building a strong foundation through intuitive explanations and real-life analogies.
-- **Digital Learning Tools**: Access to **animations**, **notes**, **assignments**, and **progress tracking** via online platform.
+- **Digital Learning Tools**: Access to **animations**, **notes**, **assignments**, and **progress tracking** via our online platform.
 - **Personalized Attention**: Small batches ensure that each student receives the attention they need to thrive.
 - **Flexible Learning**: Online classes, downloadable notes, and interactive simulations to support anytime, anywhere learning.
 
-## Vision
+## Our Vision
 
 To create an environment where students develop a genuine interest in learning, cultivate curiosity, and grow into confident problem solvers.
 
@@ -43,6 +42,7 @@ To create an environment where students develop a genuine interest in learning, 
 > everyone was as lucky as me to have such a teacher. Thanks to Anant Sir for being a constant source of guidance."
 > — **Sutirtha Biswas**, IIT Roorkee Graduate
 
+
 > "I think I never really learnt much in college, but the zeal Sir ignited in me during school pushes me forward even today. That is why I pursued a PhD at IIT Madras." 
 > — **Niladri Satpathi**, PhD Scholar, IIT Madras
 
@@ -61,3 +61,4 @@ You can find more heartfelt student feedback on our **Testimonials page**, or ju
 
 > “Education is not the learning of facts, but the training of the mind to think.” 
 > — *Albert Einstein*
+
