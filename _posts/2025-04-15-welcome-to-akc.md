@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "👋 Welcome to Anant Kumar Classes"
 date: 2025-04-15 10:00:00 +0530
 categories: [General]
