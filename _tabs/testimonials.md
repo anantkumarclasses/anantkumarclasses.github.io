@@ -62,7 +62,7 @@ Over the years, students from various batches have shared their experiences of l
 
 These are just a few of the heartfelt words from our students. If you'd like to read more or leave your own review, please visit our **[Google Business Page](https://g.page/r/CQihtPgXGNEcEBM/review)**.
 Or you can scan the following QR code:
-<p align="center">
+<p style="align: center;">
   <img src="../assets/img/review_qr.png" alt="Scan QR for review" width="132">
 </p>
 
