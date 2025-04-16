@@ -10,5 +10,5 @@ Reinforce your understanding of one of the most foundational topics in Physics �
 
 They’re quick to revise, focused on core concepts, and perfect for exam prep!
 
-👉 [Click here to view the flashcards](/flashcards/units-measurements/)
+👉 [Click here to view the flashcards](/units-measurements/)
 
