@@ -90,21 +90,22 @@ title: "Interactive Motion Graphs "
 
     ctx.clearRect(0, 0, width, height);
 
-    function smooth(array, windowSize = 5) {
-      const result = [];
-      for (let i = 0; i < array.length; i++) {
-        const start = Math.max(0, i - windowSize + 1);
-        const slice = array.slice(start, i + 1);
-        const avg = slice.reduce((sum, val) => sum + val, 0) / slice.length;
-        result.push(avg);
-     }
-     return result;
-    }
+ function smooth(array, windowSize = 5) {
+  const result = [];
+  for (let i = 0; i < array.length; i++) {
+    const start = Math.max(0, i - windowSize + 1);
+    const slice = array.slice(start, i + 1);
+    const avg = slice.reduce((sum, val) => sum + val, 0) / slice.length;
+    result.push(avg);
+  }
+  return result;
+}
 
 // Smooth the raw data
 const positions = smooth(data.map(d => d.pos));
 const velocities = smooth(data.map(d => d.vel));
 const accelerations = smooth(data.map(d => d.acc));
+
 
     drawGraph(positions, 0, "Position", "blue", graphHeight, width);
     drawGraph(velocities, graphHeight, "Velocity", "green", graphHeight, width);
