@@ -1,7 +1,6 @@
-
 ---
 layout: post
-title: "Interactive Motion Graphs "
+title: "Interactive Motion Graphs (Responsive)"
 ---
 
 <p>Slide the slider below to see how position, velocity, and acceleration change dynamically over time:</p>
@@ -54,17 +53,6 @@ title: "Interactive Motion Graphs "
     lastVel = vel;
   }
 
-  function smooth(array, windowSize = 5) {
-    const result = [];
-    for (let i = 0; i < array.length; i++) {
-      const start = Math.max(0, i - windowSize + 1);
-      const slice = array.slice(start, i + 1);
-      const avg = slice.reduce((sum, val) => sum + val, 0) / slice.length;
-      result.push(avg);
-    }
-    return result;
-  }
-
   function drawGraph(values, yOffset, label, color, graphHeight, width) {
     ctx.save();
     ctx.translate(0, yOffset);
@@ -101,10 +89,9 @@ title: "Interactive Motion Graphs "
 
     ctx.clearRect(0, 0, width, height);
 
-    // Smooth the raw data
-    const positions = smooth(data.map(d => d.pos));
-    const velocities = smooth(data.map(d => d.vel));
-    const accelerations = smooth(data.map(d => d.acc));
+    const positions = data.map(d => d.pos);
+    const velocities = data.map(d => d.vel);
+    const accelerations = data.map(d => d.acc);
 
     drawGraph(positions, 0, "Position", "blue", graphHeight, width);
     drawGraph(velocities, graphHeight, "Velocity", "green", graphHeight, width);
@@ -115,5 +102,4 @@ title: "Interactive Motion Graphs "
 
   draw();
 </script>
-
 
