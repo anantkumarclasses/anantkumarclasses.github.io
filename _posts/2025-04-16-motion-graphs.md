@@ -1,23 +1,39 @@
+
 ---
 layout: post
-title: "Interactive Motion Graphs"
+title: "Interactive Motion Graphs "
 ---
 
-<p>This animation shows how position, velocity, and acceleration change over time as you move the slider:</p>
+<p>Slide the slider below to see how position, velocity, and acceleration change dynamically over time:</p>
 
-<div style="text-align:center;">
-  <canvas id="canvas" width="800" height="600"></canvas><br>
+<div class="motion-graph-container">
+  <canvas id="canvas" width="1000" height="600"></canvas>
   <input type="range" id="slider" min="0" max="100" value="50">
 </div>
+
+<style>
+  .motion-graph-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+  }
+
+  #slider {
+    width: 100%;
+    margin: 1rem auto;
+    display: block;
+  }
+</style>
 
 <script>
   const slider = document.getElementById("slider");
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext("2d");
-
-  const WIDTH = canvas.width;
-  const HEIGHT = canvas.height;
-  const GRAPH_HEIGHT = HEIGHT / 3;
 
   let data = [];
   let lastTime = performance.now();
@@ -28,38 +44,33 @@ title: "Interactive Motion Graphs"
   function updateData() {
     const now = performance.now();
     const dt = (now - lastTime) / 1000;
-
     const pos = +slider.value;
     const vel = (pos - lastPos) / dt;
     const acc = (vel - lastVel) / dt;
-
     data.push({ t: now / 1000, pos, vel, acc });
-
     if (data.length > MAX_POINTS) data.shift();
-
     lastTime = now;
     lastPos = pos;
     lastVel = vel;
   }
 
-  function drawGraph(values, yOffset, label, color) {
+  function drawGraph(values, yOffset, label, color, graphHeight, width) {
     ctx.save();
     ctx.translate(0, yOffset);
     ctx.fillStyle = "#f9f9f9";
-    ctx.fillRect(0, 0, WIDTH, GRAPH_HEIGHT);
+    ctx.fillRect(0, 0, width, graphHeight);
     ctx.strokeStyle = "#000";
-    ctx.strokeRect(0, 0, WIDTH, GRAPH_HEIGHT);
+    ctx.strokeRect(0, 0, width, graphHeight);
     ctx.fillStyle = "#000";
     ctx.fillText(label, 10, 15);
-
     ctx.beginPath();
     ctx.strokeStyle = color;
 
     const max = Math.max(...values.map(v => Math.abs(v))) || 1;
 
     for (let i = 0; i < values.length; i++) {
-      const x = (i / MAX_POINTS) * WIDTH;
-      const y = GRAPH_HEIGHT / 2 - (values[i] / max) * (GRAPH_HEIGHT / 2) * 0.9;
+      const x = (i / MAX_POINTS) * width;
+      const y = graphHeight / 2 - (values[i] / max) * (graphHeight / 2) * 0.9;
       if (i === 0) ctx.moveTo(x, y);
       else ctx.lineTo(x, y);
     }
@@ -70,16 +81,22 @@ title: "Interactive Motion Graphs"
 
   function draw() {
     updateData();
+    const width = canvas.clientWidth;
+    const height = canvas.clientHeight;
+    canvas.width = width;
+    canvas.height = height;
 
-    ctx.clearRect(0, 0, WIDTH, HEIGHT);
+    const graphHeight = height / 3;
+
+    ctx.clearRect(0, 0, width, height);
 
     const positions = data.map(d => d.pos);
     const velocities = data.map(d => d.vel);
     const accelerations = data.map(d => d.acc);
 
-    drawGraph(positions, 0, "Position", "blue");
-    drawGraph(velocities, GRAPH_HEIGHT, "Velocity", "green");
-    drawGraph(accelerations, 2 * GRAPH_HEIGHT, "Acceleration", "red");
+    drawGraph(positions, 0, "Position", "blue", graphHeight, width);
+    drawGraph(velocities, graphHeight, "Velocity", "green", graphHeight, width);
+    drawGraph(accelerations, 2 * graphHeight, "Acceleration", "red", graphHeight, width);
 
     requestAnimationFrame(draw);
   }
