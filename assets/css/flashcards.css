@@ -14,6 +14,7 @@
     .flashcard {
       width: 90vw;
       max-width: 600px;
+      min-width: 400px;
       height: 60vw;
       max-height: 400px;
       perspective: 1000px;
