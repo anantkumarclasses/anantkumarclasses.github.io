@@ -1,6 +1,6 @@
 ---
 title: "Flashcards: Units & Dimensions"
-permalink: /units-measurements/
+permalink: /flashcards/units-measurements/
 layout: page
 ---
 
