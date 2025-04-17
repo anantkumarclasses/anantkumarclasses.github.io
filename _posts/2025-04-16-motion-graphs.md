@@ -6,7 +6,7 @@ title: "📈 Interactive Motion Graphs"
 <p>Slide the slider below to see how position, velocity, and acceleration change dynamically over time:</p>
 
 <div class="motion-graph-container">
-  <canvas id="canvas" width="1000" height="600"></canvas>
+  <canvas id="canvas" width="1000" height="900"></canvas>
   <input type="range" id="slider" min="0" max="100" value="50">
 </div>
 
