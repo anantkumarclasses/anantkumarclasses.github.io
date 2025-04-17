@@ -53,79 +53,78 @@ title: "📈 Interactive Motion Graphs"
     lastVel = vel;
   }
 
-  function drawGraph(values, yOffset, label, color, graphHeight, width, customYMap = null) {
-  ctx.save();
-  ctx.translate(0, yOffset);
-
-  const padding = 10;
-
-  // Background
-  ctx.fillStyle = "#f9f9f9";
-  ctx.fillRect(0, 0, width, graphHeight);
-  ctx.strokeStyle = "#000";
-  ctx.strokeRect(0, 0, width, graphHeight);
-
-  // Title
-  ctx.fillStyle = "#000";
-  ctx.font = "12px sans-serif";
-  ctx.fillText(label, 10, 15);
-
-  // Optional tick marks if using a custom Y-mapper (position graph)
-  if (customYMap) {
-    const sliderMin = +slider.min;
-    const sliderMax = +slider.max;
-    const step = 10;
-
-    ctx.strokeStyle = "#ccc";
-    ctx.fillStyle = "#333";
-    ctx.textAlign = "right";
-    ctx.textBaseline = "middle";
-    ctx.font = "10px sans-serif";
-
-    for (let val = sliderMin; val <= sliderMax; val += step) {
-      const y = customYMap(val, graphHeight, padding);
-      ctx.beginPath();
-      ctx.moveTo(0, y);
-      ctx.lineTo(5, y);
-      ctx.stroke();
-      ctx.fillText(val, 28, y);
-    }
-  }
-
-  // Draw line graph
-  ctx.beginPath();
-  ctx.strokeStyle = color;
-
-  for (let i = 0; i < values.length; i++) {
-    const x = (i / MAX_POINTS) * width;
-    let y;
-
-    if (customYMap) {
-      y = customYMap(values[i], graphHeight, padding);
-    } else {
-      const max = Math.max(...values.map(v => Math.abs(v))) || 1;
-      y = graphHeight / 2 - (values[i] / max) * (graphHeight / 2) * 0.9;
-    }
-
-    if (i === 0) ctx.moveTo(x, y);
-    else ctx.lineTo(x, y);
-  }
-
-  ctx.stroke();
-  ctx.restore();
-}
-
-  
   function smooth(array, windowSize = 5) {
     const result = [];
     for (let i = 0; i < array.length; i++) {
       const start = Math.max(0, i - windowSize + 1);
       const slice = array.slice(start, i + 1);
       const avg = slice.reduce((sum, val) => sum + val, 0) / slice.length;
-     result.push(avg);
+      result.push(avg);
     }
     return result;
-  } 
+  }
+
+  function drawGraph(values, yOffset, label, color, graphHeight, width, customYMap = null) {
+    ctx.save();
+    ctx.translate(0, yOffset);
+
+    const padding = 10;
+
+    // Background
+    ctx.fillStyle = "#f9f9f9";
+    ctx.fillRect(0, 0, width, graphHeight);
+    ctx.strokeStyle = "#000";
+    ctx.strokeRect(0, 0, width, graphHeight);
+
+    // Title
+    ctx.fillStyle = "#000";
+    ctx.font = "12px sans-serif";
+    ctx.fillText(label, 10, 15);
+
+    // Optional tick marks for Y-axis (only for position graph)
+    if (customYMap) {
+      const sliderMin = +slider.min;
+      const sliderMax = +slider.max;
+      const step = 10; // Tick mark interval
+
+      ctx.strokeStyle = "#ccc";
+      ctx.fillStyle = "#333";
+      ctx.textAlign = "right";
+      ctx.textBaseline = "middle";
+      ctx.font = "10px sans-serif";
+
+      for (let val = sliderMin; val <= sliderMax; val += step) {
+        const y = customYMap(val, graphHeight, padding);
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(5, y);
+        ctx.stroke();
+        ctx.fillText(val, 28, y);
+      }
+    }
+
+    // Draw the graph line
+    ctx.beginPath();
+    ctx.strokeStyle = color;
+
+    for (let i = 0; i < values.length; i++) {
+      const x = (i / MAX_POINTS) * width;
+      let y;
+
+      if (customYMap) {
+        y = customYMap(values[i], graphHeight, padding);
+      } else {
+        const max = Math.max(...values.map(v => Math.abs(v))) || 1;
+        y = graphHeight / 2 - (values[i] / max) * (graphHeight / 2) * 0.9;
+      }
+
+      if (i === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    }
+
+    ctx.stroke();
+    ctx.restore();
+  }
 
   function draw() {
     updateData();
@@ -138,16 +137,19 @@ title: "📈 Interactive Motion Graphs"
 
     ctx.clearRect(0, 0, width, height);
 
-    const positions = data.map(d => d.pos);
-    const velocities = data.map(d => d.vel);
-    const accelerations = data.map(d => d.acc);
+    // Smooth the raw data
+    const positions = smooth(data.map(d => d.pos));
+    const velocities = smooth(data.map(d => d.vel));
+    const accelerations = smooth(data.map(d => d.acc));
 
+    // Draw position graph with tick marks and proper Y-scaling
     drawGraph(positions, 0, "Position", "blue", graphHeight, width, (v, h, p) => {
-  const sliderMin = +slider.min;
-  const sliderMax = +slider.max;
-  return h - ((v - sliderMin) / (sliderMax - sliderMin)) * (h - 2 * p) - p;
-});
+      const sliderMin = +slider.min;
+      const sliderMax = +slider.max;
+      return h - ((v - sliderMin) / (sliderMax - sliderMin)) * (h - 2 * p) - p;
+    });
 
+    // Draw velocity and acceleration graphs
     drawGraph(velocities, graphHeight, "Velocity", "green", graphHeight, width);
     drawGraph(accelerations, 2 * graphHeight, "Acceleration", "red", graphHeight, width);
 
