@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Interactive Motion Graphs"
+title: "📈 Interactive Motion Graphs"
 ---
 
 <p>Slide the slider below to see how position, velocity, and acceleration change dynamically over time:</p>

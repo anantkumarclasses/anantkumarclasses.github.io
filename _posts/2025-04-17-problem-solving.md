@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Problem Solving"
+title: "🚩 Problem Solving"
 date: 2025-04-17
 categories: [Physics, Problem solving]
 tags: [problem solving, domain knowledge, polya's approach]
