@@ -34,8 +34,7 @@ A great many physics textbook authors recommend overall problem solving strategi
 These are typically four-step procedures that descend from George Polya’s influential
 book, **How to Solve It**, on problem solving. Here are his four steps: 
 
- 1. **Understand – get a conceptual grasp of the problem**
- 
+1. **Understand – get a conceptual grasp of the problem**
  What is the problem asking?  What are the given conditions and assumptions? What domain of knowledge is involved? 
  What is to be found and how is this determined or constrained by the given conditions? 
  
@@ -59,8 +58,7 @@ book, **How to Solve It**, on problem solving. Here are his four steps:
  your labeling and comments. Get the problem into your brain! Go systematically down the list of 
  topics in the course or for that week if you are stuck.
  
- 2. **Devise a Plan - set up a procedure to obtain the desired solution**
- 
+2. **Devise a Plan - set up a procedure to obtain the desired solution**
  **General** - Have you seen a problem like this – i.e., does the problem fit in a schema you already 
  know? Is a part of this problem a known schema? Could you simplify this problem so that it is? 
  Can you find any useful results for the given problem and data even if it is not the solution 
@@ -75,8 +73,7 @@ book, **How to Solve It**, on problem solving. Here are his four steps:
  the system’s momentum ... Given that the problem involves some particular thing (constant acceleration, 
  momentum) think over all the equations that involve this concept.
  
- 3. **Carry our your plan – solve the problem!**
- 
+3. **Carry our your plan – solve the problem!**
  This generally involves mathematical manipulations. Try to keep them as simple as possible by not substituting 
  in lengthy algebraic expressions until the end is in sight, make your work as neat as you can to ease checking
  and reduce careless mistakes. Keep a clear idea of where you are going and have been (label the equations 
@@ -85,7 +82,6 @@ book, **How to Solve It**, on problem solving. Here are his four steps:
  
  
 4. **Look Back – check your solution and method of solution**
-
  Can you see that the answer is correct now that you have it – often simply by retrospective inspection? 
  Can you solve it a different way? Is the problem equivalent to one you’ve solved before if the variables 
  have some specific values? Check special cases (for instance, for a problem involving two massive objects
