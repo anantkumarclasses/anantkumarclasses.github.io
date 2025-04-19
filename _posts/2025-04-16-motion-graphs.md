@@ -77,6 +77,31 @@ title: "📈 Interactive Motion Graphs"
     ctx.stroke();
     ctx.restore();
   }
+
+  function drawPositionGraph(values, yOffset, label, color, graphHeight, width) {
+    ctx.save();
+    ctx.translate(0, yOffset);
+    ctx.fillStyle = "#f9f9f9";
+    ctx.fillRect(0, 0, width, graphHeight);
+    ctx.strokeStyle = "#000";
+    ctx.strokeRect(0, 0, width, graphHeight);
+    ctx.fillStyle = "#000";
+    ctx.fillText(label, 10, 15);
+    ctx.beginPath();
+    ctx.strokeStyle = color;
+
+    const max = Math.max(...values.map(v => Math.abs(v))) || 1;
+
+    for (let i = 0; i < values.length; i++) {
+      const x = (i / MAX_POINTS) * width;
+      const y = 0.9 * graphHeight - (values[i] / max) * (graphHeight * 0.9) * 0.9;
+      if (i === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    }
+
+    ctx.stroke();
+    ctx.restore();
+  }
   
   
   function draw() {
@@ -94,7 +119,7 @@ title: "📈 Interactive Motion Graphs"
     const velocities = data.map(d => d.vel);
     const accelerations = data.map(d => d.acc);
 
-    drawGraph(positions, 0, "Position", "blue", graphHeight, width);
+    drawPositionGraph(positions, 0, "Position", "blue", graphHeight, width);
     drawGraph(velocities, graphHeight, "Velocity", "green", graphHeight, width);
     drawGraph(accelerations, 2 * graphHeight, "Acceleration", "red", graphHeight, width);
 
