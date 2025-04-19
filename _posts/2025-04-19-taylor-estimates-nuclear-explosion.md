@@ -1,5 +1,5 @@
 ---
-title: How G. I. Taylor Estimated the Yield of a Nuclear Explosion Using Physics
+title: 💥 How G. I. Taylor Estimated the Yield of a Nuclear Explosion Using Physics
 layout: post
 date: 2025-04-19
 categories: [Physics, Dimensional Analysis, History]
@@ -22,7 +22,7 @@ Taylor considered the following variables:
  - $$ E $$: Energy released in the explosion (dimensions $$ ML^2T^{-2} $$)
  - $$ t $$: Time since the explosion (dimensions $$ T $$)
  - $$ \rho_0 $$: Initial air density (dimensions $$ ML^{-3} $$)
- - $$ R $$: Radius of the shock wave (dimensions $$ L $$
+ - $$ R $$: Radius of the shock wave (dimensions $$ L $$)
  
 Using dimensional analysis, he deduced the only possible combination with dimensions of length:
 
@@ -43,6 +43,7 @@ This was a remarkable outcome, because:
  
   - Taylor had no access to classified data.
   - Yet he was able to estimate the energy yield of the bomb to within a factor of 2 or so of the actual value.
+
 It therefore came as a shock to the U.S. military and intelligence community that such analysis could yield top-secret information from publicly available footage.
   
 ## 📚 Where It Appeared
@@ -61,7 +62,7 @@ Feel free to share this with fellow students or teachers, and explore more such 
 
 ---
 
-*Posted by Anant Kumar | Physics & Mathematics Educator*
+
 
 
 
