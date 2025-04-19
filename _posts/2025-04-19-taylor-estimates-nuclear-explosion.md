@@ -13,6 +13,7 @@ Here is a famous historical episode involving **Sir Geoffrey Ingram Taylor**, a 
 ## 📜 Historical Context
 In the late 1940s, after the **Trinity nuclear test** (July 16, 1945) and the bombings of Hiroshima and Nagasaki, the U.S. government released footage of nuclear explosions for public and scientific scrutiny. These included high-speed photographs of the expanding shock waves like the one below:
 ![Shock wave radius vs time](/assets/img/the_trinity_explosion.jpg "The evolution of the Trinity fireball over the first 9 seconds, with the Empire State Building for scale. Image by Alex Wellerstein")
+*The evolution of the Trinity fireball over the first 9 seconds, with the Empire State Building for scale. Image by Alex Wellerstein*
 
 Sir G. I. Taylor, already an esteemed physicist and expert in fluid mechanics, watched these films. Even though the **total yield (energy release) of the bombs was classified**, Taylor realized he could estimate the energy by applying dimensional analysis to the shock wave’s radius over time.
 
