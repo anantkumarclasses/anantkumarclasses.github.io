@@ -19,24 +19,24 @@ Sir G. I. Taylor, already an esteemed physicist and expert in fluid mechanics, w
 ## 🧠 The Analysis
 Taylor considered the following variables:
 
- - $$ E $$: Energy released in the explosion $$ [ML^2T^{-2}] $$
- - $$ t $$: Time since the explosion \([T]\)
- - \( \rho_0 \): Initial air density \([ML^{-3}]\)
- - \( R \): Radius of the shock wave \([L]\)
+ - $$ E $$: Energy released in the explosion (dimensions $$ ML^2T^{-2} $$)
+ - $$ t $$: Time since the explosion (dimensions $$ T $$)
+ - $$ \rho_0 $$: Initial air density (dimensions $$ ML^{-3} $$)
+ - $$ R $$: Radius of the shock wave (dimensions $$ L $$
  
 Using dimensional analysis, he deduced the only possible combination with dimensions of length:
 
-\[
+$$
 R \propto \left(\frac{Et^2}{\rho_0}\right)^{1/5}
-\]
+$$
 
 This gives us a formula:
 
-\[
+$$
 R = C\left(\frac{Et^2}{\rho_0}\right)^{1/5}
-\]
+$$
 
-where \( C \) is a dimensionless constant. From films of the explosion, Taylor could measure \( R \) and \( t \), and with a good estimate of air density, he inferred \( E \)—the energy released in the blast.
+where $$ C $$ is a dimensionless constant. From films of the explosion, Taylor could measure $$ R $$ and $$ t $$, and with a good estimate of air density, he inferred $$ E $$ — the energy released in the blast.
 
 ## 💣 The Bombshell (pun intended)
 This was a remarkable outcome, because:
