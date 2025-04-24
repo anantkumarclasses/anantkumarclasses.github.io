@@ -12,7 +12,7 @@ This interactive visualization lets you explore the motion of an object moving a
 ### Equation of Motion
 
 $$
-x(t) = ut + \frac{1}{2} a t^2 \quad\text{and}\quad v(t) = u + at
+x(t) = x_0 + ut + \frac{1}{2} a t^2 \quad\text{and}\quad v(t) = u + at
 $$
 
 ---
@@ -73,7 +73,7 @@ $$
 
   <div id='layout'>
     <div id='animationArea'>
-      <canvas id='motionCanvas' width='100%' height='150'></canvas>
+      <canvas id='motionCanvas' width='600' height='150'></canvas>
     </div>
     <div id='graphs'>
       <canvas id='positionGraph'></canvas>
