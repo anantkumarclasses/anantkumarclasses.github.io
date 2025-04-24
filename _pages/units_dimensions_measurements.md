@@ -74,11 +74,11 @@ quantities* and their units. They are the *plane angle* having radians
 as its unit, and the *solid angle* with unit steradian. Rest all other
 physical quantities have *derived units*. The base quantities together
 with the supplementary quantities have been summarized in
-Table [1](#table:siunits){reference-type="ref"
+[Table 1](#table:siunits){reference-type="ref"
 reference="table:siunits"}.
 
 ::: center
-::: {#table:siunits}
+::: {table:siunits}
 +-----------------+-----------------+-----------------+------------+
 | *Base           |                 |                 |            |
 | quantities*     |                 |                 |            |
@@ -127,7 +127,7 @@ abbreviations, which may be used as *prefixes* before units. These
 prefixes are shown in Table [3](#table:po10){reference-type="ref"
 reference="table:po10"}.
 
-::: {#table:po10}
+::: {table:po10}
    **Power of 10**   **Prefix**   **Symbol**
   ----------------- ------------ ------------
       $10^{18}$         exa           E
@@ -142,7 +142,7 @@ reference="table:po10"}.
   : **Prefixes for powers of 10**
 :::
 
-::: {#table:po10}
+::: {table:po10}
    **Power of 10**   **Prefix**   **Symbol**
   ----------------- ------------ ------------
       $10^{-1}$         deci          d
@@ -290,7 +290,7 @@ the true value of the physical quantity may lie. For example, in
 Figure [1](#fig:t1figure1){reference-type="ref"
 reference="fig:t1figure1"}, the true length of the paper lies within
 5.0 cm and 5.1 cm.
-
+<a id="#fig:t1figure1"></a>
 ## [Classification]{.sans-serif}
 
 There are several causes for errors in measurements. Based on their
