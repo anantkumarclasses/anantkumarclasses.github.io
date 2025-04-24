@@ -74,8 +74,6 @@ quantities* and their units. They are the *plane angle* having radians
 as its unit, and the *solid angle* with unit steradian. Rest all other
 physical quantities have *derived units*. The base quantities together
 with the supplementary quantities have been summarized in
-[Table 1](#table:siunits){reference-type="ref"
-reference="table:siunits"}.
 
 ::: center
 ::: {table:siunits}
@@ -124,8 +122,7 @@ To express very large and very small numbers, we generally use the
 *scientific notation* of representation. Further, to simplify matters,
 certain powers of 10 in this system of notation have been given
 abbreviations, which may be used as *prefixes* before units. These
-prefixes are shown in Table [3](#table:po10){reference-type="ref"
-reference="table:po10"}.
+prefixes are shown in Table 
 
 ::: {table:po10}
    **Power of 10**   **Prefix**   **Symbol**
@@ -287,10 +284,9 @@ precise, there is invariably some uncertainty in the measured value of
 the physical quantity. This *uncertainty* is called *error*. The error
 in a measured quantity gives an indication of the limits within which
 the true value of the physical quantity may lie. For example, in
-Figure [1](#fig:t1figure1){reference-type="ref"
-reference="fig:t1figure1"}, the true length of the paper lies within
+Figure  the true length of the paper lies within
 5.0 cm and 5.1 cm.
-<a id="#fig:t1figure1"></a>
+
 ## [Classification]{.sans-serif}
 
 There are several causes for errors in measurements. Based on their
@@ -461,12 +457,11 @@ quantities combine to give the units of that derived quantity.* For
 example, if $v$ be the velocity, then $[v]=LT^{-1}$. A dimensionless
 quantity would have $[\phi] = 1$. This means that in all system of
 units, its numerical value would be the same.
-Table [5](#table:dimensionalformula){reference-type="ref"
-reference="table:dimensionalformula"} gives the dimensional formula of
+ gives the dimensional formula of
 some commonly encountered quantities. Of course, the list is not
 exhaustive.
 
-::: {#table:dimensionalformula}
+::: {table:dimensionalformula}
   --------- ---------------------- -------------------------
    **Sl.**  **Physical**           **Dimensional**
    **No.**  **Quantity**           **Formula**
@@ -490,7 +485,7 @@ exhaustive.
   : **Dimensional formulae for some commonly encountered quantities**
 :::
 
-::: {#table:dimensionalformula}
+::: {table:dimensionalformula}
   --------- ---------------------- ----------------------
    **Sl.**  **Physical**           **Dimensional**
    **No.**  **Quantity**           **Formula**
@@ -515,8 +510,7 @@ exhaustive.
 :::
 
 Note that all the dimensional formulae listed in
-Table [5](#table:dimensionalformula){reference-type="ref"
-reference="table:dimensionalformula"} are product of *power law
+are product of *power law
 monomials*, of the form $$[\phi] = M^a L^b T^c \theta^d\ldots$$ where
 $a$, $b$, $c$, $d$ ...are constants. In fact, this is a general result
 which can be proved mathematically.
@@ -553,7 +547,7 @@ dimensions of the governed parameter $q$ is determined by the dimensions
 of $(q_1$, $q_2$, ..., $q_k)$, and all of the $q_s$'s with $s>k$ can be
 written as products of powers of of the dimensions of $(q_1$, $q_2$,
 ..., $q_k)$. With these definitions, it is possible to prove that
-[\[eq:q\]](#eq:q){reference-type="eqref" reference="eq:q"} can be
+can be
 written as: $$\label{eq:dcenter}
 q=q_1^\alpha\ldots q_k^\gamma \,
 \Phi\left(\frac{q_{k+1}}{q_1^{\alpha_{k+1}}\ldots
@@ -561,14 +555,11 @@ q_k^{\gamma_{k+1}}},\,\ldots,\,\frac{q_{n}}{q_1^{\alpha_{n}}\ldots
 q_k^{\gamma_{n}}}\right)$$ with $\Phi$ some function of *dimensionless
 quantities only* and $\alpha$, ..., $\gamma$, $\alpha_{k+1}$, ...,
 $\gamma_{k+1}$, $\alpha_n$, ..., $\gamma_n$ are some real numbers. The
-great simplification is that while the function $f$ in
-[\[eq:q\]](#eq:q){reference-type="eqref" reference="eq:q"} was a
+great simplification is that while the function $f$ in was a
 function of $n$ variables, the function $\Phi$ in
-[\[eq:dcenter\]](#eq:dcenter){reference-type="eqref"
-reference="eq:dcenter"} is a *function of only $n-k$ variables*.
-[\[eq:dcenter\]](#eq:dcenter){reference-type="eqref"
-reference="eq:dcenter"} is a mathematical statement of *Buckingham's
-$\Pi$ Theorem* which is the central result of dimensional analysis.
+ is a *function of only $n-k$ variables*.
+is a mathematical statement of **Buckingham's
+$$ \Pi $$ Theorem** which is the central result of dimensional analysis.
 Dimensional analysis cannot supply us with the dimensionless function
 $\Phi$ --- we need a *real theory* for that.
 
