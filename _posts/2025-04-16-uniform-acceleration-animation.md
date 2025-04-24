@@ -73,7 +73,7 @@ $$
 
   <div id='layout'>
     <div id='animationArea'>
-      <canvas id='motionCanvas' width='600' height='150'></canvas>
+      <canvas id='motionCanvas' width='100%' height='150'></canvas>
     </div>
     <div id='graphs'>
       <canvas id='positionGraph'></canvas>
@@ -161,7 +161,7 @@ $$
         velocityChart.update();
       }
 
-      if (px < canvas.width) {
+      if (px >= 0 && px < canvas.width) {
         animationId = requestAnimationFrame(animate);
       }
     }
