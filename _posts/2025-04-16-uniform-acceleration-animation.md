@@ -19,7 +19,7 @@ $$
 
 ## 🎬 Animation + Graphs
 
-<iframe style="width: 100%; height: 500px; border: none;" srcdoc="
+<iframe style="width: 100%; height: 90vh; border: none;" srcdoc="
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,6 +64,7 @@ $$
 </head>
 <body>
   <div id='controls'>
+    <label>Initial Position (x<sub>0</sub>) [m/s]: <input type='number' id='initialPosition' value='0'></label>
     <label>Initial Velocity (u) [m/s]: <input type='number' id='initialVelocity' value='2'></label>
     <label>Acceleration (a) [m/s²]: <input type='number' id='acceleration' value='1'></label>
     <button id='startBtn'>Start</button>
@@ -85,7 +86,7 @@ $$
     const ctx = canvas.getContext('2d');
     const startBtn = document.getElementById('startBtn');
     const resetBtn = document.getElementById('resetBtn');
-    let u = 0, a = 0, startTime = null, animationId;
+    let x0 = 0, u = 0, a = 0, startTime = null, animationId;
     let dataTime = [], dataX = [], dataV = [];
 
     const posCtx = document.getElementById('positionGraph').getContext('2d');
@@ -96,7 +97,7 @@ $$
       data: {
         labels: dataTime,
         datasets: [{
-          label: 'Displacement (m)',
+          label: 'Position (m)',
           data: dataX,
           borderColor: 'blue',
           tension: 0.2
@@ -145,7 +146,7 @@ $$
     function animate(timestamp) {
       if (!startTime) startTime = timestamp;
       const t = (timestamp - startTime) / 1000;
-      const x = u * t + 0.5 * a * t * t;
+      const x = x0 + u * t + 0.5 * a * t * t;
       const v = u + a * t;
       const px = x * 50;
 
@@ -167,6 +168,7 @@ $$
 
     function startAnimation() {
       cancelAnimationFrame(animationId);
+      x0 = parseFloat(document.getElementById('initialPosition').value);
       u = parseFloat(document.getElementById('initialVelocity').value);
       a = parseFloat(document.getElementById('acceleration').value);
       startTime = null;
