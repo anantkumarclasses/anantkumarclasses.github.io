@@ -7,7 +7,7 @@ pin: false
 math: true
 ---
 
-This interactive visualization lets you explore the motion of an object moving along a straight line with **uniform acceleration**. You can specify the initial velocity $$ u $$ and acceleration $$ a $$. The animation and graphs update in real time.
+This interactive visualization lets you explore the motion of an object moving along a straight line with **uniform acceleration**. You can specify the initial position $$ x_0 $$, initial velocity $$ u $$ and acceleration $$ a $$. The animation and graphs update in real time.
 
 ### Equation of Motion
 
@@ -64,9 +64,9 @@ $$
 </head>
 <body>
   <div id='controls'>
-    <label>Initial Position (x<sub>0</sub>) [m/s]: <input type='number' id='initialPosition' value='0'></label>
+    <label>Initial Position (x<sub>0</sub>) [m]: <input type='number' id='initialPosition' value='2'></label>
     <label>Initial Velocity (u) [m/s]: <input type='number' id='initialVelocity' value='2'></label>
-    <label>Acceleration (a) [m/s²]: <input type='number' id='acceleration' value='1'></label>
+    <label>Acceleration (a) [m/s²]: <input type='number' id='acceleration' value='-0.5'></label>
     <button id='startBtn'>Start</button>
     <button id='resetBtn'>Reset</button>
   </div>
