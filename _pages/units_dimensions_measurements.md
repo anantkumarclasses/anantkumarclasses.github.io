@@ -151,149 +151,139 @@ Figure  the true length of the paper lies within
 
 ## [Classification]{.sans-serif}
 
-There are several causes for errors in measurements. Based on their
-cause, we may classify errors into three broad categories: **systematic
-errors**, **random errors**, and **gross errors**.\
-**Systematic errors.** These are the errors whose causes are known and,
-hence, can be minimized. For example:
+There are several causes for errors in measurements. Based on their cause, we may classify errors into three broad categories: **systematic errors**, **random errors**, and **gross errors**.
 
--   *least count error:* it is associated with the resolution of the
-    instrument, i.e. the minimum measurement that can be precisely
-    performed using a certain instrument;
+### Systematic errors
+These are the errors whose causes are known and, hence, can be minimized. For example:
 
--   *resolution of the experiment:* different experimental methods will
-    have different units of resolution and hence errors;
+-   *least count error:* it is associated with the resolution of the instrument, i.e. the minimum measurement that can be precisely performed using a certain instrument;
 
--   *instrumental error:* arising out of erroneous manufacture of
-    instruments or using instruments having zero--error;
+-   *resolution of the experiment:* different experimental methods will have different units of resolution and hence errors;
 
--   *personal error:* arising out of carelessness or deficiency of the
-    observer e.g. a person holding his head a bit too far to the right
-    while reading a needle on the scale and thus introducing an error
-    due to parallax.
+-   *instrumental error:* arising out of erroneous manufacture of instruments or using instruments having zero--error;
 
-**Random errors.** These are errors that occur irregularly and hence are
-random with respect to sign and size. They can be taken care by
-repeating the measurements several times and average of the values
-taken. Normally, statistical methods are used to analyze data containing
-random errors.\
-**Gross errors.** These errors are due to the sheer carelessness of the
-experimenter. For example, taking the reading without proper adjustment
-of the apparatus, recording the readings incorrectly etc. These can be
-lessened if the experimenter is mentally alert and sincere.
+-   *personal error:* arising out of carelessness or deficiency of the observer e.g. a person holding his head a bit too far to the right while reading a needle on the scale and thus introducing an error due to parallax.
 
-## [Expressing errors quantitatively]{.sans-serif}
+### Gross errors
+These errors are due to the sheer carelessness of the experimenter. For example, taking the reading without proper adjustment of the apparatus, recording the readings incorrectly etc. These can be lessened if the experimenter is mentally alert and sincere.
 
-As already mentioned, random errors can be minimized by repeating the
-measurements many times and taking their average value or the arithmetic
-mean as the "true" value of the measured quantity.\
-**Mean value.** Suppose we are trying to measure a physical quantity
-$A$. Let us denote its value as $a$ and further suppose that the values
-obtained in several measurements are $a_1$, $a_2$, $a_3$, ..., $a_n$.
-Their arithmetic mean is
-$$\langle a\rangle = \frac{a_1+a_2+a_3+\cdots+ a_n}{n}
-=\frac{1}{n}\sum_{i=1}^n a_i$$ This value is taken as the true value of
-the quantity $A$ under the conditions of measurements, because it is
-reasonable to suppose that individual measurements are as likely to
-overestimate as to underestimate the true value of the physical
-quantity.\
-**Absolute error.** *The magnitude of the difference between the value
-of the quantity and the individual measurement value* is called the
-*absolute error* of the measurement. This is denoted by $|\Delta a|$.
-Since the true value is unknown, let us accept the mean as the true
-value. Then the absolute errors in our measurements are
-$$\begin{aligned}
-|\Delta a_1|&=&\langle a\rangle -a_1\\
-|\Delta a_2|&=&\langle a\rangle -a_2\\
-&\vdots&\\
-|\Delta a_n|&=&\langle a\rangle -a_n
-\end{aligned}$$ Finally, the arithmetic mean of all these absolute
-errors is taken to be the absolute error of the value of the quantity
-i.e. $a$.
-$$\langle|\Delta a|\rangle=\frac{|\Delta a_1|+|\Delta a_2|+|\Delta
-a_3| + \cdots + |\Delta a_n|}{n}=\frac{1}{n}\sum_{i=1}^n |\Delta
-a_i|$$ If we do a single measurement, the value we get may be in the
-range $\langle a\rangle \pm \langle|\Delta a|\rangle$ i.e.
-$$\langle a\rangle - \langle|\Delta a|\rangle \leq a \leq \langle
-a\rangle + \langle|\Delta a|\rangle$$ **Relative and percentage error.**
-Often, instead of the absolute error, we use the *relative error* and
-*percentage error*. *The ratio of the absolute error to the value of the
-quantity being measured* is called the *relative or fractional error*.
-When expressed in percentage, it becomes percentage error:
-$$\delta a  = \frac{\langle|\Delta a|\rangle}{\langle| a|\rangle}
-\times 100$$ Let us consider an example.
+### Random errors
+These are errors that occur irregularly and hence are random with respect to sign and size. They can be taken care by repeating the measurements several times and average of the values
+taken. Normally, statistical methods are used to analyze data containing random errors.
 
-::: small
-::: example
-***Example* 1**. The refractive index of water was measured. In
-successive measurements, the readings turn out to be 1.29, 1.33, 1.34,
-1.35, 1.32, 1.36, 1.30, 1.33.
 
-Thus, the mean value of the refractive index, taken to be the actual
-value is
-$$\mu=\frac{1.29 + 1.33 + 1.34 + 1.35 + 1.32 + 1.36 + 1.30 + 1.33}{8}
-=1.3275=1.33$$ The absolute errors are $$\begin{aligned}
-|\Delta\mu_1|&=&|1.33-1.29|=0.04\\
-|\Delta\mu_2|&=&|1.33-1.33|=0.00\\
-|\Delta\mu_3|&=&|1.33-1.34|=0.01\\
-|\Delta\mu_4|&=&|1.33-1.35|=0.02\\
-|\Delta\mu_5|&=&|1.33-1.32|=0.01\\
-|\Delta\mu_6|&=&|1.33-1.36|=0.03\\
-|\Delta\mu_7|&=&|1.33-1.30|=0.03\\
-|\Delta\mu_8|&=&|1.33-1.33|=0.00
-\end{aligned}$$ Hence, the mean absolute error is
-$$\langle|\Delta \mu|\rangle=\frac{0.04+ 0.00 + 0.01 + 0.02 + 0.01 +
-0.03 + 0.03 + 0.00}{8} = \frac{0.14}{8} = 0.0175 = 0.02$$ Hence, the
-refractive index of water is $\mu = 1.33 \pm 0.02$. Further, the
-percentage error $$\delta\mu = \frac{0.02}{1.33}\times 100 = 1.5~\%$$
-:::
-:::
+## Expressing errors quantitatively
+As already mentioned, random errors can be minimized by repeating the measurements many times and taking their average value or the arithmetic mean as the "true" value of the measured quantity.
 
-## [Combination of errors]{.sans-serif}
+**Mean value.** Suppose we are trying to measure a physical quantity $$ A $$. Let us denote its value as $$ a $$ and further suppose that the values obtained in several measurements are $$ a_1 $$, $$ a_2 $$, $$ a_3 $$, ..., $$ a_n $$. Their arithmetic mean is 
 
-If we do an experiment involving several measurements, we must know how
-the error combines in the process of addition, subtraction,
-multiplication and division. The procedure is outlined below:
+$$
+\overline{a} = \frac{a_1+a_2+a_3+\cdots+ a_n}{n} =\frac{1}{n}\sum_{i=1}^n a_i
+$$
 
-1.  *Error of a sum or a difference.* Suppose two quantities $A$ and $B$
-    have measured values $\alpha\pm\Delta\alpha$ and $\beta
-    \pm\Delta\beta$, respectively, where $\Delta\alpha$ and
-    $\Delta\beta$ are the corresponding absolute errors. We wish to find
-    the absolute error $\Delta \zeta$ in their sum $Z=A+B$. We have by
-    addition, $$\zeta \pm \Delta\zeta =
-    (\alpha\pm\Delta\alpha)+(\beta\pm\Delta\beta) = (\alpha +\beta) \pm
-    (\Delta\alpha+\Delta\beta)$$ Thus the maximum possible error in
-    their sum is $\Delta\alpha +
-    \Delta\beta$.
+This value is taken as the true value of the quantity $$ A $$ under the conditions of measurements, because it is reasonable to suppose that individual measurements are as likely to
+overestimate as to underestimate the true value of the physical quantity.
 
-    For the difference, $Z=A-B$,
-    $$\zeta\pm\Delta\zeta =(\alpha\pm\Delta\alpha)-(\beta\pm\Delta\beta) =
-    \alpha-\beta\pm\Delta\alpha\pm\Delta\beta$$ And so,
-    $\pm\Delta\zeta =\pm\Delta\alpha\pm\Delta\beta$. The maximum
-    possible error is again $\Delta\alpha + \Delta\beta$. Hence the
-    rule: *when two quantities are added or subtracted, the absolute
-    error in the final result is the sum of the absolute errors in the
-    quantities.*
+### Absolute error
+*The magnitude of the difference between the value of the quantity and the individual measurement value* is called the *absolute error* of the measurement. This is denoted by $$ |\Delta a| $$. Since the true value is unknown, let us accept the mean as the true value. Then the absolute errors in our measurements are 
 
-2.  *Error of a product or a quotient.* Suppose $Z=AB$ and the measured
-    values $\alpha\pm\Delta\alpha$ and $\beta
-    \pm\Delta\beta$, respectively. Then, the value of $Z$
-    $$\begin{aligned}
-    \zeta\pm\Delta\zeta &=&(\alpha\pm\Delta\alpha)(\beta \pm\Delta\beta)
-    \\
-    &=&\alpha\beta \pm \alpha\Delta\beta \pm \beta\Delta\alpha \pm
-    \Delta\alpha\Delta\beta\\
-    \Rightarrow 1\pm\frac{\Delta\zeta}{\zeta} &=& 1 \pm
-    \frac{\Delta\alpha}{\alpha} \pm \frac{\Delta\beta}{\beta} \pm
-    \frac{\Delta\alpha}{\alpha}\cdot\frac{\Delta\beta}{\beta}
-    \end{aligned}$$ Since, ${\displaystyle\frac{\Delta\alpha}{\alpha}}$
-    and ${\displaystyle\frac{\Delta\beta}{\beta}}$ are much smaller
-    compared to unity, their product can be neglected. Hence, the
-    maximum error in $Z$ is
-    $$\frac{\Delta\zeta}{\zeta} =\frac{\Delta\alpha}{\alpha} +
-    \frac{\Delta\beta}{\beta}$$ This result holds true for division as
-    well. Hence, *when two quantities are multiplied or divided, the
-    fractional error in the result is the sum of the fractional errors
+$$
+\begin{aligned}
+|\Delta a_1|&= \vert \overline{a} -a_1 \vert \\
+|\Delta a_2|&= \vert \overline{a} -a_2 \vert \\
+&\vdots \\
+|\Delta a_n|&=\vert \overline{a} -a_n \vert
+\end{aligned}
+$$
+
+Finally, the arithmetic mean of all these absolute errors is taken to be the absolute error in the measured value of the quantity 
+
+$$
+\overline { |\Delta a|} = \frac{|\Delta a_1|+|\Delta a_2|+|\Delta a_3| + \cdots + |\Delta a_n|}{n}=\frac{1}{n}\sum_{i=1}^n |\Delta a_i|
+$$
+
+If we do a single measurement, the value we get may be in the range $$ \overline{a} \pm \overline{|\Delta a|} $$.
+
+### Relative and percentage error
+Often, instead of the absolute error, we use the *relative error* and *percentage error*. *The ratio of the absolute error to the value of the quantity being measured* is called the *relative or fractional error*. When expressed in percentage, it becomes percentage error:
+
+$$
+\text{percent erro } = \frac{\overline{|\Delta a|}}{\overline{a}} \times 100
+$$
+
+Let us consider an example.
+
+
+***Example* 1**. The refractive index of water was measured. In successive measurements, the readings turn out to be 1.29, 1.33, 1.34, 1.35, 1.32, 1.36, 1.30, 1.33.
+Thus, the mean value of the refractive index, taken to be the actual value is
+
+$$
+\mu=\frac{1.29 + 1.33 + 1.34 + 1.35 + 1.32 + 1.36 + 1.30 + 1.33}{8} =1.3275=1.33
+$$
+
+The absolute errors are 
+
+$$
+\begin{aligned}
+|\Delta\mu_1|&=|1.33-1.29|=0.04\\
+|\Delta\mu_2|&=|1.33-1.33|=0.00\\
+|\Delta\mu_3|&=|1.33-1.34|=0.01\\
+|\Delta\mu_4|&=|1.33-1.35|=0.02\\
+|\Delta\mu_5|&=|1.33-1.32|=0.01\\
+|\Delta\mu_6|&=|1.33-1.36|=0.03\\
+|\Delta\mu_7|&=|1.33-1.30|=0.03\\
+|\Delta\mu_8|&=|1.33-1.33|=0.00
+\end{aligned}
+$$
+
+Hence, the mean absolute error is
+
+$$
+\overline{|\Delta \mu|} =\frac{0.04+ 0.00 + 0.01 + 0.02 + 0.01 + 0.03 + 0.03 + 0.00}{8} = \frac{0.14}{8} = 0.0175 = 0.02
+$$
+
+Hence, the refractive index of water is $$ \mu = 1.33 \pm 0.02 $$. Further, the percentage error 
+
+$$
+ = \frac{0.02}{1.33}\times 100 = 1.5~\%
+$$
+
+
+## Combination of errors
+If we do an experiment involving several measurements, we must know how the error combines in the process of addition, subtraction, multiplication and division. The procedure is outlined below:
+
+1.  *Error of a sum or a difference.* Suppose two quantities $$ A $$ and $$ B $$ have measured values $$ \alpha\pm\Delta\alpha $$ and $$ \beta  \pm\Delta\beta$$, respectively, where $$\Delta\alpha $$ and $$ \Delta\beta $$ are the corresponding absolute errors. We wish to find the absolute error $$ \Delta \zeta $$ in their sum $$ Z=A+B $$. We have by addition, 
+
+$$ 
+\zeta \pm \Delta\zeta =     (\alpha\pm\Delta\alpha)+(\beta\pm\Delta\beta) = (\alpha +\beta) \pm  (\Delta\alpha+\Delta\beta)
+$$ 
+
+Thus the maximum possible error in their sum is $$ \Delta\alpha + \Delta\beta $$.
+For the difference, $$ Z=A-B $$, 
+
+$$
+\zeta\pm\Delta\zeta =(\alpha\pm\Delta\alpha)-(\beta\pm\Delta\beta) =    \alpha-\beta\pm\Delta\alpha\pm\Delta\beta
+$$
+
+And so, $$ \pm\Delta\zeta =\pm\Delta\alpha\pm\Delta\beta $$. The maximum possible error is again $$ \Delta\alpha + \Delta\beta $$. Hence the rule: *when two quantities are added or subtracted, the absolute  error in the final result is the sum of the absolute errors in the quantities.*
+
+2.  *Error of a product or a quotient.* Suppose $$ Z=AB $$ and the measured values $$ \alpha\pm\Delta\alpha $$ and $$ \beta \pm\Delta\beta $$, respectively. Then, the value of $$ Z $$ 
+
+    $$
+    \begin{aligned}
+    \zeta\pm\Delta\zeta &=(\alpha\pm\Delta\alpha)(\beta \pm\Delta\beta)  \\
+    &= \alpha\beta \pm \alpha\Delta\beta \pm \beta\Delta\alpha \pm \Delta\alpha\Delta\beta\\
+    \Rightarrow 1\pm\frac{\Delta\zeta}{\zeta} &= 1 \pm \frac{\Delta\alpha}{\alpha} \pm \frac{\Delta\beta}{\beta} \pm \frac{\Delta\alpha}{\alpha}\cdot\frac{\Delta\beta}{\beta}
+    \end{aligned}
+    $$
+    
+    Since, $$ {\displaystyle\frac{\Delta\alpha}{\alpha}} $$  and $$ {\displaystyle\frac{\Delta\beta}{\beta}} $$ are much smaller compared to unity, their product can be neglected. Hence, the maximum error in $Z$ is 
+    
+    $$
+    \frac{\Delta\zeta}{\zeta} =\frac{\Delta\alpha}{\alpha} +  \frac{\Delta\beta}{\beta}
+    $$ 
+    
+    This result holds true for division as well. Hence, *when two quantities are multiplied or divided, the fractional error in the result is the sum of the fractional errors
     in individual quantities.*
 
 # [Dimensional analysis]{.sans-serif}
