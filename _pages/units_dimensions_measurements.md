@@ -1,5 +1,5 @@
 ---
-title: "Units Dimensions Measurements"
+title: "Units, Dimensions, Measurements"
 permalink: /units-dimensions-measurements/
 tags: ['Physics', 'Notes', 'Units', 'Measurements', 'Dimensions']
 math: true
@@ -41,20 +41,23 @@ In the SI system the seven base units are the meter for *length*, the kilogram f
 substance*. Besides these base units, there are two *supplementary quantities* and their units. They are the *plane angle* having radians as its unit, and the *solid angle* with unit steradian. Rest all other physical quantities have *derived units*. The base quantities together with the supplementary quantities have been summarized in the following table.
 
 ### Base quantities
-| **Sl. no.** | **Physical quantity** | **Name of the unit** | **Symbol**|
-| :--------------: | :-------------------------------: | :--------------------------------: | :----------------: |
-| 1.               |  Length                        |  meter                           |   m                |
-| 2.               |  Mass                          |  kilogram                      |   kg               |
-| 3.               |  Time                           |  second                        |   s                 |
-| 4.               |  Electric current         |  ampere                        |   A                |
-| 5.               |  Thermodynamic temperature  |  kelvin         |   K                |
-| 6.               |  Luminous intensity  |  candela                        |   cd              |
-| 7.               |  Amount of substance |  mole                         |   mol            |
+
+|   **Sl. no.**    | **Physical quantity**       | **Name of the unit**       | **Symbol**         |
+| :--------------: | :-------------------------: | :------------------------: | :----------------: |
+| 1.               |  Length                     |  meter                     |   m                |
+| 2.               |  Mass                       |  kilogram                  |   kg               |
+| 3.               |  Time                       |  second                    |   s                |
+| 4.               |  Electric current           |  ampere                    |   A                |
+| 5.               |  Thermodynamic temperature  |  kelvin                    |   K                |
+| 6.               |  Luminous intensity         |  candela                   |   cd               |
+| 7.               |  Amount of substance        |  mole                      |   mol              |
+
 ### Supplementary quantities
-| **Sl. no.** | **Physical quantity** | **Name of the unit** | **Symbol**|
-| :--------------: | :-------------------------------: | :--------------------------------: | :----------------: |
-| 8.               |  Plane angle                | radian                           |   rad             |
-| 9.               |  Solid angle                | steradian                       |   sr             |
+
+| **Sl. no.**      | **Physical quantity**       | **Name of the unit**       | **Symbol**     |
+| :--------------: | :-------------------------: | :------------------------: | :------------: |
+| 8.               |  Plane angle                | radian                     |   rad          |
+| 9.               |  Solid angle                | steradian                  |   sr           |
 
 
 ## Abbreviations of powers of 10
@@ -62,7 +65,7 @@ To express very large and very small numbers, we generally use the *scientific n
 certain powers of 10 in this system of notation have been given abbreviations, which may be used as *prefixes* before units. These prefixes are shown 
 in the following table:
 
- **Power of 10** | **Prefix** | **Symbol**|
+ | **Power of 10** | **Prefix** | **Symbol**|
 | :-------------------------------: | :--------------------------------: | :----------------: |
 |  $$ 10^{18} $$            |  exa  |         E | 
 |  $$ 10^{15} $$            |  peta  |         P |
