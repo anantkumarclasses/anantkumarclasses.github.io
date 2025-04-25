@@ -6,277 +6,136 @@ math: true
 ---
 
 
-# [Measurement]{.sans-serif}
+# Measurement
+Physics is a "natural" science --- a branch of science dealing with nature and natural phenomena. And like in all other sciences, we need to take measurements frequently. The quantities that can be measured are referred to as *physical* quantities. The act of measurement is essentially a comparison of the given sample under consideration with a **reference standard** (that has been agreed to be called so beforehand). The standard is a physical entity whose choice is determined by the following three major factors:
+  
+*  ease of availability, 
+* ease of reproducibility, and 
+* invariance under change in environment. 
 
-Physics is a "natural" science --- a branch of science dealing with
-nature and natural phenomena. And like in all other sciences, we need to
-take measurements frequently.\
-The quantities that can be measured are referred to as physical
-quantities. *The act of measurement is essentially a comparison of the
-given sample under consideration with a **reference standard*** (that
-has been agreed to be called so beforehand). The standard is a physical
-entity whose choice is determined by the following three major factors:
-(i) ease of availability, (ii) ease of reproducibility, and (iii)
-invariance under change in environment. For example, the standard of the
-physical quantity *mass* is a specific platinum--iridium alloy cylinder
-kept at the International Bureau of Weights and Measures at Sèvres,
-France.
 
-## [Units for measurement]{.sans-serif}
+For example, the standard of the physical quantity *mass* is a specific cylinder made of an alloy of platinum and iridium kept at the International Bureau of Weights and Measures at Sèvres, France.
 
-*The **unit** of a physical quantity is a value of it, in terms of which
-other quantities of that kind is expressed*[^1]. Generally, the unit of
-a physical quantity is the measure of the reference standard for that
-quantity. For example the unit of mass is the *kilogram* (abbreviation
-kg) which is the mass of the platinum--iridium cylinder mentioned above.
-The result of measurement of a physical quantity is reported as a
-numerical figure followed by a unit which signifies the reference
-standard chosen. For example, 1.05 kilogram means that our sample has a
-mass which is 1.05 times the mass of the standard.
 
-Although the number of physical quantities that can be measured are very
-large, we do not need a very large numbers of units. *A limited number
-of fundamental units is sufficient for expressing all physical
-quantities*. These limited number of units are the so called *base* or
-*defined* units and these form a set of independent quantities. It turns
-out that **only seven base quantities** are required to span the entire
-collection of physical quantities. By suitable combinations of these
-seven base units, the units of other physical quantities can be derived
-and as such they are just called the *derived units*.
 
-## [System of units]{.sans-serif}
+## Units for measurement
+*The **unit** of a physical quantity is a value of it, in terms of which other quantities of that kind is expressed*[^1]. Generally, the unit of a physical quantity is the measure of the reference standard for that quantity. For example the unit of mass is the *kilogram* (abbreviation kg) which is the mass of the platinum--iridium cylinder mentioned above.
 
-There are several system of units which have been used for describing
-measurements. The common systems are given below:
+The result of measurement of a physical quantity is reported as a numerical figure followed by a unit which signifies the reference standard chosen. For example, 1.05 kilogram means that our sample has a mass which is 1.05 times the mass of the standard.
 
--   The CGS system is based on the three basic units -- the centimeter
-    for length, the gram for mass and the second for time.
+Although the number of physical quantities that can be measured are very large, we do not need a very large numbers of units. *A limited number of fundamental units is sufficient for expressing all physical quantities*. These limited number of units are the so called *base* or *fundamental* units and these form a set of independent quantities. It turns out that **only seven base quantities** are required to span the entire collection of physical quantities. By suitable combinations of these seven base units, the units of other physical quantities can be derived and as such they are just called the *derived units*.
 
--   The FPS system or the British system uses the foot, pound and second
-    respectively for length, mass and time measurement.
+## System of units
+There are several system of units which have been used for describing measurements. The common systems are given below:
 
--   The MKS system is based on the meter for length, kilogram for mass
-    and second for time.
+-   The CGS system is based on the three basic units -- the centimeter for length, the gram for mass and the second for time.
 
--   The system which is now internationally accepted is the SI system.
-    (The abbreviation SI comes from the system's French name
-    *[S]{.underline}ystèm [I]{.underline}nternationale d'Unitès*.) This
-    is the system that we shall follow.
+-   The FPS system or the British system uses the foot, pound and second respectively for length, mass and time measurement.
 
-### [The SI system]{.sans-serif}
+-   The MKS system is based on the meter for length, kilogram for mass and second for time.
 
-In the SI system the seven base units are the meter for *length*, the
-kilogram for *mass*, the second for *time*, the kelvin for
-*thermodynamic temperature*, the ampere for *electric current*, the
-candela for *luminous intensity*, and the mole for *amount of
-substance*. Besides these base units, there are two *supplementary
-quantities* and their units. They are the *plane angle* having radians
-as its unit, and the *solid angle* with unit steradian. Rest all other
-physical quantities have *derived units*. The base quantities together
-with the supplementary quantities have been summarized in
+-   The system which is now internationally accepted is the SI system. (The abbreviation SI comes from the system's French name ***S**ystèm **I**nternationale d'Unitès*.) This is the system that we shall follow.
 
-::: center
-::: {table:siunits}
-+-----------------+-----------------+-----------------+------------+
-| *Base           |                 |                 |            |
-| quantities*     |                 |                 |            |
-+:===============:+:================+:================+:===========+
-| **Sl. no.**     | **Physical      | **Name of the   | **Symbol** |
-|                 | quantities**    | unit**          |            |
-+-----------------+-----------------+-----------------+------------+
-| 1\.             | Length          | meter           | m          |
-+-----------------+-----------------+-----------------+------------+
-| 2\.             | Mass            | kilogram        | kg         |
-+-----------------+-----------------+-----------------+------------+
-| 3\.             | Time            | second          | s          |
-+-----------------+-----------------+-----------------+------------+
-| 4\.             | Thermodynamic   | kelvin          | K          |
-|                 | temperature     |                 |            |
-|                 |                 |                 |            |
-|                 | -------------   |                 |            |
-+-----------------+-----------------+-----------------+------------+
-| 5\.             | Electric        | ampere          | A          |
-|                 | current         |                 |            |
-+-----------------+-----------------+-----------------+------------+
-| 6\.             | Luminous        | candela         | cd         |
-|                 | intensity       |                 |            |
-+-----------------+-----------------+-----------------+------------+
-| 7\.             | Amount of       | mole            | mol        |
-|                 | substance       |                 |            |
-+-----------------+-----------------+-----------------+------------+
-| *Supplementary  |                 |                 |            |
-| quantities*     |                 |                 |            |
-+-----------------+-----------------+-----------------+------------+
-| 8\.             | Plane angle     | radian          | rad        |
-+-----------------+-----------------+-----------------+------------+
-| 9\.             | Solid angle     | steradian       | sr         |
-+-----------------+-----------------+-----------------+------------+
+### The SI system
+In the SI system the seven base units are the meter for *length*, the kilogram for *mass*, the second for *time*, the kelvin for *thermodynamic temperature*, the ampere for *electric current*, the candela for *luminous intensity*, and the mole for *amount of
+substance*. Besides these base units, there are two *supplementary quantities* and their units. They are the *plane angle* having radians as its unit, and the *solid angle* with unit steradian. Rest all other physical quantities have *derived units*. The base quantities together with the supplementary quantities have been summarized in the following table.
 
-: **The SI system of units**
-:::
-:::
+### Base quantities
+| **Sl. no.** | **Physical quantity** | **Name of the unit** | **Symbol**|
+| :--------------: | :-------------------------------: | :--------------------------------: | :----------------: |
+| 1.               |  Length                        |  meter                           |   m                |
+| 2.               |  Mass                          |  kilogram                      |   kg               |
+| 3.               |  Time                           |  second                        |   s                 |
+| 4.               |  Electric current         |  ampere                        |   A                |
+| 5.               |  Thermodynamic temperature  |  kelvin         |   K                |
+| 6.               |  Luminous intensity  |  candela                        |   cd              |
+| 7.               |  Amount of substance |  mole                         |   mol            |
+### Supplementary quantities
+| **Sl. no.** | **Physical quantity** | **Name of the unit** | **Symbol**|
+| :--------------: | :-------------------------------: | :--------------------------------: | :----------------: |
+| 8.               |  Plane angle                | radian                           |   rad             |
+| 9.               |  Solid angle                | steradian                       |   sr             |
 
-## [Abbreviations in powers of 10]{.sans-serif}
 
-To express very large and very small numbers, we generally use the
-*scientific notation* of representation. Further, to simplify matters,
-certain powers of 10 in this system of notation have been given
-abbreviations, which may be used as *prefixes* before units. These
-prefixes are shown in Table 
+## Abbreviations of powers of 10
+To express very large and very small numbers, we generally use the *scientific notation* of representation. Further, to simplify matters,
+certain powers of 10 in this system of notation have been given abbreviations, which may be used as *prefixes* before units. These prefixes are shown 
+in the following table:
 
-::: {table:po10}
-   **Power of 10**   **Prefix**   **Symbol**
-  ----------------- ------------ ------------
-      $10^{18}$         exa           E
-      $10^{15}$         peta          P
-      $10^{12}$         tera          T
-       $10^9$           giga          G
-       $10^6$           mega          M
-       $10^3$           kilo          k
-       $10^2$          hecto          h
-       $10^1$           deca          da
+ **Power of 10** | **Prefix** | **Symbol**|
+| :-------------------------------: | :--------------------------------: | :----------------: |
+|  $$ 10^{18} $$            |  exa  |         E | 
+|  $$ 10^{15} $$            |  peta  |         P |
+|  $$ 10^{12} $$            |  tera  |        T  |
+|  $$ 10^{9} $$             |  giga   |         G |
+|  $$ 10^{6} $$            |  mega  |         M |
+|  $$ 10^{3} $$            |  kilo  |         k |
+|  $$ 10^{2} $$            |  hecto   |        h |
+|  $$ 10^{1} $$            |  deca  |         da |
+|  $$ 10^{-1} $$            |  deci |         d |
+|  $$ 10^{-2} $$            |  centi |         c |
+|  $$ 10^{-3} $$            |  milli |         m |
+|  $$ 10^{-6} $$            |  micro |         $$ \mu $$  |
+|  $$ 10^{-9} $$            |  nano |         n |
+|  $$ 10^{-12} $$            | pico |       p |
+ |  $$ 10^{-15} $$            |  femto |         f |
+ |  $$ 10^{-18} $$            |  atto|         a |
 
-  : **Prefixes for powers of 10**
-:::
 
-::: {table:po10}
-   **Power of 10**   **Prefix**   **Symbol**
-  ----------------- ------------ ------------
-      $10^{-1}$         deci          d
-      $10^{-2}$        centi          c
-      $10^{-3}$        milli          m
-      $10^{-6}$        micro        $\mu$
-      $10^{-9}$         nano          n
-     $10^{-12}$         pico          p
-     $10^{-15}$        femto          f
-     $10^{-18}$         atto          a
+Thus, 0.0000567 m can be expressed as $$ 5.67\times 10^{-5} $$ m or
+56.7 $$ \mu $$m.
 
-  : **Prefixes for powers of 10**
-:::
+# Significant figures
+When physical quantities are measured, the measured values are known only to within the limits of the experimental uncertainty. The value of this uncertainty can depend on various factors, such as the quality of the apparatus, the skill of the experimenter, and the number of measurements performed.
 
-Thus, 0.0000567 m can be expressed as $5.67\times 10^{-5}$ m or
-56.7 $\mu$m.
+Suppose we are trying to measure the length of a small piece of paper with a 15--cm scale which has graduations down to a millimeter. What we do is to align one edge of the paper with the marking on the scale which reads 'zero' and then try to figure out where the second edge is lying.Suppose the situation is as shown in the following figure:
 
-# [Significant figures]{.sans-serif}
+![Measuring with a scale](../assets/img/measuring_length.png)
+*Measuring the length of a piece of paper using a scale*
 
-When physical quantities are measured, the measured values are known
-only to within the limits of the experimental uncertainty. The value of
-this uncertainty can depend on various factors, such as the quality of
-the apparatus, the skill of the experimenter, and the number of
-measurements performed.
+From the figure, we are quite sure that the length of the wood is more than 5.0 cm but less than 5.1 cm. But how to report the length? What we now do is to further divide the 1 mm length, mentally, in 10 equal units and try to figure out where the edge lies. Suppose I find that it lies half way between 5.0 and 5.1 markings. So I report the data as 5.05 cm. In this data, the last digit i.e. the digit 5 is uncertain because we did it all in our mind. However, we are quite sure about the first two digits. We say that the reported data contains three significant figures (or sig figs).
 
-<figure id="fig:t1figure1">
 
-<figcaption>Measuring the length of piece of paper with a
-scale.</figcaption>
-</figure>
+> **Significant figures** The number of significant figures (digits) is the number of certain figures (digits) plus the last uncertain figure (digit).
 
-Suppose we are trying to measure the length of a small piece of paper
-with a 15--cm scale which has graduations down to a millimeter. What we
-do is to align one edge of the paper with the marking on the scale which
-reads 'zero' and then try to figure out where the second edge is lying.
-Suppose the situation is as shown in Figure. From the figure, we are
-quite sure that the length of the wood is more than 5.0 cm but less than
-5.1 cm. But how to report the length? What we now do is to further
-divide the 1 mm length, mentally, in 10 equal units and try to figure
-out where the edge lies. Suppose I find that it lies half way between
-5.0 and 5.1 markings. So I report the data as 5.05 cm. In this data, the
-last digit i.e. the digit 5 is uncertain because we did it all in our
-mind. However, we are quite sure about the first two digits. We say that
-the reported data contains three significant figures (or sig figs).
+The leftmost (non--zero) digit is the most significant while the rightmost digit is the least significant. The greater the number of significant figures, the greater is the
+information in the data (or the more precise the data becomes).
 
-::: defn
-**$\rhd\
-$[Definition]{.sans-serif} 1** (**Significant figures**). The number of
-significant figures (digits) is the number of certain figures (digits)
-plus the last uncertain figure (digit).
+## General rules
 
-The leftmost (non--zero) digit is the most significant while the
-rightmost digit is the least significant.
-:::
-
-The greater the number of significant figures, the greater is the
-information in the data (or the more accurate the data becomes).
-
-## [General rules]{.sans-serif}
-
-### [Determining the number of significant figures]{.sans-serif}
-
-The following are the rules that are commonly followed for determining
-the number of significant figures:
+### Determining the number of significant figures
+The following are the rules that are commonly followed for determining the number of significant figures:
 
 -   All non--zero digits are significant.
 
 -   All zeros occurring between two non--zero digits are significant.
 
--   In a number less than one, all zeros to the right of the decimal
-    point and to the left of the first non--zero digit are not
-    significant.
+-   In a number less than one, all zeros to the right of the decimal point and to the left of the first non--zero digit are not significant.
 
--   All zeros to the right of the last non--zero digit in the decimal
-    part are significant.
+-   All zeros to the right of the last non--zero digit in the decimal part are significant.
 
--   In a number with no decimal point, only the zeroes in between
-    non-zero digits are significant; the leading and the trailing zeroes
-    are not significant.
+-   In a number with no decimal point, only the zeroes in between non-zero digits are significant; the leading and the trailing zeroes are not significant.
 
-For example, 1.0900 m has five significant figures whereas 0.0090 m has
-only two.
+For example, 1.0900 m has five significant figures whereas 0.0090 m has only two.
 
-### [In arithmetical operations]{.sans-serif}
+### In arithmetical operations
+The question now arises that what rules should be followed when we are multiplying, dividing, adding or subtracting numbers involving different number of significant figures. The fact underlying all the rules for these arithmetical operations is simply this: **the result should not be more precise than the least precise of the numbers we started with**.
 
-The question now arises that what rules should be followed when we are
-multiplying, dividing, adding or subtracting numbers involving different
-number of significant figures. The fact underlying all the rules for
-these arithmetical operations is simply this: *the result should not be
-accurate than the least accurate of the numbers we started with*.
+1.  **Multiplication/Division:** We just note down, what is the least number of significant figures involved in all the data. Then we proceed with the operation with the numbers. Finally, we show the result with the noted number of significant figures after appropriate rounding off. For example: suppose we need to multiply 2.104 m with 9.8 m. We note that the least number of significant figures is two in the second datum. Now, we simply multiply the two getting 20.6192 m$$ ^2 $$. While showing the result, we must truncate the product so that the number of significant figures are only two. So after necessary rounding off, we show the result as 21 m$$ ^2 $$.
 
-1.  **Multiplication/Division:** We just note down, what is the least
-    number of significant figures involved in all the data. Then we
-    proceed with the operation with the numbers. Finally, we show the
-    result with the noted number of significant figures after
-    appropriate rounding off. For example: suppose we need to multiply
-    2.104 m with 9.8 m. We note that the least number of significant
-    figures is two in the second datum. Now, we simply multiply the two
-    getting 20.6192 m$^2$. While showing the result, we must truncate
-    the product so that the number of significant figures are only two.
-    So after necessary rounding off, we show the result as $2.1 \times
-    10^1$ m$^2$.
+2.  **Addition/Subtraction:** In this case, we align the decimal point along a column and then proceed with the operation. Once we have the result, we show the final answer, after truncating to the least number of decimal places involved in any of the numbers. For example upon adding 14.785 m and 9.03 m, we get 23.815 m. But since the smaller number of decimal point is two (in the second datum), so the answer must contain only two decimal places and so the final result after appropriate rounding off is 23.82 m.
 
-2.  **Addition/Subtraction:** In this case, we align the decimal point
-    along a column and then proceed with the operation. Once we have the
-    result, we show the final answer, after truncating to the least
-    number of decimal places involved in any of the numbers. The
-    following example will clarify.\
 
-    Add: 14.785 m and 9.03 m.\
-    The process is shown on the right. The last row shows the final
-    result after appropriate rounding off.
+### Rules for rounding off
+While rounding off, we should keep the following rules in mind. First, determine after what decimal place you have to truncate the result. Then proceed as follows:
 
-      ---- ---- ----- ---
-             14 785   m
-       \+     9 03    m
-             23 815   m
-             23 82    m
-      ---- ---- ----- ---
-
-### [Rules for rounding off]{.sans-serif}
-
-While rounding off, we should keep the following rules in mind. First,
-determine after what decimal place you have to truncate the result. Then
-proceed as follows:
-
--   If the digit just to the right is greater than five, increase the
-    digit at the required decimal place by one taking the carry if it is
-    there (just like addition).
+-   If the digit just to the right is greater than five, increase the digit at the required decimal place by one taking the carry if it is there (just like addition).
 
 -   If the digit just to the right is less than five, leave it as it is.
 
--   If the digit just to the right is equal to five, then look at the
-    digit at the required decimal position. If it is even, leave it as
-    it is, otherwise increase by one.
+-   If the digit just to the right is equal to five, then look at the digit at the required decimal position. If it is even, leave it as it is, otherwise increase by one.
 
-# [Errors]{.sans-serif}
+# Errors
 
 We do all measurements with the help of instruments. Since all
 instruments have a certain resolution beyond which they can not be
