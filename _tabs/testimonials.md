@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-commenting
-order: 5
+order: 6
 ---
 
 # What Students Say
