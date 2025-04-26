@@ -196,12 +196,11 @@ $$
 $$
 
 If we do a single measurement, the value we get may be in the range $$ \overline{a} \pm \overline{|\Delta a|} $$.
-
 ### Relative and percentage error
 Often, instead of the absolute error, we use the *relative error* and *percentage error*. *The ratio of the absolute error to the value of the quantity being measured* is called the *relative or fractional error*. When expressed in percentage, it becomes percentage error:
 
 $$
-\text{percent erro } = \frac{\overline{|\Delta a|}}{\overline{a}} \times 100
+\text{percent error } = \frac{\overline{|\Delta a|}}{\overline{a}} \times 100
 $$
 
 Let us consider an example.
@@ -245,22 +244,21 @@ $$
 ## Combination of errors
 If we do an experiment involving several measurements, we must know how the error combines in the process of addition, subtraction, multiplication and division. The procedure is outlined below:
 
-1.  *Error of a sum or a difference.* Suppose two quantities $$ A $$ and $$ B $$ have measured values $$ \alpha\pm\Delta\alpha $$ and $$ \beta  \pm\Delta\beta$$, respectively, where $$\Delta\alpha $$ and $$ \Delta\beta $$ are the corresponding absolute errors. We wish to find the absolute error $$ \Delta \zeta $$ in their sum $$ Z=A+B $$. We have by addition, 
+-  *Error of a sum or a difference.* Suppose two quantities $$ A $$ and $$ B $$ have measured values $$ \alpha\pm\Delta\alpha $$ and $$ \beta  \pm\Delta\beta$$, respectively, where $$\Delta\alpha $$ and $$ \Delta\beta $$ are the corresponding absolute errors. We wish to find the absolute error $$ \Delta \zeta $$ in their sum $$ Z=A+B $$. We have by addition, 
 
-$$ 
-\zeta \pm \Delta\zeta =     (\alpha\pm\Delta\alpha)+(\beta\pm\Delta\beta) = (\alpha +\beta) \pm  (\Delta\alpha+\Delta\beta)
-$$ 
+  $$ 
+   \zeta \pm \Delta\zeta =     (\alpha\pm\Delta\alpha)+(\beta\pm\Delta\beta) = (\alpha +\beta) \pm  (\Delta\alpha+\Delta\beta)
+  $$ 
+   
+  Thus the maximum possible error in their sum is $$ \Delta\alpha + \Delta\beta $$. For the difference, $$ Z=A-B $$, 
 
-Thus the maximum possible error in their sum is $$ \Delta\alpha + \Delta\beta $$.
-For the difference, $$ Z=A-B $$, 
+  $$
+   \zeta\pm\Delta\zeta =(\alpha\pm\Delta\alpha)-(\beta\pm\Delta\beta) =    \alpha-\beta\pm\Delta\alpha\pm\Delta\beta
+   $$
 
-$$
-\zeta\pm\Delta\zeta =(\alpha\pm\Delta\alpha)-(\beta\pm\Delta\beta) =    \alpha-\beta\pm\Delta\alpha\pm\Delta\beta
-$$
+   And so, $$ \pm\Delta\zeta =\pm\Delta\alpha\pm\Delta\beta $$. The maximum possible error is again $$ \Delta\alpha + \Delta\beta $$. Hence the rule: *when two quantities are added or   subtracted, the absolute  error in the final result is the sum of the absolute errors in the quantities.*
 
-And so, $$ \pm\Delta\zeta =\pm\Delta\alpha\pm\Delta\beta $$. The maximum possible error is again $$ \Delta\alpha + \Delta\beta $$. Hence the rule: *when two quantities are added or subtracted, the absolute  error in the final result is the sum of the absolute errors in the quantities.*
-
-2.  *Error of a product or a quotient.* Suppose $$ Z=AB $$ and the measured values $$ \alpha\pm\Delta\alpha $$ and $$ \beta \pm\Delta\beta $$, respectively. Then, the value of $$ Z $$ 
+-  *Error of a product or a quotient.* Suppose $$ Z=AB $$ and the measured values $$ \alpha\pm\Delta\alpha $$ and $$ \beta \pm\Delta\beta $$, respectively. Then, the value of $$ Z $$ 
 
     $$
     \begin{aligned}
@@ -270,7 +268,7 @@ And so, $$ \pm\Delta\zeta =\pm\Delta\alpha\pm\Delta\beta $$. The maximum possibl
     \end{aligned}
     $$
     
-    Since, $$ {\displaystyle\frac{\Delta\alpha}{\alpha}} $$  and $$ {\displaystyle\frac{\Delta\beta}{\beta}} $$ are much smaller compared to unity, their product can be neglected. Hence, the maximum error in $Z$ is 
+    Since, $$ {\displaystyle\frac{\Delta\alpha}{\alpha}} $$  and $$ {\displaystyle\frac{\Delta\beta}{\beta}} $$ are much smaller compared to unity, their product can be neglected. Hence, the maximum error in $$Z$$ is 
     
     $$
     \frac{\Delta\zeta}{\zeta} =\frac{\Delta\alpha}{\alpha} +  \frac{\Delta\beta}{\beta}
@@ -289,6 +287,7 @@ Following a convention suggested by Maxwell, we denote the dimensions of a physi
 example, if $$v$$ be the velocity, then $$[v]=LT^{-1}$$. A dimensionless quantity would have $$[\phi] = 1$$. This means that in all system of units, its numerical value would be the same. The following table gives the dimensional formula of some commonly encountered quantities. Of course, the list is not exhaustive.
 
 ### Dimensional formulae of some derived quantities
+
 | **Sl. No.** | **Physical Quantity** | **Dimensional formula** |
 |:-----------:|:---------------------:|:-----------------------:|
 |  1. | Area | $$L^2$$ |
