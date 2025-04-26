@@ -140,16 +140,9 @@ While rounding off, we should keep the following rules in mind. First, determine
 
 # Errors
 
-We do all measurements with the help of instruments. Since all
-instruments have a certain resolution beyond which they can not be
-precise, there is invariably some uncertainty in the measured value of
-the physical quantity. This *uncertainty* is called *error*. The error
-in a measured quantity gives an indication of the limits within which
-the true value of the physical quantity may lie. For example, in
-Figure  the true length of the paper lies within
-5.0 cm and 5.1 cm.
+We do all measurements with the help of instruments. Since all instruments have a certain resolution beyond which they can not be precise, there is invariably some uncertainty in the measured value of the physical quantity. This *uncertainty* is called *error*. The error in a measured quantity gives an indication of the limits within which the true value of the physical quantity may lie. For example, in the p  the true length of the paper lies within 5.0 cm and 5.1 cm.
 
-## [Classification]{.sans-serif}
+## Classification
 
 There are several causes for errors in measurements. Based on their cause, we may classify errors into three broad categories: **systematic errors**, **random errors**, and **gross errors**.
 
@@ -286,281 +279,167 @@ And so, $$ \pm\Delta\zeta =\pm\Delta\alpha\pm\Delta\beta $$. The maximum possibl
     This result holds true for division as well. Hence, *when two quantities are multiplied or divided, the fractional error in the result is the sum of the fractional errors
     in individual quantities.*
 
-# [Dimensional analysis]{.sans-serif}
+# Dimensional analysis
+In physics, the word "dimension" has a special meaning. It usually denotes the physical nature of a quantity. Whether a distance is measured in the unit feet or the unit meter, it is still a distance. We say the dimension -- the physical nature -- of distance is *length*.
 
-In physics, the word "dimension" has a special meaning. It usually
-denotes the physical nature of a quantity. Whether a distance is
-measured in the unit feet or the unit meter, it is still a distance. We
-say the dimension -- the physical nature -- of distance is *length*.
+## Dimensional formula
+Generally, the symbol $$ L $$, $$ M $$ and $$ T $$ are used to denote the physical quantities of length, mass and time, respectively. Further, $$ \theta $$ denotes the temperature and $$$ I $$ the electric current. To denote the amount of substance and luminous intensity, we can use their respective symbols.
 
-## [Dimensional formula]{.sans-serif}
+Following a convention suggested by Maxwell, we denote the dimensions of a physical quantity $$ \phi $$ by $$ [\phi] $$. Thus, for example, if $$x$$ denotes the distance traveled by a particle, $$ [x]=L $$. *For a derived quantity, its **dimensional formula** expresses the way in which the base quantities combine to give the units of that derived quantity.* For
+example, if $$v$$ be the velocity, then $$[v]=LT^{-1}$$. A dimensionless quantity would have $$[\phi] = 1$$. This means that in all system of units, its numerical value would be the same. The following table gives the dimensional formula of some commonly encountered quantities. Of course, the list is not exhaustive.
 
-Generally, the symbol $L$, $M$ and $T$ are used to denote the physical
-quantities of length, mass and time, respectively. Further, $\theta$
-denotes the temperature and $I$ the electric current. To denote the
-amount of substance and luminous intensity, we can use their respective
-symbols.
+### Dimensional formulae of some derived quantities
+| **Sl. No.** | **Physical Quantity** | **Dimensional formula** |
+|:-----------:|:---------------------:|:-----------------------:|
+|  1. | Area | $$L^2$$ |
+|  2. | Volume | $$L^3$$ |
+|  3. | Mass density | $$ML^{-3}$$ |
+|  4. | Velocity | $$LT^{-1}$$ |
+|  5. | Acceleration | $$LT^{-2}$$ |
+|  6. | Momentum | $$MLT^{-1}$$ |
+|  7. | Force | $$MLT^{-2}$$ |
+|  8. | Energy | $$ML^2T^{-2}$$ |
+|  9. | Power | $$ML^2T^{-3}$$ |
+| 10. | Pressure | $$ML^{-1}T^{-2}$$ |
+| 11. | Torque | $$ML^2T^{-2}$$ |
+| 12. | Moment of inertia | $$ML^2$$ |
+| 13. | Entropy | $$ML^2T^{-2}\theta^{-1}$$ |
+| 14. | Specific heat | $$L^2T^{-2}\theta^{-1}$$ |
+| 15. | Thermal conductivity | $$MLT^{-3}\theta^{-1}$$ |
+| 16. | Electric charge | $$IT$$ |
+| 17. | Permittivity | $$M^{-1}L^{-3}T^4I^2$$ |
+| 18. | Capacitance | $$M^{-1}L^{-2}T^4I^2$$ |
+| 19. | Electric field | $$MLT^{-3}I^{-1}$$ |
+| 20. | Electric potential | $$ML^2T^{-3}I^{-1}$$ |
+| 21. | Resistance | $$ML^2T^{-3}I^{-2}$$ |
+| 22. | Magnetic flux | $$ML^2T^{-2}I^{-1}$$ |
+| 23. | Permeability | $$MLT^{-2}I^{-2}$$ |
+| 24. | Magnetic field | $$MT^{-2}I^{-1}$$ |
+| 25. | Inductance | $$ML^2T^{-2}I^{-2}$$ |
+| 26. | Angular momentum | $$ML^2T^{-1}$$ |
+| 27. | Frequency | $$T^{-1}$$ |
+| 28. | Gravitational constant | $$M^{-1}L^3T^{-2}$$ |
+| 29. | Viscosity | $$ML^{-1}T^{-1}$$ |
+| 30. | Angle | $$1$$ |
 
-Following a convention suggested by Maxwell, we denote the dimensions of
-a physical quantity $\phi$ by $[\phi]$. Thus, for example, if $x$
-denotes the distance traveled by a particle, $[x]=L$. *For a derived
-quantity, its *dimensional formula* expresses the way in which the base
-quantities combine to give the units of that derived quantity.* For
-example, if $v$ be the velocity, then $[v]=LT^{-1}$. A dimensionless
-quantity would have $[\phi] = 1$. This means that in all system of
-units, its numerical value would be the same.
- gives the dimensional formula of
-some commonly encountered quantities. Of course, the list is not
-exhaustive.
 
-::: {table:dimensionalformula}
-  --------- ---------------------- -------------------------
-   **Sl.**  **Physical**           **Dimensional**
-   **No.**  **Quantity**           **Formula**
-     1\.    Area                   $L^2$
-     2\.    Volume                 $L^3$
-     3\.    Mass density           $ML^{-3}$
-     4\.    Velocity               $LT^{-1}$
-     5\.    Acceleration           $LT^{-2}$
-     6\.    Momentum               $MLT^{-1}$
-     7\.    Force                  $MLT^{-2}$
-     8\.    Energy                 $ML^2T^{-2}$
-     9\.    Power                  $ML^2T^{-3}$
-    10\.    Pressure               $ML^{-1}T^{-2}$
-    11\.    Torque                 $ML^2T^{-2}$
-    12\.    Moment of inertia      $ML^2$
-    13\.    Entropy                $ML^2T^{-2}\theta^{-1}$
-    14\.    Specific heat          $L^2T^{-2}\theta^{-1}$
-    15\.    Thermal conductivity   $MLT^{-3}\theta^{-1}$
-  --------- ---------------------- -------------------------
+Note that all the dimensional formulae listed in are product of *power law monomials*, of the form $$[\phi] = M^a L^b T^c \theta^d\ldots$$ where $$a$$, $$b$$, $$c$$, $$d$$ ...are constants. In fact, this is a general result which can be proved mathematically.
 
-  : **Dimensional formulae for some commonly encountered quantities**
-:::
+## Dimensional analysis
+**Whenever an equation is written, the 'net' dimensions on both sides of the equality sign must be the same**. This statement is known as the **principle of homogeneity of dimensions** and really is the key to all kinds of dimensional analysis. This principle is very useful, as we shall see shortly.
 
-::: {table:dimensionalformula}
-  --------- ---------------------- ----------------------
-   **Sl.**  **Physical**           **Dimensional**
-   **No.**  **Quantity**           **Formula**
-    16\.    Electric charge        $IT$
-    17\.    Permittivity           $M^{-1}L^{-3}T^4I^2$
-    18\.    Capacitance            $M^{-1}L^{-2}T^4I^2$
-    19\.    Electric field         $MLT^{-3}I^{-1}$
-    20\.    Electric potential     $ML^2T^{-3}I^{-1}$
-    21\.    Resistance             $ML^2T^{-3}I^{-2}$
-    22\.    Magnetic flux          $ML^2T^{-2}I^{-1}$
-    23\.    Permeability           $MLT^{-2}I^{-2}$
-    24\.    Magnetic field         $MT^{-2}I^{-1}$
-    25\.    Inductance             $ML^2T^{-2}I^{-2}$
-    26\.    Angular momentum       $ML^2T^{-1}$
-    27\.    Frequency              $T^{-1}$
-    28\.    Gravitation constant   $M^{-1}L^3T^{-2}$
-    29\.    Viscosity              $ML^{-1}T^{-1}$
-    30\.    Angle                  1
-  --------- ---------------------- ----------------------
+Another concept that is useful is that of **independence of dimensions**. *A set of quantities $$(q_1$$, $$q_2$$, ..., $$q_k)$$ are said to be dimensionally independent if none of these quantities have dimensions which can be represented as a product of powers of the dimensions of the remaining quantities*. Alternatively, no combination of a set of independent quantities will result in a dimensionless quantity.
 
-  : **Dimensional formulae for some commonly encountered quantities**
-:::
+For example, density ($$[\rho]=ML^{-3}$$), velocity ($$[v]=LT^{-1}$$) and force ($$[F]=MLT^{-2}$$) form a set of independent quantities[^2]. On the other hand, the density, velocity, and pressure ($$[p]=ML^{-1}T^{-2}$$) are not independent since $$[p]=[\rho][v]^2$$ i.e. the quantity $$p/\rho v^2$$ is dimensionless.
 
-Note that all the dimensional formulae listed in
-are product of *power law
-monomials*, of the form $$[\phi] = M^a L^b T^c \theta^d\ldots$$ where
-$a$, $b$, $c$, $d$ ...are constants. In fact, this is a general result
-which can be proved mathematically.
+Now suppose we have a relationship between a quantity $$q$$ which is being determined in some experiment (which we will refer to as the *governed parameter*), and a set of quantities $$(q_1$$, $$q_2$$, ..., $$q_n)$$, which are under experimental control (the *governing parameters*). Further let us assume that this relationship is of the form 
 
-## [Dimensional analysis]{.sans-serif}
+$$
+q=f(q_1,\,q_2,\,\ldots,q_k,\,q_{k+1},\,\ldots,q_n)
+$$ 
 
-*Whenever an equation is written, the 'net' dimensions on both sides of
-the equality sign must be the same*. This statement is known as the
-**principle of homogeneity of dimensions** and really is the key to all
-kinds of dimensional analysis. This principle is very useful, as we
-shall see shortly.
+where $$(q_1$$, $$q_2$$, ..., $$q_k)$$ have independent dimensions. This would mean that the dimensions of the governed parameter $$q$$ is determined by the dimensions of $$(q_1$$, $$q_2$$, ..., $$q_k)$$, and all of the $$q_s$$'s with $$s>k$$ can be written as products of powers of of the dimensions of $$(q_1$$, $$q_2$$, ..., $$q_k)$$. With these definitions, it is possible to prove that can be written as: 
 
-Another concept that is useful is that of *independence of dimensions*.
-*A set of quantities $(q_1$, $q_2$, ..., $q_k)$ are said to be
-dimensionally independent if none of these quantities have dimensions
-which can be represented as a product of powers of the dimensions of the
-remaining quantities*. Alternatively, no combination of a set of
-independent quantities will result in a dimensionless quantity.
-
-For example, density ($[\rho]=ML^{-3}$), velocity ($[v]=LT^{-1}$) and
-force ($[F]=MLT^{-2}$) form a set of independent quantities[^2]. On the
-other hand, the density, velocity, and pressure ($[p]=ML^{-1}T^{-2}$)
-are not independent since $[p]=[\rho][v]^2$ i.e. the quantity
-$p/\rho v^2$ is dimensionless.
-
-Now suppose we have a relationship between a quantity $q$ which is being
-determined in some experiment (which we will refer to as the *governed
-parameter*), and a set of quantities $(q_1$, $q_2$, ..., $q_n)$, which
-are under experimental control (the *governing parameters*). Further let
-us assume that this relationship is of the form $$\label{eq:q}
-q=f(q_1,\,q_2,\,\ldots,q_k,\,q_{k+1},\,\ldots,q_n)$$ where $(q_1$,
-$q_2$, ..., $q_k)$ have independent dimensions. This would mean that the
-dimensions of the governed parameter $q$ is determined by the dimensions
-of $(q_1$, $q_2$, ..., $q_k)$, and all of the $q_s$'s with $s>k$ can be
-written as products of powers of of the dimensions of $(q_1$, $q_2$,
-..., $q_k)$. With these definitions, it is possible to prove that
-can be
-written as: $$\label{eq:dcenter}
+$$
+\label{eq:dcenter}
 q=q_1^\alpha\ldots q_k^\gamma \,
 \Phi\left(\frac{q_{k+1}}{q_1^{\alpha_{k+1}}\ldots
 q_k^{\gamma_{k+1}}},\,\ldots,\,\frac{q_{n}}{q_1^{\alpha_{n}}\ldots
-q_k^{\gamma_{n}}}\right)$$ with $\Phi$ some function of *dimensionless
-quantities only* and $\alpha$, ..., $\gamma$, $\alpha_{k+1}$, ...,
-$\gamma_{k+1}$, $\alpha_n$, ..., $\gamma_n$ are some real numbers. The
-great simplification is that while the function $f$ in was a
-function of $n$ variables, the function $\Phi$ in
- is a *function of only $n-k$ variables*.
-is a mathematical statement of **Buckingham's
-$$ \Pi $$ Theorem** which is the central result of dimensional analysis.
-Dimensional analysis cannot supply us with the dimensionless function
-$\Phi$ --- we need a *real theory* for that.
+q_k^{\gamma_{n}}}\right)
+$$ 
 
-Dimensional analysis can be used to (i) check the correctness of a given
-expression or equation; and (ii) derive a formula for a physical
-quantity. We take a look at a few examples.
+with $$\Phi$$ some function of *dimensionless quantities only* and $$\alpha$$, ..., $$\gamma$$, $$\alpha_{k+1}$$, ..., $$\gamma_{k+1}$$, $$\alpha_n$$, ..., $$\gamma_n$$ are some real numbers. The great simplification is that while the function $$f$$ in was a function of $$n$$ variables, the function $$\Phi$$ in  is a *function of only $$n-k$$ variables*. The above idea is a mathematical statement of **Buckingham's $$ \Pi $$ Theorem** which is the central result of dimensional analysis. Dimensional analysis cannot supply us with the dimensionless function $$\Phi$$ --- we need a *real theory* for that.
 
-::: small
-::: example
-***Example* 2**. Which of the formulae for kinetic energy, KE, of a mass
-$m$ moving with a velocity $v$ given below are dimensionally consistent?
-($a$ is the acceleration, $t$ is the time.) (a) KE = $m^2v^2$; (b) KE =
-$\frac{1}{2}mv^2$; (c) KE = $ma$; (d) KE = $\frac{3}{16}mv^2+mva$.\
-*Solution:* Every correct formula or equation must have the same
-dimensions on both side of the equality sign. Also, only quantities with
-the same dimensions can be added or subtracted. Now, \[KE\] =
-$ML^2T^{-2}$. On the right hand side of the equality signs, the
-quantities have the following dimensions: $M^2L^2T^{-2}$ for (a);
-$ML^2T^{-2}$ for (b); $MLT^{-2}$ for (c). Quantities having different
-dimensions have been added in (d). Consequently, only (b) is
-dimensionally consistent.
-:::
+Dimensional analysis can be used to (i) check the correctness of a given expression or equation; and (ii) derive a formula for a physical quantity. We take a look at a few examples.
 
-::: example
-***Example* 3** (**Frequency of simple pendulum.**). Derive, using
-dimensional analysis, the expression for the angular frequency $\omega$
-of small oscillations of a simple pendulum which is a point mass $m$
-tied to a string of length $l$.\
-*Solution:* Here $\omega$ is the governed parameter. The question arises
-that on what factor it might depend. Of course, the mass, $m$, is a
-factor and so is the length $l$. Since, the entire set up is near the
-surface of the Earth, the acceleration due to gravity $g$ also comes
-into picture. Further, these three quantities are dimensionally
-independent. Hence, the function $\Phi$ is just a constant. So let us
-assume that $$\omega = C m^\alpha l^\beta g^\gamma$$ where $C$,
-$\alpha$, $\beta$ and $\gamma$ are constants. Taking into account that
-$[C]=1$, $[\omega]=T^{-1}$, $[m]=M$, $[l]=L$ and $[g]=LT^{-2}$, we
-obtain
-$$T^{-1}=M^\alpha L^\beta (LT^{-2})^\gamma = M^\alpha L^{\beta+\gamma}
-T^{-2\gamma}$$ By the principle of homogeneity, we obtain, by comparing
-the exponents, $\alpha =0$, $\beta +\gamma =0$ and $-2\gamma =-1$.
-Solving the latter two, we obtain $\gamma = 1/2$ and $\beta = -1/2$.
-Thus, $$\omega = C\sqrt{\frac{g}{l}}$$
-:::
-:::
+***Example* 2**. Which of the formulae for kinetic energy, KE, of a mass $$m$$ moving with a velocity $$v$$ given below are dimensionally consistent?
+($$a$$ is the acceleration, $$t$$ is the time.) 
+(a) KE = $$m^2v^2$$; (b) KE = $$\frac{1}{2}mv^2$$; (c) KE = $$ma$$; (d) KE = $$\frac{3}{16}mv^2+mva$$.
 
-A few comments are in order: (1) the frequency is independent of the
-mass of the pendulum bob, a somewhat surprising conclusion to the
-uninitiated; (2) the constant cannot be determined from dimensional
-analysis alone. These results are typical of dimensional analysis ---
-uncovering often unexpected relations among the variables, while at the
-same time failing to pin down numerical constants. Indeed, to fix the
-numerical constants we need a *real theory* of the phenomena in
-question, which goes beyond dimensional considerations.
+*Solution:* Every correct formula or equation must have the same dimensions on both side of the equality sign. Also, only quantities with the same dimensions can be added or subtracted. Now, $$ KE  =  ML^2T^{-2}$$. On the right hand side of the equality signs, the quantities have the following dimensions: $$M^2L^2T^{-2}$$ for (a); $$ML^2T^{-2}$$ for (b); $$MLT^{-2}$$ for (c). Quantities having different dimensions have been added in (d). Consequently, only (b) is dimensionally consistent.
 
-::: small
-::: example
-***Example* 4** (**Gravity waves on water.**). Consider waves on the
-surface of water, which are called *gravity waves* (or sometimes
-*capillary waves*). In wave motion, the distance between two successive
-crests or troughs is called the wavelength, $\lambda$ and the quantity
-$k=2\pi/\lambda$ is called the wave number. The relation between the
-angular frequency $\omega$ and $k$ is known as the *dispersion
-relation*: $\omega = \omega(k)$. For most waves, e.g. sound waves, light
-waves or even the waves on a stretched string, the dispersion relation
-is $\omega =kv$, where $v$ is the wave velocity. *Question:* How does
-angular frequency, $\omega$, of water wave depends on the wave number
-$k$?\
-*Solution:* The relevant variables seems to be the density of water
-$\rho$; acceleration due to gravity $g$; and of course the wave number
-$k$, which have dimensions: $[\rho] = ML^{-3}$, $[g]=LT^{-2}$, and
-$[k]=L^{-1}$. these quantities have independent dimensions and hence the
-function $\Phi$ is again a constant. Thus $$\begin{aligned}
+***Example* 3** (**Frequency of simple pendulum.**). Derive, using dimensional analysis, the expression for the angular frequency $$\omega$$ of small oscillations of a simple pendulum which is a point mass $$m$$ tied to a string of length $$l$$.
+
+*Solution:* Here $$\omega$$ is the governed parameter. The question arises that on what factor it might depend. Of course, the mass, $$m$$, is a factor and so is the length $$l$$. Since, the entire set up is near the surface of the Earth, the acceleration due to gravity $$g$$ also comes into picture. Further, these three quantities are dimensionally independent. Hence, the function $$\Phi$$ is just a constant. So let us assume that $$$$\omega = C m^\alpha l^\beta g^\gamma$$$$ where $$C$$, $$\alpha$$, $$\beta$$ and $$\gamma$$ are constants. Taking into account that $$[C]=1$$, $$[\omega]=T^{-1}$$, $$[m]=M$$, $$[l]=L$$ and $$[g]=LT^{-2}$$, we obtain
+
+$$
+T^{-1}=M^\alpha L^\beta (LT^{-2})^\gamma = M^\alpha L^{\beta+\gamma}
+T^{-2\gamma}
+$$ 
+
+By the principle of homogeneity, we obtain, by comparing the exponents, $$\alpha =0$$, $$\beta +\gamma =0$$ and $$-2\gamma =-1$$. Solving the latter two, we obtain $$\gamma = 1/2$$ and $$\beta = -1/2$$. 
+Thus, 
+
+$$
+\omega = C\sqrt{\frac{g}{l}}
+$$
+
+
+A few comments are in order: (1) the frequency is independent of the mass of the pendulum bob, a somewhat surprising conclusion to the uninitiated; (2) the constant cannot be determined from dimensional analysis alone. These results are typical of dimensional analysis --- uncovering often unexpected relations among the variables, while at the same time failing to pin down numerical constants. Indeed, to fix the numerical constants we need a *real theory* of the phenomena in question, which goes beyond dimensional considerations.
+
+***Example* 4** (**Gravity waves on water.**). Consider waves on the surface of water, which are called *gravity waves* (or sometimes *capillary waves*). In wave motion, the distance between two successive crests or troughs is called the wavelength, $$\lambda$$ and the quantity $$k=2\pi/\lambda$$ is called the wave number. The relation between the angular frequency $$\omega$$ and $$k$$ is known as the *dispersion relation*: $$\omega = \omega(k)$$. For most waves, e.g. sound waves, light waves or even the waves on a stretched string, the dispersion relation is $$\omega =kv$$, where $$v$$ is the wave velocity. 
+*Question:* How does angular frequency, $$\omega$$, of water wave depends on the wave number $$k$$?
+
+*Solution:* The relevant variables seems to be the density of water $$\rho$$; acceleration due to gravity $$g$$; and of course the wave number $$k$$, which have dimensions: $$[\rho] = ML^{-3}$$, $$[g]=LT^{-2}$$, and $$[k]=L^{-1}$$. these quantities have independent dimensions and hence the function $$\Phi$$ is again a constant. Thus 
+
+$$
+\begin{aligned}
 &=&T^{-1}\\
 &=&[\rho]^a[g]^b[k]^c\\
 &=& M^a\, L^{-3a+b-c}\, T^{-2b}
-\end{aligned}$$ so that $a=0$, $-3a+b-c=0$, and $-2b=-1$. with the
-solution $a=0$, $b=c=1/2$. Therefore, $$\omega = C\sqrt{gk}$$ with $C$
-another undetermined constant. We see that the frequency of water waves
-is proportional to the square root of the wave number, in contrast to
-sound or light waves, for which the frequency is proportional to the
-wave number. This fact has some significant consequences.
+\end{aligned}
+$$
 
-You might worry about the effects of surface tension $\sigma$ on the
-dispersion relationship. We can include it in our dimensional analysis
-by noting that the surface tension is the energy per unit area of the
-surface of the water, so it has dimensions $[\sigma] =
-MT^{-2}$. The dimensions of the surface tension are not independent of
-the dimensions of $\rho$, $g$ and $k$. in fact, it is easy to show that
-$[\sigma] = [\rho][g][k]^{-2}$, so that $\sigma k^2/\rho
-g$ is dimensionless. Then using the same arguments as before, we have
-$$\omega = \sqrt{gk}\,\Phi\left(\frac{\sigma k^2}{\rho g}\right)$$with
-$\Phi$ some undetermined function. A calculation of the dispersion
-relation for gravity waves starting from the fundamental equations of
-fluid mechanics gives
-$$\omega =\sqrt{gk}\,\sqrt{1+\frac{\sigma k^2}{\rho g}},$$so that our
-function $\Phi(x)=\sqrt{1+x}$. Dimensional analysis enabled us to deduce
-the correct form of the solution, i.e., the possible combinations of the
-variables. Of course, only a complete theory could provide us with the
-function $\Phi(x)$.
-:::
+so that $$a=0$$, $$-3a+b-c=0$$, and $$-2b=-1$$. with the solution $$a=0$$, $$b=c=1/2$$. Therefore, 
 
-::: example
-***Example* 5** (**Energy in nuclear explosion.**). We next turn to a
-famous example worked out by the eminent British fluid dynamicist G. I.
-Taylor[^3]. In a nuclear explosion there is an essentially instantaneous
-release of energy $E$ in a small region of space. This produces a
-spherical shock wave, with the pressure inside the shock wave thousands
-of times greater that the initial air pressure, which may be neglected.
-How does the radius $R$ of this shock wave grow with time $t$?\
-*Solution:* The relevant governing variables are $E$, $t$ and the
-initial air density $\rho_0$, with dimensions $[E]=ML^2T^{-2}$, $[t]=T$,
-and $[\rho_0] = ML^{-3}$. This set of variables has independent
-dimensions so that $\Phi$ is just a constant function. We next determine
-the exponents: $$\begin{aligned}
-&=&L\\
-&=&[E]^a[\rho_0]^b[t]^c\\
-&=& M^{a+b}\, L^{2a-3b}\, T^{-2a+c}
-\end{aligned}$$
-:::
+$$
+\omega = C\sqrt{gk}
+$$ 
 
-so that $a+b=0$, $2a-3b=1$, and $-2a+c=0$, with the solution $a=1/5$,
-$b=-1/5$ and $c=2/5$. Therefore,
-$$R=C\left(\frac{Et^2}{\rho_0}\right)^{1/5}$$ with $C$ an undetermined
-constant.
+with $$C$$ another undetermined constant. We see that the frequency of water waves is proportional to the square root of the wave number, in contrast to sound or light waves, for which the frequency is proportional to the wave number. This fact has some significant consequences.
 
-If we could plot the radius $R$ of the shock as a function of time $t$
-on a log--log plot, the slope of the line should be $2/5$. The intercept
-of the graph would provide information about the energy $E$ released in
-the explosion, if the constant $C$ could be determined. By solving a
-model shock-wave problem Taylor estimated $C$ to be about 1; he was able
-to take declassified movies of nuclear tests, and using his model, infer
-the yield of the bombs. This data, of course, was strictly classified;
-it came as a surprise to the American intelligence community that this
-data was essentially publicly available to those well versed in
-dimensional analysis.
-:::
+You might worry about the effects of surface tension $$\sigma$$ on the dispersion relationship. We can include it in our dimensional analysis by noting that the surface tension is the energy per unit area of the surface of the water, so it has dimensions $$[\sigma] = MT^{-2}$$. The dimensions of the surface tension are not independent of the dimensions of $$\rho$$, $$g$$ and $$k$$. in fact, it is easy to show that $$[\sigma] = [\rho][g][k]^{-2}$$, so that $$\sigma k^2/\rho g$$ is dimensionless. Then using the same arguments as before, we have
 
-# [Conclusion]{.sans-serif}
+$$
+\omega = \sqrt{gk}\,\Phi\left(\frac{\sigma k^2}{\rho g}\right)
+$$
 
-We have seen in this topic, what role the units, dimensions and
-significant figures play in the general structure of physics. What is
-expected of you is to follow the general rules outlined above. Try to be
-proficient in dimensional analysis and always use the appropriate units.
-Follow as far as possible the rules of the game.
+with $$\Phi$$ some undetermined function. A calculation of the dispersion relation for gravity waves starting from the fundamental equations of fluid mechanics gives
 
-::: center
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-:::
+$$
+\omega =\sqrt{gk}\,\sqrt{1+\frac{\sigma k^2}{\rho g}},
+$$
+
+so that our function $$\Phi(x)=\sqrt{1+x}$$. Dimensional analysis enabled us to deduce the correct form of the solution, i.e., the possible combinations of the variables. Of course, only a complete theory could provide us with the function $$\Phi(x)$$.
+
+
+***Example* 5** (**Energy in nuclear explosion.**). We next turn to a famous example worked out by the eminent British fluid dynamicist G. I. Taylor[^3]. In a nuclear explosion there is an essentially instantaneous release of energy $$E$$ in a small region of space. This produces a spherical shock wave, with the pressure inside the shock wave thousands of times greater that the initial air pressure, which may be neglected. How does the radius $$R$$ of this shock wave grow with time $$t$$?
+
+*Solution:* The relevant governing variables are $$E$$, $$t$$ and the initial air density $$\rho_0$$, with dimensions $$[E]=ML^2T^{-2}$$, $$[t]=T$$, and $$[\rho_0] = ML^{-3}$$. This set of variables has independent dimensions so that $$\Phi$$ is just a constant function. We next determine the exponents: 
+
+$$
+\begin{aligned}
+&=L\\
+&=[E]^a[\rho_0]^b[t]^c\\
+&= M^{a+b}\, L^{2a-3b}\, T^{-2a+c}
+\end{aligned}
+$$
+
+so that $$a+b=0$$, $$2a-3b=1$$, and $$-2a+c=0$$, with the solution $$a=1/5$$, $$b=-1/5$$ and $$c=2/5$$. Therefore,
+
+$$
+R=C\left(\frac{Et^2}{\rho_0}\right)^{1/5}
+$$ 
+
+with $$C$$ an undetermined constant.
+
+If we could plot the radius $$R$$ of the shock as a function of time $$t$$ on a log--log plot, the slope of the line should be $$2/5$$. The intercept of the graph would provide information about the energy $$E$$ released in the explosion, if the constant $$C$$ could be determined. By solving a model shock-wave problem Taylor estimated $$C$$ to be about 1; he was able to take declassified movies of nuclear tests, and using his model, infer the yield of the bombs. This data, of course, was strictly classified; it came as a surprise to the American intelligence community that this data was essentially publicly available to those well versed in dimensional analysis.
+
+
+# Conclusion
+
+We have seen in this topic, what role the units, dimensions and significant figures play in the general structure of physics. What is expected of you is to follow the general rules outlined above. Try to be proficient in dimensional analysis and always use the appropriate units. Follow as far as possible the rules of the game.
+
 
 [^1]: The unit is chosen arbitrarily but then agreed upon universally.
 
