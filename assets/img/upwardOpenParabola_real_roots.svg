@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<svg  
+	xmlns="http://www.w3.org/2000/svg"
+	viewBox="0 0 300 300"
+	>
+<title>Upward opening with real roots </title>
+<desc>Graph of a quadaratic expression when the leading coefficient is positive and discriminant is positive as well</desc>
+<defs> 
+   <pattern id="minorGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="gray" stroke-width="0.4"/>
+   </pattern>
+   <pattern id="majorGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="gray" stroke-width="0.6"/>
+   </pattern>
+   <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="url(#minorGrid)" stroke="none"/>
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="gray" stroke-width="0.8"/>
+   </pattern>
+   <marker id="open-arrow"
+                    viewBox="0 0 7 7"
+                    refX="6.9" refY="3.5"
+                    markerWidth="7"
+                    markerHeight="7"
+                    orient="auto">
+                    <g>
+                        <path d="M7,3.5L0,6 M7 3.5 L 0 1"
+                              stroke="black" fill="none"/> 
+						 	  
+                    </g>
+    </marker>
+	
+</defs>
+
+<g transform="translate(60,240) scale(1,-1)">
+<path d="M-60 -60 l300 0 l0 300 l-300 0 Z" style="fill:url(#majorGrid); stroke:none;"/> 
+<path d="M-60 0 l290 0" marker-end="url(#open-arrow)" fill="none" stroke="black" stroke-width="1" />
+<path d="M0-50 l0 280 " marker-end="url(#open-arrow)" fill="none" stroke="black" stroke-width="1" />
+<path d="M-40 200 Q 80 -284.0336134 200 200" stroke="darkgreen" stroke-width="1.5" fill="none" stroke-linecap="round" />
+<circle cx="30" cy="0" r="2" stroke="green" fill="red" stroke-width="0.3" />
+<circle cx="130" cy="0" r="2" stroke="green" fill="red" stroke-width="0.3" />
+</g>
+<g transform="translate(60,240)">
+<text x="233" y="2" style="font: italic 12px serif;" > x </text>
+<text x="5" y="-233" style="font: italic 12px serif;" > y </text>
+<text x="-12" y="12" style="font: italic 12px serif;" > O </text>
+<rect x="30" y="-156" height="22" width="110" rx="4" fill="lemonchiffon" stroke="gray" stroke-width="0.5" />
+<text x="40" y="-140" style="font: italic 1.1em serif;"> a &gt; 0, D &gt; 0 </text>
+</g>
+</svg>

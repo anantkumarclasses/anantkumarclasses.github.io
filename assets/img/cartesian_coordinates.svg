@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<svg  
+	xmlns="http://www.w3.org/2000/svg"
+	viewBox="0 0 300 300"
+	>
+<title>Cartesian Coordinates </title>
+<desc>Locating points on the Cartesian coordinates</desc>
+<defs> 
+   <pattern id="minorGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="gray" stroke-width="0.5"/>
+   </pattern>
+   <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="url(#minorGrid)" stroke="none"/>
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="gray" stroke-width="1"/>
+   </pattern>
+   <marker id="open-arrow"
+                    viewBox="0 0 10 10"
+                    refX="9.9" refY="5"
+                    markerWidth="10"
+                    markerHeight="10"
+                    orient="auto">
+                    <g>
+                        <path d="M10,5L0,9 M10 5 L 0 1"
+                              stroke="black" fill="none"/> 
+						 	  
+                    </g>
+    </marker>
+
+</defs>
+<g transform="translate(60,240) scale(1,-1)">
+<path d="M-60 -60 l300 0 l 0 300 l -300 0 Z" style="fill:url(#grid); stroke:none;"/>
+<path d="M-60 0 l290 0" marker-end="url(#open-arrow)" fill="none" stroke="black" stroke-width="1" />
+<path d="M0-60 l0 290 " marker-end="url(#open-arrow)" fill="none" stroke="black" stroke-width="1" />
+</g>
+<text x="280" y="290" style="font: italic 13px sans-serif;" > x </text>
+</svg>

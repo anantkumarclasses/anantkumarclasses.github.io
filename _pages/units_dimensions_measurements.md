@@ -383,9 +383,8 @@ A few comments are in order: (1) the frequency is independent of the mass of the
 
 $$
 \begin{aligned}
-&=&T^{-1}\\
-&=&[\rho]^a[g]^b[k]^c\\
-&=& M^a\, L^{-3a+b-c}\, T^{-2b}
+T^{-1}& = [\rho]^a[g]^b[k]^c\\
+&= M^a\, L^{-3a+b-c}\, T^{-2b}
 \end{aligned}
 $$
 
@@ -418,8 +417,7 @@ so that our function $$\Phi(x)=\sqrt{1+x}$$. Dimensional analysis enabled us to 
 
 $$
 \begin{aligned}
-&=L\\
-&=[E]^a[\rho_0]^b[t]^c\\
+L &=[E]^a[\rho_0]^b[t]^c\\
 &= M^{a+b}\, L^{2a-3b}\, T^{-2a+c}
 \end{aligned}
 $$

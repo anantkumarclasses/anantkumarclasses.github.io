@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+
+<svg  
+	xmlns="http://www.w3.org/2000/svg"
+	viewBox="0 0 300 300"
+	>
+<style>
+    text{
+	fill:#000;
+	font-size:1em;
+	font-family:Ubuntu, serif;
+	}
+	text.sub-text{
+	display:none;
+	fill:#000;
+	font-size:0.8em;
+	font-family: monospace;
+	}
+    g:hover > text.sub-text{
+	display:block;
+	}
+  </style>
+<title>Quadratic Graph </title>
+<desc>Graph of a quadaratic expression</desc>
+
+<defs> 
+   <pattern id="minorGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="gray" stroke-width="0.4"/>
+   </pattern>
+   <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="url(#minorGrid)" stroke="none"/>
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="gray" stroke-width="0.8"/>
+   </pattern>
+   <marker id="open-arrow"
+                    viewBox="0 0 7 7"
+                    refX="6.9" refY="3.5"
+                    markerWidth="7"
+                    markerHeight="7"
+                    orient="auto">
+                    <g>
+                        <path d="M7,3.5L0,6 M7 3.5 L 0 1"
+                              stroke="black" stroke-linecap="round" fill="none"/> 
+						 	  
+                    </g>
+    </marker>
+	
+</defs>
+
+<g transform="translate(60,240) scale(1,-1)">
+<path d="M-60 -60 l300 0 l0 300 l-300 0 Z" style="fill:url(#grid); stroke:none;"/>
+<path d="M-55 0 l285 0" marker-end="url(#open-arrow)" fill="none" stroke="black" stroke-width="1" stroke-linecap="round" />
+<path d="M0-55 l0 285 " marker-end="url(#open-arrow)" fill="none" stroke="black" stroke-width="1" stroke-linecap="round" />
+<path d="M-40 200 Q 80 -284.0336134 200 200" stroke="darkgreen" stroke-width="1.5" fill="none" stroke-linecap="round" />
+<circle cx="-30" cy="161.345" r="2" stroke="green" fill="red" stroke-width="0.3" />
+<circle cx="0" cy="65.5462" r="2" stroke="green" fill="red" stroke-width="0.3" />
+<circle cx="30" cy="0" r="2" stroke="green" fill="red" stroke-width="0.3" />
+<circle cx="80" cy="-42.0168" r="2" stroke="green" fill="red" stroke-width="0.3" />
+<circle cx="130" cy="0" r="2" stroke="green" fill="red" stroke-width="0.3" />
+<circle cx="149" cy="38" r="2" stroke="green" fill="red" stroke-width="0.3" />
+<circle cx="170" cy="94.1176" r="2" stroke="green" fill="red" stroke-width="0.3" />
+<circle cx="194.935" cy="180" r="2" stroke="green" fill="red" stroke-width="0.3" />
+<line x1="50" y1="-3" x2="50" y2="3" stroke="black" fill="none" stroke-width="1" stroke-linecap="round" />
+<line x1="-50" y1="-3" x2="-50" y2="3" stroke="black" fill="none" stroke-width="1" stroke-linecap="round" />
+<line x1="100" y1="-3" x2="100" y2="3" stroke="black" fill="none" stroke-width="1" stroke-linecap="round" />
+<line x1="150" y1="-3" x2="150" y2="3" stroke="black" fill="none" stroke-width="1" stroke-linecap="round" />
+<line x1="200" y1="-3" x2="200" y2="3" stroke="black" fill="none" stroke-width="1" stroke-linecap="round" />
+<line x1="-3" y1="-50" x2="3" y2="-50" stroke="black" fill="none" stroke-width="1" stroke-linecap="round" />
+<line x1="-3" y1="50" x2="3" y2="50" stroke="black" fill="none" stroke-width="1" stroke-linecap="round" />
+<line x1="-3" y1="100" x2="3" y2="100" stroke="black" fill="none" stroke-width="1" stroke-linecap="round" />
+<line x1="-3" y1="150" x2="3" y2="150" stroke="black" fill="none" stroke-width="1" stroke-linecap="round" />
+<line x1="-3" y1="200" x2="3" y2="200" stroke="black" fill="none" stroke-width="1" stroke-linecap="round" />
+</g>
+
+<g transform="translate(60,240)">
+<text x="233" y="2" style="font: italic 12px serif;" > x </text>
+<text x="2" y="-233" style="font: italic 12px serif;" > y </text>
+<text x="-12" y="12" style="font: italic 12px serif;" > O </text>
+<text x="-55" y="12" style="font: 0.6em sans-serif;" > -5 </text>
+<text x="48" y="12" style="font: 0.6em sans-serif;" > 5 </text>
+<text x="95" y="12" style="font: 0.6em sans-serif;" > 10 </text>
+<text x="155" y="12" style="font: 0.6em sans-serif;" > 15 </text>
+<text x="195" y="12" style="font: 0.6em sans-serif;" > 20 </text>
+<text x="-18" y="53" style="font: 0.6em sans-serif;" > -50 </text>
+<text x="-15" y="-47" style="font: 0.6em sans-serif;" > 50 </text>
+<text x="-20" y="-97" style="font: 0.6em sans-serif;" > 100 </text>
+<text x="-20" y="-147" style="font: 0.6em sans-serif;" > 150 </text>
+<text x="-20" y="-197" style="font: 0.6em sans-serif;" > 200 </text>
+<g>
+<circle cx="30" cy="0" r="3" stroke="green" stroke-opacity="0" fill="red" fill-opacity="0" stroke-width="0.3" />
+<text x="30" y="-5" class="sub-text">(3,0)</text>
+</g>
+<g>
+<circle cx="-30" cy="-161.345" r="3" stroke="green" stroke-opacity="0" fill="red" fill-opacity="0" stroke-width="0.3" />
+<text x="-30" y="-165" class="sub-text">(-3,19200/119)</text>
+</g>
+<g>
+<circle cx="130" cy="0" r="3" stroke="green" stroke-opacity="0" fill="red" fill-opacity="0" stroke-width="0.3" />
+<text x="130" y="-5" class="sub-text">(13,0)</text>
+</g>
+<g>
+<circle cx="80" cy="42.0168" r="3" stroke="green" stroke-opacity="0" fill="red" fill-opacity="0" stroke-width="0.3" />
+<text x="60" y="50" class="sub-text">(8,-5000/119)</text>
+</g>
+<g>
+<circle cx="0" cy="-65.5462" r="3" stroke="green" stroke-opacity="0" fill="red" fill-opacity="0" stroke-width="0.3" />
+<text x="0" y="-66" class="sub-text">(0,7800/119)</text>
+</g>
+<g>
+<circle cx="149" cy="-38" r="3" stroke="green" stroke-opacity="0" fill="red" fill-opacity="0" stroke-width="0.3" />
+<text x="149" y="-30" class="sub-text">(14.9,38)</text>
+</g>
+<g>
+<circle cx="170" cy="-94.1176" r="3" stroke="green" stroke-opacity="0" fill="red" fill-opacity="0" stroke-width="0.3" />
+<text x="85" y="-90" class="sub-text">(17,1600/17)</text>
+</g>
+<g>
+<circle cx="194.935" cy="-180" r="3" stroke="green" stroke-opacity="0" fill="red" fill-opacity="0" stroke-width="0.3" />
+<text x="150" y="-185" class="sub-text">(19.4935,180.001)</text>
+</g>
+</g>
+</svg>
