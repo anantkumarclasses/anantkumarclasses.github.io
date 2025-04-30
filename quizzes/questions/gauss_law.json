@@ -401,7 +401,7 @@
       "B": "/quizzes/images/electric_field/prop_density_E_option_B.png",
       "C": "/quizzes/images/electric_field/prop_density_E_option_C.png",
       "D": "/quizzes/images/electric_field/prop_density_E_option_D.png",
-      "E": "/quizzes/images/electric_field/prop_density_E_option_E.png",
+      "E": "/quizzes/images/electric_field/prop_density_E_option_E.png"
     },
     "answer": "D",
     "type" : "image_option"
@@ -413,7 +413,7 @@
       "B": "/quizzes/images/electric_field/prop_density_E_option_B.png",
       "C": "/quizzes/images/electric_field/prop_density_E_option_C.png",
       "D": "/quizzes/images/electric_field/prop_density_E_option_D.png",
-      "E": "/quizzes/images/electric_field/prop_density_E_option_E.png",
+      "E": "/quizzes/images/electric_field/prop_density_E_option_E.png"
     },
     "answer": "E",
     "type" : "image_option"
