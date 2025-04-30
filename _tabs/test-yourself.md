@@ -13,4 +13,5 @@ Each section below links to a short quiz that helps you revise, apply, and test 
 
 # Physics
 1.  [Electric Field](/quiz/electric-field/)
+2.  [Gauss's Law](/quiz/gauss-law/)
 

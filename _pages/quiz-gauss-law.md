@@ -5,7 +5,7 @@ layout: page
 math: true
 ---
 
-# ⚡ Gauss's Law
+# Gauss's Law
 
 According to the Gauss's Law, the **flux of the electric field through a closed surface equals the algebraic sum of all the charges enclosed within the surface divided by $$ \epsilon_0 $$:**
 
