@@ -145,7 +145,7 @@
   },
   {
     "question": "The table below gives the electric flux in N · m$^2$/C through the ends and round surfaces of four Gaussian surfaces in the form of cylinders. Rank the cylinders according to the charge inside, from the most negative to the most positive.",
-    "question_image": "/quizzes/images/electric_field/table_01.png",
+    "question_image": "/quizzes/images/gauss_law/table_01.png",
     "options": {
        "A": "1, 2, 3, 4",
        "B": "4, 3, 2, 1",
@@ -347,7 +347,7 @@
   },
   {
     "question": "Two large insulating parallel plates carry a charge of equal magnitude, one positive and the other negative, that is distributed uniformly over their inner surfaces. Rank the points 1 through 5 according to the magnitude of the electric field at the points, least to greatest.",
-    "question_image": "/quizzes/images/electric_field/opposite_charged_plates.png",
+    "question_image": "/quizzes/images/gauss_law/opposite_charged_plates.png",
     "options": {
       "A": "1, 2, 3, 4, 5",
       "B": "2, then 1, 3, and 4 tied, then 5",
@@ -360,7 +360,7 @@
   },
   {
     "question": "Two large parallel plates carry a positive charge of equal magnitude that is distributed uniformly over their inner surfaces. Rank the points 1 through 5 according to the magnitude of the electric field at the points, least to greatest.",
-    "question_image": "/quizzes/images/electric_field/like_charged_plates.png",
+    "question_image": "/quizzes/images/gauss_law/like_charged_plates.png",
     "options": {
       "A": "1, 2, 3, 4, 5",
       "B": "5, 4, 3, 2, 1",
@@ -397,11 +397,11 @@
   {
     "question": "A solid insulating sphere of radius R contains positive charge that is distributed with a volume charge density that does not depend on angle but does increase with distance from the sphere center. Which of the graphs below might give the magnitude E of the electric field as a function of the distance r from the center of the sphere?",
     "options": {
-      "A": "/quizzes/images/electric_field/prop_density_E_option_A.png",
-      "B": "/quizzes/images/electric_field/prop_density_E_option_B.png",
-      "C": "/quizzes/images/electric_field/prop_density_E_option_C.png",
-      "D": "/quizzes/images/electric_field/prop_density_E_option_D.png",
-      "E": "/quizzes/images/electric_field/prop_density_E_option_E.png"
+      "A": "/quizzes/images/gauss_law/prop_density_E_option_A.png",
+      "B": "/quizzes/images/gauss_law/prop_density_E_option_B.png",
+      "C": "/quizzes/images/gauss_law/prop_density_E_option_C.png",
+      "D": "/quizzes/images/gauss_law/prop_density_E_option_D.png",
+      "E": "/quizzes/images/gauss_law/prop_density_E_option_E.png"
     },
     "answer": "D",
     "type" : "image_option"
@@ -409,11 +409,11 @@
   {
     "question": "Which of the following graphs represents the magnitude of the electric field as a function of the distance from the center of a solid charged conducting sphere of radius R?",
     "options": {
-      "A": "/quizzes/images/electric_field/prop_density_E_option_A.png",
-      "B": "/quizzes/images/electric_field/prop_density_E_option_B.png",
-      "C": "/quizzes/images/electric_field/prop_density_E_option_C.png",
-      "D": "/quizzes/images/electric_field/prop_density_E_option_D.png",
-      "E": "/quizzes/images/electric_field/prop_density_E_option_E.png"
+      "A": "/quizzes/images/gauss_law/prop_density_E_option_A.png",
+      "B": "/quizzes/images/gauss_law/prop_density_E_option_B.png",
+      "C": "/quizzes/images/gauss_law/prop_density_E_option_C.png",
+      "D": "/quizzes/images/gauss_law/prop_density_E_option_D.png",
+      "E": "/quizzes/images/gauss_law/prop_density_E_option_E.png"
     },
     "answer": "E",
     "type" : "image_option"
