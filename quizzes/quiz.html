@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test your understanding</title>
+  <script>
+      window.MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        svg: { fontCache: 'global' }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body { font-family: Arial; background: #f9f9f9; padding: 2rem; }
+    .quiz-container { max-width: 600px; margin: auto; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .option { display: block; margin: 10px 0; }
+    .correct { background-color: #c8e6c9; }
+    .incorrect { background-color: #ffcdd2; }
+    button { margin-top: 1rem; padding: 0.5rem 1rem; font-size: 1rem; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h2 id="question-text">Loading question...</h2>
+    <div id="options"></div>
+    <div>
+      <button id="prev-btn" class="hidden">Previous</button>
+      <button id="submit-btn">Submit</button>
+      <button id="next-btn" class="hidden">Next</button>
+    </div>
+    <h3 id="score" class="hidden"></h3>
+    <button id="restart-btn" class="hidden">Restart</button>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
+

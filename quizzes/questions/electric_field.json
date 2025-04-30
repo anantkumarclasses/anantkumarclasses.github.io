@@ -1,0 +1,505 @@
+[
+  {
+    "question": "An electric field is most directly related to:",
+    "options": {
+      "A": "the momentum of a test charge",
+      "B": "the kinetic energy of a test charge",
+      "C": "the potential energy of a test charge",
+      "D": "the force acting on a test charge",
+      "E": "the charge carried by a test charge"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "As used in the definition of electric field, a test charge:",
+    "options": {
+      "A": "has zero charge",
+      "B": "has charge of magnitude 1 C",
+      "C": "has charge of magnitude 1.6 × 10$^{−19}$ C",
+      "D": "must be an electron",
+      "E": "none of the above"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "Amit uses a test charge $q_0$ and Bina uses a test charge $−2q_0$ to measure an electric field produced by stationary charges. Amit finds a field that is:",
+    "options": {
+      "A": "the same in both magnitude and direction as the field found by Bina",
+      "B": "greater in magnitude than the field found by Bina",
+      "C": "less in magnitude than the field found by Bina",
+      "D": "opposite in direction to the field found by Bina",
+      "E": "either greater or less than the field found by Bina, depending on the accelerations of the test charges"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "The units of the electric field are:",
+    "options": {
+      "A": "N · C$^2$",
+      "B": "C/N",
+      "C": "N",
+      "D": "N/C",
+      "E": "C/m$^2$"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "The units of the electric field are:",
+    "options": {
+      "A": "J/(C·m)",
+      "B": "J/C",
+      "C": "J·C",
+      "D": "J/m",
+      "E": "none of these"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "Electric field lines:",
+    "options": {
+      "A": "are trajectories of a test charge",
+      "B": "are vectors in the direction of the electric field",
+      "C": "form closed loops",
+      "D": "cross each other in the region between two point charges",
+      "E": "are none of the above"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "Two thin spherical shells, one with radius R and the other with radius 2R, surround an isolated charged point particle. The ratio of the number of field lines through the larger sphere to the number through the smaller is:",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "4",
+      "D": "1/2",
+      "E": "1/4"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "A certain physics textbook shows a region of space in which two electric field lines cross each other. We conclude that:",
+    "options": {
+      "A": "at least two point charges are present",
+      "B": "an electrical conductor is present",
+      "C": "an insulator is present",
+      "D": "the field points in two directions at the same place",
+      "E": "the author made a mistake"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "Choose the correct statement concerning electric field lines:",
+    "options": {
+      "A": "field lines may cross",
+      "B": "field lines are close together where the field is large",
+      "C": "field lines point away from a negatively charged particle",
+      "D": "a charged point particle released from rest moves along a field line",
+      "E": "none of these are correct"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "The diagram shows the electric field lines due to two charged parallel metal plates. We conclude that:",
+    "question_image": "../images/electric_field/charged_parallel_plates.png",
+    "options": {
+      "A": "the upper plate is positive and the lower plate is negative",
+      "B": "a proton at X would experience the same force if it were placed at Y",
+      "C": "a proton at X experiences a greater force than if it were placed at Z",
+      "D": "a proton at X experiences less force than if it were placed at Z",
+      "E": "an electron at X could have its weight balanced by the electrical force"
+    },
+    "answer": "B",
+    "type": "image_question"
+  },
+  {
+    "question": "Let $k=\\dfrac{1}{4\\pi\\epsilon_0}$. The magnitude of the electric field at a distance $r$ from an isolated point particle with charge $q$ is:",
+    "options": {
+      "A": "$\\dfrac{kq}{r}$",
+      "B": "$\\dfrac{kr}{q}$",
+      "C": "$\\dfrac{kq}{r^3}$",
+      "D": "$\\dfrac{kq}{r^2}$",
+      "E": "$\\dfrac{kq^2}{r^2}$"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "The diagram shows the electric field lines in a region of space containing two small charged spheres (Y and Z). Then:",
+    "question_image": "../images/electric_field/opposite_charged.png",
+    "options": {
+      "A": "Y is negative and Z is positive",
+      "B": "the magnitude of the electric field is the same everywhere",
+      "C": "the electric field is strongest midway between Y and Z",
+      "D": "Y is positive and Z is negative",
+      "E": "Y and Z must have the same sign"
+    },
+    "answer": "D",
+    "type": "image_question"
+  },
+  {
+    "question": "The electric field at a distance of 10 cm from an isolated point particle with a charge of 2×10$^{−9}$ C is:",
+    "options": {
+      "A": "1.8 N/C",
+      "B": "180 N/C",
+      "C": "18 N/C",
+      "D": "1800 N/C",
+      "E": "none of these"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "An isolated charged point particle produces an electric field with magnitude E at a point 2 m away from the charge. A point at which the field magnitude is E/4 is:",
+    "options": {
+      "A": "1 m away from the particle",
+      "B": "0.5 m away from the particle",
+      "C": "2 m away from the particle",
+      "D": "4 m away from the particle",
+      "E": "8 m away from the particle"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "An isolated charged point particle produces an electric field with magnitude E at a point 2 m away. At a point 1 m from the particle the magnitude of the field is:",
+    "options": {
+      "A": "E",
+      "B": "2E",
+      "C": "4E",
+      "D": "E/2",
+      "E": "E/4"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "Two protons (p1 and p2) are on the x axis, as shown below. The directions of the electric field at points 1, 2, and 3, respectively, are:",
+    "question_image": "../images/electric_field/two_protons.png",
+    "options": {
+      "A": "&LongRightArrow;, &LongLeftArrow;, &LongRightArrow;",
+      "B": "&LongLeftArrow;, &LongRightArrow;, &LongLeftArrow;",
+      "C": "&LongLeftArrow;,&LongRightArrow;, &LongRightArrow;",
+      "D": "&LongLeftArrow;, &LongLeftArrow;, &LongLeftArrow;",
+      "E": "&LongLeftArrow;, &LongLeftArrow;, &LongRightArrow;"
+    },
+    "answer": "E",
+    "type": "image_question"
+  },
+  {
+    "question": "The diagrams below depict four different charge distributions. The charge particles are all the same distance from the origin. The electric field at the origin:",
+    "question_image": "../images/electric_field/four_charge_config.png",
+    "options": {
+      "A": "is greatest for situation 1",
+      "B": "is greatest for situation 3",
+      "C": "is zero for situation 4",
+      "D": "is downward for situation 1"
+    },
+    "answer": "",
+    "type": "image_question"
+  },
+  {
+    "question": "The diagram shows a particle with positive charge Q and a particle with negative charge −Q. The electric field at point P on the perpendicular bisector of the line joining them is:",
+    "question_image": "../images/electric_field/opposite_charges.png",
+    "options": {
+      "A": "↑",
+      "B": "↓",
+      "C": "→",
+      "D": "←",
+      "E": "zero"
+    },
+    "answer": "A",
+    "type": "image_question"
+  },
+  {
+    "question": "The diagram shows two identical particles, each with positive charge Q. The electric field at point P on the perpendicular bisector of the line joining them is:",
+    "question_image": "../images/electric_field/like_charges.png",
+    "options": {
+      "A": "↑",
+      "B": "↓",
+      "C": "→",
+      "D": "←",
+      "E": "zero"
+    },
+    "answer": "C",
+    "type": "image_question"
+  },
+  {
+    "question": "Two point particles, one with charge +8 × 10$^{−9}$ C and the other with charge −2 × 10$^{−9}$ C, are separated by 4 m. The electric field in N/C midway between them is:",
+    "options": {
+      "A": "9 × 10$^9$",
+      "B": "13, 500",
+      "C": "135, 000",
+      "D": "36 × 10$^{−9}$",
+      "E": "22.5"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "Two charged point particles are located at two vertices of an equilateral triangle and the electric field is zero at the third vertex. We conclude:",
+    "options": {
+      "A": "the two particles have charges with opposite signs and the same magnitude",
+      "B": "the two particles have charges with opposite signs and different magnitudes",
+      "C": "the two particles have identical charges",
+      "D": "the two particles have charges with the same sign but different magnitudes",
+      "E": "at least one other charged particle is present"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "Positive charge Q is uniformly distributed on a semicircular rod. What is the direction of the electric field at point P, the center of the semicircle?",
+    "question_image": "../images/electric_field/charged_semi_ring.png",
+    "options": {
+      "A": "↑",
+      "B": "↓",
+      "C": "←",
+      "D": "→",
+      "E": "&UpperRightArrow;"
+    },
+    "answer": "D",
+    "type": "image_question"
+  },
+  {
+    "question": "Positive charge +Q is uniformly distributed on the upper half a semicircular rod and negative charge −Q is uniformly distributed on the lower half. What is the direction of the electric field at point P, the center of the semicircle?",
+    "question_image": "../images/electric_field/oppositely_charged_semi_ring.png",
+    "options": {
+      "A": "↑",
+      "B": "↓",
+      "C": "←",
+      "D": "→",
+      "E": "&UpperRightArrow;"
+    },
+    "answer": "B",
+    "type": "image_question"
+  },
+  {
+    "question": "Positive charge +Q is uniformly distributed on the upper half a rod and negative charge −Q is uniformly distributed on the lower half. What is the direction of the electric field at point P, on the perpendicular bisector of the rod?",
+    "question_image": "../images/electric_field/oppositely_charged_rod.png",
+    "options": {
+      "A": "↑",
+      "B": "↓",
+      "C": "←",
+      "D": "→",
+      "E": "&UpperRightArrow;"
+    },
+    "answer": "",
+    "type": "image_question"
+  },
+  {
+    "question": "The electric field due to a uniform distribution of charge on a spherical shell is zero:",
+    "options": {
+      "A": "everywhere",
+      "B": "nowhere",
+      "C": "only at the center of the shell",
+      "D": "only inside the shell",
+      "E": "only outside the shell"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "A charged particle is placed in an electric field that varies with location. No force is exerted on this charge:",
+    "options": {
+      "A": "at locations where the electric field is zero",
+      "B": "at locations where the electric field strength is 1/(1.6 × 10$^{−19}$) N/C",
+      "C": "if the particle is moving along a field line",
+      "D": "if the particle is moving perpendicularly to a field line",
+      "E": "if the field is caused by an equal amount of positive and negative charge"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "The magnitude of the force of a 400-N/C electric field on a 0.02-C point charge is:",
+    "options": {
+      "A": "8.0 N",
+      "B": "8 × 10$^{−5}$ N",
+      "C": "8 × 10$^{−3}$ N",
+      "D": "0.08 N",
+      "E": "2 × 10$^{11}$ N"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "A 200-N/C electric field is in the positive x direction. The force on an electron in this field is:",
+    "options": {
+      "A": "200 N in the positive x direction",
+      "B": "200 N in the negative x direction",
+      "C": "3.2 × 10$^{−17}$ N in the positive x direction",
+      "D": "3.2 × 10$^{−17}$ N in the negative x direction",
+      "E": "0"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "An electron traveling north enters a region where the electric field is uniform and points north. The electron:",
+    "options": {
+      "A": "speeds up",
+      "B": "slows down",
+      "C": "veers east",
+      "D": "veers west",
+      "E": "continues with the same speed in the same direction"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "An electron traveling north enters a region where the electric field is uniform and points west. The electron:",
+    "options": {
+      "A": "speeds up",
+      "B": "slows down",
+      "C": "veers east",
+      "D": "veers west",
+      "E": "continues with the same speed in the same direction"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "Two charged particles are arranged as shown. In which region could a third particle, with charge +1 C, be placed so that the net electrostatic force on it is zero?",
+    "question_image": "../images/electric_field/three_regions.png",
+    "options": {
+      "A": "I only",
+      "B": "I and II only",
+      "C": "III only",
+      "D": "I and III only",
+      "E": "II only"
+    },
+    "answer": "A",
+    "type": "image_question"
+  },
+  {
+    "question": "The force exerted by a uniform electric field on a dipole is:",
+    "options": {
+      "A": "parallel to the dipole moment",
+      "B": "perpendicular to the dipole moment",
+      "C": "parallel to the electric field",
+      "D": "perpendicular to the electric field",
+      "E": "none of the above"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "An electric field exerts a torque on a dipole only if:",
+    "options": {
+      "A": "the field is parallel to the dipole moment",
+      "B": "the field is not parallel to the dipole moment",
+      "C": "the field is perpendicular to the dipole moment",
+      "D": "the field is not perpendicular to the dipole moment",
+      "E": "the field is uniform"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "The torque exerted by an electric field on a dipole is:",
+    "options": {
+      "A": "parallel to the field and perpendicular to the dipole moment",
+      "B": "parallel to both the field and dipole moment",
+      "C": "perpendicular to both the field and dipole moment",
+      "D": "parallel to the dipole moment and perpendicular to the field",
+      "E": "not related to the directions of the field and dipole moment"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "The diagrams show four possible orientations of an electric dipole in a uniform electric field $\\vec{E}$ . Rank them according to the magnitude of the torque exerted on the dipole by the field, least to greatest.",
+    "question_image": "../images/electric_field/four_dipole_config.png",
+    "options": {
+      "A": "1, 2, 3, 4",
+      "B": "4, 3, 2, 1",
+      "C": "1, 2, 4, 3",
+      "D": "3, 2 and 4 tie, then 1",
+      "E": "1, 2 and 4 tie, then 3"
+    },
+    "answer": "E",
+    "type": "image_question"
+  },
+  {
+    "question": "A uniform electric field of 300 N/C makes an angle of 25$^\\circ$ with the dipole moment of an electric dipole. If the torque exerted by the field has a magnitude of 2.5×10$^{−7}$ N·m, the dipole moment must be:",
+    "options": {
+      "A": "8.3 × 10$^{−10}$ C · m",
+      "B": "9.2 × 10$^{−10}$ C · m",
+      "C": "2.0 × 10$^{−9}$ C · m",
+      "D": "8.3 × 10$^{−5}$ C · m",
+      "E": "1.8 × 10$^{−4}$ C · m"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "When the dipole moment of a dipole in a uniform electric field rotates to become more nearly aligned with the field:",
+    "options": {
+      "A": "the field does positive work and the potential energy increases",
+      "B": "the field does positive work and the potential energy decreases",
+      "C": "the field does negative work and the potential energy increases",
+      "D": "the field does negative work and the potential energy decreases",
+      "E": "the field does no work"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "The dipole moment of a dipole in a 300-N/C electric field is initially perpendicular to the field, but it rotates so it is in the same direction as the field. If the moment has a magnitude of 2 × 10$^{−9}$ C · m, the work done by the field is:",
+    "options": {
+      "A": "−12 × 10$^{−7}$ J",
+      "B": "−6 × 10$^{−7}$ J",
+      "C": "0",
+      "D": "6 × 10$^{−7}$ J",
+      "E": "12 × 10$^{−7}$ J"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "An electric dipole is oriented parallel to a uniform electric field $\\vec{E}$. It is rotated to one of the five orientations shown below. Rank the final orientations according to the change in the potential energy of the dipole-field system, most negative to most positive.",
+    "question_image": "../images/electric_field/four_dipole_config_external_field.png",
+    "options": {
+      "A": "1, 2, 3, 4",
+      "B": "4, 3, 2, 1",
+      "C": "1, 2, 4, 3",
+      "D": "3, 2 and 4 tie, then 1",
+      "E": "1, 2 and 4 tie, then 3"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "The purpose of Millikan's oil drop experiment was to determine:",
+    "options": {
+      "A": "the mass of an electron",
+      "B": "the charge of an electron",
+      "C": "the ratio of charge to mass for an electron",
+      "D": "the sign of the charge on an electron",
+      "E": "viscosity"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "A charged oil drop with a mass of 2 × 10$^{−4}$ kg is held suspended by a downward electric field of 300 N/C. The charge on the drop is:",
+    "options": {
+      "A": "+1.5 × 10$^{−6}$ C",
+      "B": "−1.5 × 10$^{−6}$ C",
+      "C": "+6.5 × 10$^{−6}$ C",
+      "D": "−6.5 × 10$^{−6}$ C",
+      "E": "0"
+    },
+    "answer": "D",
+    "type": "text"
+  }
+]
