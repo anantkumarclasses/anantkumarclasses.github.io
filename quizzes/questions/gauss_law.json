@@ -1,0 +1,421 @@
+[
+  {
+    "question": "A total charge of 6.3×10$^{−8}$ C is distributed uniformly throughout a 2.7-cm radius sphere. The volume charge density is:",
+    "options": {
+      "A": "3.7 × 10$^{−7}$ C/m$^3$",
+      "B": "6.9 × 10$^{−6}$ C/m$^3$",
+      "C": "6.9 × 10^{−6}$ C/m$^2$",
+      "D": "2.5 × 10^{−4}$ C/m$^3$",
+      "E": "7.6 × 10^{−4}$ C/m$^3$"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "Charge is placed on the surface of a 2.7-cm radius isolated conducting sphere. The surface charge density is uniform and has the value 6.9 × 10^{−6}$ C/m$^2$. The total charge on the sphere is:",
+    "options": {
+      "A": "5.6 × 10^{−10}$ C",
+      "B": "2.1 × 10^{−8}$ C",
+      "C": "4.7 × 10^{−8}$ C",
+      "D": "6.3 × 10^{−8}$ C",
+      "E": "9.5 × 10^{−3}$ C"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "A spherical shell has an inner radius of 3.7 cm and an outer radius of 4.5 cm. If charge is distributed uniformly throughout the shell with a volume density of 6.1 × 10^{−4}$ C/m$^3$ the total charge is:",
+    "options": {
+      "A": "1.0 × 10$^{−7}$ C",
+      "B": "1.3 × 10$^{−7}$ C",
+      "C": "2.0 × 10$^{−7}$ C",
+      "D": "2.3 × 10$^{−7}$ C",
+      "E": "4.0 × 10$^{−7}$ C"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "A cylinder has a radius of 2.1 cm and a length of 8.8 cm. Total charge 6.1×10$^{−7}$ C is distributed uniformly throughout. The volume charge density is:",
+    "options": {
+      "A": "5.3 × 10$^{−5}$ C/m$^3$",
+      "B": "5.3 × 10$^{−5}$ C/m$^2$",
+      "C": "8.5 × 10$^{−4}$ C/$^3$",
+      "D": "5.0 × 10$^{−3}$ C/$^3$",
+      "E": "6.3 × 10$^{−2}$ C/$^3$"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "When a piece of paper is held with one face perpendicular to a uniform electric field the flux through it is 25 N · m$^2$ /C. When the paper is turned 25$^\\circ$ with respect to the field the flux through it is:",
+    "options": {
+      "A": "0",
+      "B": "12 N · m$^2$/C",
+      "C": "21 N · m$^2$/C",
+      "D": "23 N · m$^2$/C",
+      "E": "25 N · m$^2$/C"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "The flux of the electric field (24 N/C)$\\hat{i}$ + (30 N/C)$\\hat{j}$ + (16 N/C)$\\hat{k}$ through a 2.0 m$^2$ portion of the $yz$ plane is:",
+    "options": {
+      "A": "32 N · m$^2$ /C",
+      "B": "34 N · m$^2$ /C",
+      "C": "42 N · m$^2$ /C",
+      "D": "48 N · m$^2$ /C",
+      "E": "60 N · m$^2$ /C"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "Choose the INCORRECT statement:",
+    "options": {
+      "A": "Gauss' law can be derived from Coulomb's law",
+      "B": "Gauss' law states that the net number of lines crossing any closed surface in an outward direction is proportional to the net charge enclosed within the surface",
+      "C": "Coulomb's law can be derived from Gauss' law and symmetry",
+      "D": "Gauss' law applies to a closed surface of any shape",
+      "E": "According to Gauss' law, if a closed surface encloses no charge, then the electric field must vanish everywhere on the surface"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "The outer surface of the cardboard center of a paper towel roll:",
+    "options": {
+      "A": "is a possible Gaussian surface",
+      "B": "cannot be a Gaussian surface because it encloses no charge",
+      "C": "cannot be a Gaussian surface since it is an insulator",
+      "D": "cannot be a Gaussian surface because it is not a closed surface",
+      "E": "none of the above"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "A physics instructor in an anteroom charges an electrostatic generator to 25 µC, then carries it into the lecture hall. The net electric flux in N · m$^2$/C through the lecture hall walls is:",
+    "options": {
+      "A": "0",
+      "B": "25 × 10$^{−6}$",
+      "C": "2.2 × 10$^5$",
+      "D": "2.8 × 10$^6$",
+      "E": "can not tell unless the lecture hall dimensions are given"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "A point particle with charge q is placed inside the cube but not at its center. The electric flux through any one side of the cube:",
+    "options": {
+      "A": "is zero",
+      "B": "is q/ϵ$_0$",
+      "C": "is q/4ϵ$_0$",
+      "D": "is q/6ϵ$_0$",
+      "E": "cannot be computed using Gauss' law"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "A particle with charge 5.0-µC is placed at the corner of a cube. The total electric flux in N · m$^2$ /C through all sides of the cube is:",
+    "options": {
+      "A": "0",
+      "B": "7.1 × 10$^4$",
+      "C": "9.4 × 10$^4$",
+      "D": "1.4 × 10$^5$",
+      "E": "5.6 × 10$^5$"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "A point particle with charge q is at the center of a Gaussian surface in the form of a cube. The electric flux through any one face of the cube is:",
+    "options": {
+      "A": "q/ϵ$_0$",
+      "B": "q/4πϵ$_0$",
+      "C": "q/3ϵ$_0$",
+      "D": "q/6ϵ$_0$",
+      "E": "q/12ϵ$_0$"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "The table below gives the electric flux in N · m$^2$/C through the ends and round surfaces of four Gaussian surfaces in the form of cylinders. Rank the cylinders according to the charge inside, from the most negative to the most positive.",
+    "question_image": "/quizzes/images/electric_field/table_01.png",
+    "options": {
+       "A": "1, 2, 3, 4",
+       "B": "4, 3, 2, 1",
+       "C": "3, 4, 2, 1",
+       "D": "3, 1, 4, 2",
+       "E": "4, 3, 1, 2"
+     },
+    "answer": "E",
+    "type": "image_question"
+  },
+  {
+    "question": "A conducting sphere of radius 0.01 m has a charge of 1.0 × 10$^{−9}$ C deposited on it. The magnitude of the electric field in N/C just outside the surface of the sphere is:",
+    "options": {
+      "B": "450",
+      "C": "900",
+      "D": "4500",
+      "E": "90, 000"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "A round wastepaper basket with a 0.15-m radius opening is in a uniform electric field of 300 N/C, perpendicular to the opening. The total flux through the sides and bottom, in N · m$^2$ C, is:",
+    "options": {
+      "A": "0",
+      "B": "4.2",
+      "C": "21",
+      "D": "280",
+      "E": "can not tell without knowing the areas of the sides and bottom"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "10 C of charge are placed on a spherical conducting shell. A particle with a charge of −3 C is placed at the center of the cavity. The net charge on the inner surface of the shell is:",
+    "options": {
+      "B": "−3 C",
+      "C": "0 C",
+      "D": "+3 C",
+      "E": "+7 C"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "10 C of charge are placed on a spherical conducting shell. A particle with a charge of −3 C is placed at the center of the cavity. The net charge on the outer surface of the shell is:",
+    "options": {
+      "B": "−3 C",
+      "C": "0 C",
+      "D": "+3 C",
+      "E": "+7 C"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "A 30-N/C uniform electric field points perpendicularly toward the left face of a large neutral conducting sheet. The surface charge density in C/m$^2$ on the left and right faces, respectively, are:",
+    "options": {
+      "A": "−2.7 × 10$^{−9}$ C/m$^2$; +2.7 × 10$^{−9}$ C/m$^2$",
+      "B": "+2.7 × 10$^{−9}$ C/m$^2$; −2.7 × 10$^{−9}$ C/m$^2$",
+      "C": "−5.3 × 10$^{−9}$ C/m$^2$; +5.3 × 10$^{−9}$ C/m$^2$",
+      "D": "+5.3 × 10$^{−9}$ C/m$^2$; −5.3 × 10$^{−9}$ C/m$^2$",
+      "E": "0; 0"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "Charge Q is distributed uniformly throughout an insulating sphere of radius R. The magnitude of the electric field at a point R/2 from the center is:",
+    "options": {
+      "A": "$\\frac{Q}{4\\pi\\epsilon_0R^2}$",
+      "B": "$\\frac{Q}{\\pi\\epsilon_0R^2}$",
+      "C": "$\\frac{3Q}{4\\pi\\epsilon_0R^2}$",
+      "D": "$\\frac{Q}{8\\pi\\epsilon_0R^2}$",
+      "E": "none of these"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "Positive charge Q is distributed uniformly throughout an insulating sphere of radius R, centered at the origin. A particle with positive charge Q is placed at x = 2R on the x axis. The magnitude of the electric field at x = R/2 on the x axis is:",
+    "options": {
+      "A": "$\\frac{Q}{4\\pi\\epsilon_0R^2}$",
+      "B": "$\\frac{Q}{8\\pi\\epsilon_0R^2}$",
+      "C": "$\\frac{Q}{72\\pi\\epsilon_0R^2}$",
+      "D": "$\\frac{17Q}{72\\pi\\epsilon_0R^2}$",
+      "E": "none of these"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "Charge Q is distributed uniformly throughout a spherical insulating shell. The net electric flux in N · m$^2$ /C through the inner surface of the shell is:",
+    "options": {
+      "A": "0",
+      "B": "Q/ϵ$_0$",
+      "C": "2Q/ϵ$_0$",
+      "D": "Q/4πϵ$_0$",
+      "E": "Q/2πϵ$_0$"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "Charge Q is distributed uniformly throughout a spherical insulating shell. The net electric flux in N · m$^2$ /C through the outer surface of the shell is:",
+    "options": {
+      "A": "0",
+      "B": "Q/ϵ$_0",
+      "C": "2Q/ϵ$_0",
+      "D": "Q/4ϵ$_0",
+      "E": "Q/2πϵ$_0"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "A 3.5-cm radius hemisphere contains a total charge of 6.6 × 10$^{−7}$ C. The flux through the rounded portion of the surface is 9.8 × 10$^4$ N · m$^2$ /C. The flux through the flat base is:",
+    "options": {
+      "A": "0",
+      "B": "+2.3 × 10$^4$ N · m$^2$ /C",
+      "C": "−2.3 × 10$^4$ N · m$^2$ /C",
+      "D": "−9.8 × 10$^4$ N · m$^2$ /C",
+      "E": "+9.8 × 10$^4$ N · m$^2$ /C"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "Charge is distributed uniformly along a long straight wire. The electric field 2 cm from the wire is 20 N/C. The electric field 4 cm from the wire is:",
+    "options": {
+      "A": "120 N/C",
+      "B": "80 N/C",
+      "C": "40 N/C",
+      "D": "10 N/C",
+      "E": "5 N/C"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "Positive charge Q is placed on a conducting spherical shell with inner radius R$_1$ and outer radius R$_2$. A particle with charge q is placed at the center of the cavity. The magnitude of the electric field at a point in the cavity, a distance r from the center, is:",
+    "options": {
+      "A": "zero",
+      "B": "Q/4πϵ$_0$R$_1^2$",
+      "C": "q/4πϵ$_0$r$^2$",
+      "D": "(q + Q)/4πϵ$_0$r$^2$",
+      "E": "(q + Q)/4πϵ$_0$(R$_1^2$ − r$^2$)"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "Positive charge Q is placed on a conducting spherical shell with inner radius R$_1$ and outer radius R$_2$. A point charge q is placed at the center of the cavity. The magnitude of the electric field at a point outside the shell, a distance r from the center, is:",
+    "options": {
+      "A": "zero",
+      "B": "Q/4πϵ$_0$r$^2$",
+      "C": "q/4πϵ$_0$r$^2$",
+      "D": "(q + Q)/4πϵ$_0$r$^2$",
+      "E": "(q + Q)/4πϵ$_0$(R$_1^2$ − r$^2$)"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "Positive charge Q is placed on a conducting spherical shell with inner radius R$_1$ and outer radius R$_2$. A point charge q is placed at the center of the cavity. The magnitude of the electric field produced by the charge on the inner surface at a point in the interior of the conductor, a distance r from the center, is:",
+    "options": {
+      "A": "0",
+      "B": "Q/4πϵ$_0$R$_1^2$",
+      "C": "Q/4πϵ$_0$R$_2^2$",
+      "D": "q/4πϵ$_0$r$^2$",
+      "E": "Q/4πϵ$_0$r$^2$"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "A long line of charge with  charge per unit length λ runs along the cylindrical axis of a cylindrical shell which carries a charge per unit length of λ$_c$. The charge per unit length on the inner and outer surfaces of the shell, respectively are:",
+    "options": {
+      "A": "λ  and λ$_c$",
+      "B": "−λ and λ$_c$ + λ",
+      "C": "−λ and λ$_c$ − λ",
+      "D": "λ + λ$_c$ and λ$_c$ − λ",
+      "E": "λ − λ$_c$ and λ$_c$ + λ"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "Charge is distributed uniformly on the surface of a large flat plate. The electric field 2 cm from the plate is 30 N/C. The electric field 4 cm from the plate is:",
+    "options": {
+      "A": "120 N/C",
+      "B": "80 N/C",
+      "C": "30 N/C",
+      "D": "15 N/C",
+      "E": "7.5 N/C"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "Two large insulating parallel plates carry a charge of equal magnitude, one positive and the other negative, that is distributed uniformly over their inner surfaces. Rank the points 1 through 5 according to the magnitude of the electric field at the points, least to greatest.",
+    "question_image": "/quizzes/images/electric_field/opposite_charged_plates.png",
+    "options": {
+      "A": "1, 2, 3, 4, 5",
+      "B": "2, then 1, 3, and 4 tied, then 5",
+      "C": "1, 4, and 5 tie, then 2 and 3 tie",
+      "D": "2 and 3 tie, then 1 and 4 tie, then 5",
+      "E": "2 and 3 tie, then 1, 4, and 5 tie"
+    },
+    "answer": "C",
+    "type": "image_question"
+  },
+  {
+    "question": "Two large parallel plates carry a positive charge of equal magnitude that is distributed uniformly over their inner surfaces. Rank the points 1 through 5 according to the magnitude of the electric field at the points, least to greatest.",
+    "question_image": "/quizzes/images/electric_field/like_charged_plates.png",
+    "options": {
+      "A": "1, 2, 3, 4, 5",
+      "B": "5, 4, 3, 2, 1",
+      "C": "1, 4, and 5 tie, then 2 and 3 tie",
+      "D": "2 and 3 tie, then 1 and 4 tie, then 5",
+      "E": "2 and 3 tie, then 1, 4, and 5 tie"
+    },
+    "answer": "E",
+    "type": "image_question"
+  },
+  {
+    "question": "A particle with charge Q is placed outside a large neutral conducting sheet. At any point in the interior of the sheet the electric field produced by charges on the surface is directed:",
+    "options": {
+      "B": "away from the surface",
+      "C": "toward Q",
+      "D": "away from Q",
+      "E": "none of the above"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "A spherical conducting shell has charge Q. A particle with charge q is placed at the center of the cavity. The charge on the inner surface of the shell and the charge on the outer surface of the shell, respectively, are:",
+    "options": {
+      "A": "0, Q",
+      "B": "q, Q − q",
+      "C": "Q, 0",
+      "D": "−q, Q + q",
+      "E": "−q, 0"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "A solid insulating sphere of radius R contains positive charge that is distributed with a volume charge density that does not depend on angle but does increase with distance from the sphere center. Which of the graphs below might give the magnitude E of the electric field as a function of the distance r from the center of the sphere?",
+    "options": {
+      "A": "/quizzes/images/electric_field/prop_density_E_option_A.png",
+      "B": "/quizzes/images/electric_field/prop_density_E_option_B.png",
+      "C": "/quizzes/images/electric_field/prop_density_E_option_C.png",
+      "D": "/quizzes/images/electric_field/prop_density_E_option_D.png",
+      "E": "/quizzes/images/electric_field/prop_density_E_option_E.png",
+    },
+    "answer": "D",
+    "type" : "image_option"
+  },
+  {
+    "question": "Which of the following graphs represents the magnitude of the electric field as a function of the distance from the center of a solid charged conducting sphere of radius R?",
+    "options": {
+      "A": "/quizzes/images/electric_field/prop_density_E_option_A.png",
+      "B": "/quizzes/images/electric_field/prop_density_E_option_B.png",
+      "C": "/quizzes/images/electric_field/prop_density_E_option_C.png",
+      "D": "/quizzes/images/electric_field/prop_density_E_option_D.png",
+      "E": "/quizzes/images/electric_field/prop_density_E_option_E.png",
+    },
+    "answer": "E",
+    "type" : "image_option"
+  }
+]
