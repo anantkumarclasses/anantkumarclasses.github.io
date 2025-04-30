@@ -34,6 +34,8 @@ function showQuestion() {
     const img = document.createElement('img');
     img.src = q.question_image;
     img.alt = 'question image';
+    img.style.maxWidth = '100%';
+    img.style.marginTop = '1rem';
     qDiv.appendChild(img);
   }
 

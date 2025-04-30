@@ -11,3 +11,6 @@ Each section below links to a short quiz that helps you revise, apply, and test 
 
 👉 Click on a topic to begin!
 
+# Physics
+1.  [Electric Field](/quiz/electric-field/)
+
