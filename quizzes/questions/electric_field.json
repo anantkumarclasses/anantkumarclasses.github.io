@@ -109,7 +109,7 @@
   },
   {
     "question": "The diagram shows the electric field lines due to two charged parallel metal plates. We conclude that:",
-    "question_image": "../images/electric_field/charged_parallel_plates.png",
+    "question_image": "/quizzes/images/electric_field/charged_parallel_plates.png",
     "options": {
       "A": "the upper plate is positive and the lower plate is negative",
       "B": "a proton at X would experience the same force if it were placed at Y",
@@ -134,7 +134,7 @@
   },
   {
     "question": "The diagram shows the electric field lines in a region of space containing two small charged spheres (Y and Z). Then:",
-    "question_image": "../images/electric_field/opposite_charged.png",
+    "question_image": "/quizzes/images/electric_field/opposite_charged.png",
     "options": {
       "A": "Y is negative and Z is positive",
       "B": "the magnitude of the electric field is the same everywhere",
@@ -183,7 +183,7 @@
   },
   {
     "question": "Two protons (p1 and p2) are on the x axis, as shown below. The directions of the electric field at points 1, 2, and 3, respectively, are:",
-    "question_image": "../images/electric_field/two_protons.png",
+    "question_image": "/quizzes/images/electric_field/two_protons.png",
     "options": {
       "A": "&LongRightArrow;, &LongLeftArrow;, &LongRightArrow;",
       "B": "&LongLeftArrow;, &LongRightArrow;, &LongLeftArrow;",
@@ -196,7 +196,7 @@
   },
   {
     "question": "The diagrams below depict four different charge distributions. The charge particles are all the same distance from the origin. The electric field at the origin:",
-    "question_image": "../images/electric_field/four_charge_config.png",
+    "question_image": "/quizzes/images/electric_field/four_charge_config.png",
     "options": {
       "A": "is greatest for situation 1",
       "B": "is greatest for situation 3",
@@ -208,7 +208,7 @@
   },
   {
     "question": "The diagram shows a particle with positive charge Q and a particle with negative charge −Q. The electric field at point P on the perpendicular bisector of the line joining them is:",
-    "question_image": "../images/electric_field/opposite_charges.png",
+    "question_image": "/quizzes/images/electric_field/opposite_charges.png",
     "options": {
       "A": "↑",
       "B": "↓",
@@ -221,7 +221,7 @@
   },
   {
     "question": "The diagram shows two identical particles, each with positive charge Q. The electric field at point P on the perpendicular bisector of the line joining them is:",
-    "question_image": "../images/electric_field/like_charges.png",
+    "question_image": "/quizzes/images/electric_field/like_charges.png",
     "options": {
       "A": "↑",
       "B": "↓",
@@ -258,7 +258,7 @@
   },
   {
     "question": "Positive charge Q is uniformly distributed on a semicircular rod. What is the direction of the electric field at point P, the center of the semicircle?",
-    "question_image": "../images/electric_field/charged_semi_ring.png",
+    "question_image": "/quizzes/images/electric_field/charged_semi_ring.png",
     "options": {
       "A": "↑",
       "B": "↓",
@@ -271,7 +271,7 @@
   },
   {
     "question": "Positive charge +Q is uniformly distributed on the upper half a semicircular rod and negative charge −Q is uniformly distributed on the lower half. What is the direction of the electric field at point P, the center of the semicircle?",
-    "question_image": "../images/electric_field/oppositely_charged_semi_ring.png",
+    "question_image": "/quizzes/images/electric_field/oppositely_charged_semi_ring.png",
     "options": {
       "A": "↑",
       "B": "↓",
@@ -284,7 +284,7 @@
   },
   {
     "question": "Positive charge +Q is uniformly distributed on the upper half a rod and negative charge −Q is uniformly distributed on the lower half. What is the direction of the electric field at point P, on the perpendicular bisector of the rod?",
-    "question_image": "../images/electric_field/oppositely_charged_rod.png",
+    "question_image": "/quizzes/images/electric_field/oppositely_charged_rod.png",
     "options": {
       "A": "↑",
       "B": "↓",
@@ -369,7 +369,7 @@
   },
   {
     "question": "Two charged particles are arranged as shown. In which region could a third particle, with charge +1 C, be placed so that the net electrostatic force on it is zero?",
-    "question_image": "../images/electric_field/three_regions.png",
+    "question_image": "/quizzes/images/electric_field/three_regions.png",
     "options": {
       "A": "I only",
       "B": "I and II only",
@@ -418,7 +418,7 @@
   },
   {
     "question": "The diagrams show four possible orientations of an electric dipole in a uniform electric field $\\vec{E}$ . Rank them according to the magnitude of the torque exerted on the dipole by the field, least to greatest.",
-    "question_image": "../images/electric_field/four_dipole_config.png",
+    "question_image": "/quizzes/images/electric_field/four_dipole_config.png",
     "options": {
       "A": "1, 2, 3, 4",
       "B": "4, 3, 2, 1",
@@ -467,7 +467,7 @@
   },
   {
     "question": "An electric dipole is oriented parallel to a uniform electric field $\\vec{E}$. It is rotated to one of the five orientations shown below. Rank the final orientations according to the change in the potential energy of the dipole-field system, most negative to most positive.",
-    "question_image": "../images/electric_field/four_dipole_config_external_field.png",
+    "question_image": "/quizzes/images/electric_field/four_dipole_config_external_field.png",
     "options": {
       "A": "1, 2, 3, 4",
       "B": "4, 3, 2, 1",
