@@ -37,11 +37,7 @@ Note: It is not necessary that every quadratic expression will have a real root.
 
 Now, let us take an arbitrary value of $$x$$, say $$x = x_0$$. If we divide $$f(x) = ax^2 + bx + c$$ by $$(x - x_0)$$ using the long division method, we obtain the following result:
 
-![Dividing the quadratic expression by a linear factor](/assets/img/energy_in_nuclear_explosion.png)
-
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-  <rect x="10" y="10" width="100" height="100" fill="blue" />
-</svg>
+![Dividing the quadratic expression by a linear factor](/assets/img/long_division.svg)
 
 The remainder $$ax_0^2 + bx_0 + c$$ is simply the value of the expression evaluated at $$x = x_0$$, i.e., the remainder is $$f(x_0)$$. 
 
