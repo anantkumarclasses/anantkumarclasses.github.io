@@ -39,6 +39,10 @@ Now, let us take an arbitrary value of $$x$$, say $$x = x_0$$. If we divide $$f(
 
 ![Dividing the quadratic expression by a linear factor](/assets/img/energy_in_nuclear_explosion.png)
 
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="100" height="100" fill="blue" />
+</svg>
+
 The remainder $$ax_0^2 + bx_0 + c$$ is simply the value of the expression evaluated at $$x = x_0$$, i.e., the remainder is $$f(x_0)$$. 
 
 Denoting by $$Q(x)$$ the expression $$ax + ax_0 + b$$, we finally obtain:
