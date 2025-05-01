@@ -61,7 +61,7 @@ $$
 
 which can also be verified by direct division:
 
-![3x²+4x+6 divided by x+2](/assets/img/long_division_2.png)
+![3x²+4x+6 divided by x+2|200x167](/assets/img/long_division_2.png)
 
 The remainder theorem is valid for any polynomial, not just quadratics. For example, if the polynomial $$P(x) = x^3 + 1$$ is divided by $$(x+2)$$, the remainder is $$P(-2) = -7$$, which can be checked:
 
