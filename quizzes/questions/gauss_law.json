@@ -40,15 +40,15 @@
     "options": {
       "A": "5.3 × 10$^{−5}$ C/m$^3$",
       "B": "5.3 × 10$^{−5}$ C/m$^2$",
-      "C": "8.5 × 10$^{−4}$ C/$^3$",
-      "D": "5.0 × 10$^{−3}$ C/$^3$",
-      "E": "6.3 × 10$^{−2}$ C/$^3$"
+      "C": "8.5 × 10$^{−4}$ C/m$^3$",
+      "D": "5.0 × 10$^{−3}$ C/m$^3$",
+      "E": "6.3 × 10$^{−2}$ C/m$^3$"
     },
     "answer": "D",
     "type": "text"
   },
   {
-    "question": "When a piece of paper is held with one face perpendicular to a uniform electric field the flux through it is 25 N · m$^2$ /C. When the paper is turned 25$^\\circ$ with respect to the field the flux through it is:",
+    "question": "When a piece of paper is held with one face perpendicular to a uniform electric field the flux through it is 25 N · m$^2$/C. When the paper is turned 25$^\\circ$ with respect to the field the flux through it is:",
     "options": {
       "A": "0",
       "B": "12 N · m$^2$/C",
@@ -253,10 +253,10 @@
     "question": "Charge Q is distributed uniformly throughout a spherical insulating shell. The net electric flux in N · m$^2$ /C through the outer surface of the shell is:",
     "options": {
       "A": "0",
-      "B": "Q/ϵ$_0",
-      "C": "2Q/ϵ$_0",
-      "D": "Q/4ϵ$_0",
-      "E": "Q/2πϵ$_0"
+      "B": "Q/ϵ$_0$",
+      "C": "2Q/ϵ$_0$",
+      "D": "Q/4ϵ$_0$",
+      "E": "Q/2πϵ$_0$"
     },
     "answer": "B",
     "type": "text"

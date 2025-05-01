@@ -1,6 +1,6 @@
 ---
 title: "Quadratic Expressions"
-permalink: /quadratic-expressions/
+permalink: /notes/quadratic-expressions/
 tags: ['Mathematics', 'Notes', 'Quadratic', 'Polynomials']
 math: true
 ---
@@ -39,7 +39,7 @@ Note: It is not necessary that every quadratic expression will have a real root.
 
 Now, let us take an arbitrary value of $$x$$, say $$x = x_0$$. If we divide $$f(x) = ax^2 + bx + c$$ by $$(x - x_0)$$ using the long division method, we obtain the following result:
 
-![Dividing the quadratic expression by a linear factor](assets/img/long_division.svg)
+![Dividing the quadratic expression by a linear factor](/assets/img/long_division.svg)
 
 The remainder $$ax_0^2 + bx_0 + c$$ is simply the value of the expression evaluated at $$x = x_0$$, i.e., the remainder is $$f(x_0)$$. 
 
@@ -63,11 +63,11 @@ $$
 
 which can also be verified by direct division:
 
-![3x²+4x+6 divided by x+2](assets/img/long_division_2.svg)
+![3x²+4x+6 divided by x+2](/assets/img/long_division_2.svg)
 
 The remainder theorem is valid for any polynomial, not just quadratics. For example, if the polynomial $$P(x) = x^3 + 1$$ is divided by $$(x+2)$$, the remainder is $$P(-2) = -7$$, which can be checked:
 
-![x³+1 divided by x+2](assets/img/long_division_3.svg)
+![x³+1 divided by x+2](/assets/img/long_division_3.svg)
 
 ---
 
@@ -101,15 +101,14 @@ Assigning $$f(x) = y$$, we plot points $$(x,y)$$ in the Cartesian plane. The col
 
 An example is shown below:
 
-![Graph of a quadratic expression is a parabola](assets/img/quadratic-graph.svg)
-
-**Figure 1:** The graph of a quadratic expression is a parabola. The graph above is of the expression:
+![Graph of a quadratic expression is a parabola](/assets/img/quadratic-graph.svg)
+*Figure 1: The graph of a quadratic expression is a parabola. The graph above is of the expression:
 
 $$
 f(x) = \dfrac{200}{119} (x^2 - 16x + 39)
 $$
 
-The red dots are some calculated points.
+The red dots are some calculated points.*
 
 ---
 
@@ -223,5 +222,5 @@ where $$D = b^2-4ac$$.
 - If $$a>0$$: Minimum value $$= -\dfrac{D}{4a}$$ at $$x = -\dfrac{b}{2a}$$.
 - If $$a<0$$: Maximum value $$= -\dfrac{D}{4a}$$ at $$x = -\dfrac{b}{2a}$$.
 
-&#x20;If the quadratic has real and distinct roots, the extremum occurs exactly midway between the roots. 
+If the quadratic has real and distinct roots, the extremum occurs exactly midway between the roots. 
 
