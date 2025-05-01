@@ -37,7 +37,7 @@ Note: It is not necessary that every quadratic expression will have a real root.
 
 Now, let us take an arbitrary value of $$x$$, say $$x = x_0$$. If we divide $$f(x) = ax^2 + bx + c$$ by $$(x - x_0)$$ using the long division method, we obtain the following result:
 
-![Dividing the quadratic expression by a linear factor](/assets/img/long_division_cleaned.svg)
+![Dividing the quadratic expression by a linear factor](/assets/img/long_division.png)
 
 The remainder $$ax_0^2 + bx_0 + c$$ is simply the value of the expression evaluated at $$x = x_0$$, i.e., the remainder is $$f(x_0)$$. 
 
@@ -61,11 +61,11 @@ $$
 
 which can also be verified by direct division:
 
-![3x²+4x+6 divided by x+2](/assets/img/long_division_2.svg)
+![3x²+4x+6 divided by x+2](/assets/img/long_division_2.png)
 
 The remainder theorem is valid for any polynomial, not just quadratics. For example, if the polynomial $$P(x) = x^3 + 1$$ is divided by $$(x+2)$$, the remainder is $$P(-2) = -7$$, which can be checked:
 
-![x³+1 divided by x+2](/assets/img/long_division_3.svg)
+![x³+1 divided by x+2](/assets/img/long_division_3.png)
 
 ---
 
@@ -99,7 +99,7 @@ Assigning $$f(x) = y$$, we plot points $$(x,y)$$ in the Cartesian plane. The col
 
 An example is shown below:
 
-![Graph of a quadratic expression is a parabola](/assets/img/quadratic-graph.svg)
+![Graph of a quadratic expression is a parabola](/assets/img/quadratic-graph.png)
 *Figure 1: The graph of a quadratic expression is a parabola. The graph above is of the expression:
 
 $$
@@ -159,6 +159,8 @@ When $$a < 0$$:
 - The graph cuts the $$x$$-axis at two points.
 - The parabola opens **downward**.
 
+
+![Possible graphs for positive discriminant](/assets/img/quadratic-graph_D_positive.png)
 **Figure 2:** Possible shapes when the discriminant is positive ($$b^2-4ac>0$$).
 
 ### ‣ Case II: $$b^2 - 4ac = 0$$
