@@ -1,6 +1,6 @@
 ---
 title: "Quiz: Motion in One Dimension"
-permalink: /quiz/motion-in-one-dimension/
+permalink: /quiz/motion1d/
 layout: page
 math:true
 ---
