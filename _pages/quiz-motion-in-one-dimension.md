@@ -1,6 +1,6 @@
 ---
 title: "Quiz: Motion in One Dimension"
-permalink: /quiz/motion1d/
+permalink: /quiz/motion-one-dimension/
 layout: page
 math:true
 ---
@@ -13,7 +13,7 @@ $$
 v_x = \frac{\mathrm d x}{\mathrm d t}, \quad a_x = \frac{\mathrm d v_x}{\mathrm d t}
 $$
 
-Further, if the acceleration $a_x$ is a constant $a$, the following equation are valid:
+Further, if the acceleration $a_x$ is a constant $a$, the following equations are valid:
 
 -   $v_x=v_0+at$
 -   $\Delta x =v_0t+\dfrac{1}{2}at^2$
