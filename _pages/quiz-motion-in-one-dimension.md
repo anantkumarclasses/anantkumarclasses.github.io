@@ -1,7 +1,8 @@
 ---
 title: "Quiz: Motion in One Dimension"
-permalink: /quiz/motion-in-1-dimension/
+permalink: /quiz/motion-in-one-dimension/
 layout: page
+math:true
 ---
 
 # 🏃🏼‍♀️‍➡️ Motion in One Dimension
