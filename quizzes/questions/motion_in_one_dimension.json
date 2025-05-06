@@ -1,0 +1,810 @@
+[
+  {
+    "question": "A particle moves along the $x$ axis from $x_i$ to $x_f$. Of the following values of the initial and final coordinates, which results in the displacement with the largest magnitude?",
+    "options": {
+      "A": "$x_i$ = 4 m, $x_f$ = 6 m",
+      "B": "$x_i$ = −4 m, $x_f$ = −8 m",
+      "C": "$x_i$ = −4 m, $x_f$ = 2 m",
+      "D": "$x_i$ = 4 m, $x_f$ = −2 m",
+      "E": "$x_i$ = −4 m, $x_f$ = 4 m"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "A particle moves along the $x$ axis from $x_i$ to $x_f$. Of the following values of the initial and final coordinates, which results in a negative displacement?",
+    "options": {
+      "A": "$x_i$ = 4 m, $x_f$ = 6 m",
+      "B": "$x_i$ = −4 m, $x_f$ = −8 m",
+      "C": "$x_i$ = −4 m, $x_f$ = 2 m",
+      "D": "$x_i$ = −4 m, $x_f$ = −2 m",
+      "E": "$x_i$ = −4 m, $x_f$ = 4 m"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "Two automobiles are 150 kilometer apart and traveling toward each other. One automobile is moving at 60 km/h and the other is moving at 40 km/h mph. In how many hours will they meet?",
+    "options": {
+      "A": "2.5",
+      "B": "2.0",
+      "C": "1.75",
+      "D": "1.5",
+      "E": "1.25"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "The average speed of a moving object during a given interval of time is always:",
+    "options": {
+      "A": "the magnitude of its average velocity over the interval",
+      "B": "the distance covered during the time interval divided by the time interval",
+      "C": "one-half its speed at the end of the interval",
+      "D": "its acceleration multiplied by the time interval",
+      "E": "one-half its acceleration multiplied by the time interval."
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "A car travels 40 kilometer at an average speed of 80 km/h and then travels 40 kilometer at an average speed of 40 km/h. The average speed of the car for this 80-km trip is:",
+    "options": {
+      "A": "40 km/h ",
+      "B": "45 km/h ",
+      "C": "48 km/h ",
+      "D": "53 km/h ",
+      "E": "80 km/h "
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "A car starts from Hither, goes 50 km in a straight line to Yon, immediately turns around, and returns to Hither. The time for this round trip is 2 hours. The magnitude of the average velocity of the car for this round trip is:",
+    "options": {
+      "A": "0",
+      "B": "50 km/hr",
+      "C": "100 km/hr",
+      "D": "200 km/hr",
+      "E": "cannot be calculated without knowing the acceleration"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "A car starts from Hither, goes 50 km in a straight line to Yon, immediately turns around, and returns to Hither. The time for this round trip is 2 hours. The average speed of the car for this round trip is:",
+    "options": {
+      "A": "0",
+      "B": "50 km/h",
+      "C": "100 km/h",
+      "D": "200 km/h",
+      "E": "cannot be calculated without knowing the acceleration"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "The coordinate of a particle in meter is given by $x(t) = 16t − 3.0t^3$, where the time $t$ is in second. The particle is momentarily at rest at $t =$",
+    "options": {
+      "A": "0.75 s",
+      "B": "1.3 s",
+      "C": "5.3 s",
+      "D": "7.3 s",
+      "E": "9.3 s"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "A drag racing car starts from rest at $t = 0$ and moves along a straight line with velocity given by $v = bt^2$, where $b$ is a constant. The expression for the distance traveled by this car from its position at $t = 0$ is:",
+    "options": {
+      "A": "$bt^3$",
+      "B": "$bt^3/3$",
+      "C": "$4bt^2$",
+      "D": "$3bt^2$",
+      "E": "$bt^3/2$"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "A ball rolls up a slope. At the end of three second its velocity is 20 cm/s; at the end of eight second its velocity is 0. What is the average acceleration from the third to the eighth second?",
+    "options": {
+      "A": "2.5 cm/s$^2$ ",
+      "B": "4.0 cm/s$^2$",
+      "C": "5.0 cm/s$^2$ ",
+      "D": "6.0 cm/s$^2$ ",
+      "E": "6.67 cm/s$^2$ "
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "The coordinate of an object is given as a function of time by $x = 7t − 3t^2$, where $x$ is in meter and $t$ is in second. Its average velocity over the interval from $t = 0$ to $t = 4$ s is:",
+    "options": {
+      "A": "5 m/s",
+      "B": "−5 m/s",
+      "C": "11 m/s",
+      "D": "−11 m/s",
+      "E": "−14.5 m/s"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "The velocity of an object is given as a function of time by $v = 4t − 3t^2$, where $v$ is in m/s and $t$ is in second. Its average velocity over the interval from t = 0 to t = 2 s:",
+    "options": {
+      "A": "is 0",
+      "B": "is −2 m/s",
+      "C": "is 2 m/s",
+      "D": "is −4 m/s",
+      "E": "cannot be calculated unless the initial position is given"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "The coordinate of an object is given as a function of time by $x = 4t^2 −3t^3$, where $x$ is in meter and t is in second. Its average acceleration over the interval from t = 0 to t = 2 s is:",
+    "options": {
+      "A": "−4 m/s$^2$",
+      "B": "4 m/s$^2$ ",
+      "C": "−10 m/s$^2$ ",
+      "D": "10 m/s$^2$ ",
+      "E": "−13 m/s$^2$ "
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "Each of four particles move along the $x$ axis. Their coordinates (in meter) as functions of time (in second) are given by: $$ \\begin{aligned} \\text{particle 1:} & x(t)=3.5-2.7t^3 \\\\ \\text{particle 2:} & x(t)=3.5+2.7t^3 \\\\ \\text{particle 3:} & x(t)=3.5-2.7t^2 \\\\ \\text{particle 4:} & x(t)=3.5-3.4t - 2.7t^3 \\end{aligned} $$ Which of these particles have constant acceleration?",
+    "options": {
+      "A": "All four",
+      "B": "Only 1 and 2",
+      "C": "Only 2 and 3",
+      "D": "Only 3 and 4",
+      "E": "None of them"
+      },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "Each of four particles move along an $x$ axis. Their coordinates (in meter) as functions of time (in second) are given by $$ \\begin{aligned} \\text{particle 1:} & x(t)=3.5-2.7t^3 \\\\ \\text{particle 2:} & x(t)=3.5+2.7t^3 \\\\ \\text{particle 3:} & x(t)=3.5-2.7t^2 \\\\ \\text{particle 4:} & x(t)=3.5-3.4t - 2.7t^3 \\end{aligned} $$ Which of these particles is speeding up for t > 0?",
+    "options": {
+      "A": "All four",
+      "B": "Only 1",
+      "C": "Only 2 and 3",
+      "D": "Only 2, 3 and 4",
+      "E": "None of them"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "An object starts from rest at the origin and moves along the $x$ axis with a constant acceleration of 4 m/s$^2$. Its average velocity as it goes from $x$ = 2 m to $x$ = 8 m is:",
+    "options": {
+      "A": "1 m/s",
+      "B": "2 m/s",
+      "C": "3 m/s",
+      "D": "5 m/s",
+      "E": "6 m/s"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "Of the following situations, which one is impossible?",
+    "options": {
+      "A": "A body having velocity east and acceleration east",
+      "B": "A body having velocity east and acceleration west",
+      "C": "A body having zero velocity and non-zero acceleration",
+      "D": "A body having constant acceleration and variable velocity",
+      "E": "A body having constant velocity and variable acceleration"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "Throughout a time interval, while the speed of a particle increases as it moves along the $x$ axis, its velocity and acceleration might be:",
+    "options": {
+      "A": "positive and negative, respectively",
+      "B": "negative and positive, respectively",
+      "C": "negative and negative, respectively",
+      "D": "negative and zero, respectively",
+      "E": "positive and zero, respectively"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "A particle moves on the $x$ axis. When its acceleration is positive and increasing:",
+    "options": {
+      "A": "its velocity must be positive",
+      "B": "its velocity must be negative",
+      "C": "it must be slowing down ",
+      "D": "it must be speeding up",
+      "E": "none of the above must be true"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "A particle moves along the $x$ axis according to the equation $x = 6t^2$, where $x$ is in meter and $t$ is in second. Therefore:",
+    "options": {
+      "A": "the acceleration of the particle is 6 m/s$^2$",
+      "B": "$t$ cannot be negative",
+      "C": "the particle follows a parabolic path",
+      "D": "each second the velocity of the particle changes by 9.8 m/s",
+      "E": "none of the above"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "Over a short interval near time t = 0 the coordinate of an automobile in meter is given by $x(t) = 27t − 4.0t^3$, where $t$ is in second. At the end of 1.0 s the acceleration of the auto is:",
+    "options": {
+      "A": "27 m/s$^2$",
+      "B": "4.0 m/s$^2$",
+      "C": "−4.0 m/s$^2$",
+      "D": "−12 m/s$^2$",
+      "E": "−24 m/s$^2$"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "Over a short interval, starting at time t = 0, the coordinate of an automobile in meter is given by $x(t) = 27t − 4.0t^3$, where t is in second. The magnitudes of the initial (at t = 0) velocity and acceleration of the auto respectively are:",
+    "options": {
+      "A": "0; 12 m/s$^2$",
+      "B": "0; 24 m/s$^2$",
+      "C": "27 m/s; 0",
+      "D": "27 m/s; 12 m/s$^2$",
+      "E": "27 m/s; 24 m/s$^2$"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "At time t = 0 a car has a velocity of 16 m/s. It slows down with an acceleration given by $−0.50t$, in m/s$^2$ for t in second. It stops at t =",
+    "options": {
+      "A": "64 s",
+      "B": "32 s",
+      "C": "16 s",
+      "D": "8.0 s",
+      "E": "4.0 s"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "At time t = 0 a car has a velocity of 16 m/s. It slows down with an acceleration given by $−0.50t$, in m/s$^2$ for $t$ in second. At the end of 4.0 s it has traveled:",
+    "options": {
+      "A": "0",
+      "B": "12 m",
+      "C": "14 m",
+      "D": "25 m",
+      "E": "59 m"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "At time t = 0 a car has a velocity of 16 m/s. It slows down with an acceleration given by $−0.50t$, in m/s$^2$ for $t$ in second. By the time it stops it has traveled:",
+    "options": {
+      "A": "15 m",
+      "B": "31 m",
+      "C": "62 m",
+      "D": "85 m",
+      "E": "100 m"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "Starting at time t = 0, an object moves along a straight line with velocity in m/s given by $v(t) = 98 − 2t^2$, where t is in second. When it momentarily stops its acceleration is:",
+    "options": {
+      "A": "0",
+      "B": "−4.0 m/s$^2$",
+      "C": "−9.8 m/s$^2$",
+      "D": "−28 m/s$^2$",
+      "E": "49 m/s$^2$"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "Starting at time t = 0, an object moves along a straight line. Its coordinate in meter is given by $x(t) = 75t − 1.0t^3$, where t is in second. When it momentarily stops its acceleration is:",
+    "options": {
+      "A": "0",
+      "B": "−73 m/s$^2$",
+      "C": "−30 m/s$^2$",
+      "D": "−9.8 m/s$^2$",
+      "E": "9.2 × 10$^3$ m/s$^2$"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "A car, initially at rest, travels 20 m in 4 s along a straight line with constant acceleration. The acceleration of the car is:",
+    "options": {
+      "A": "0.4 m/s$^2$",
+      "B": "1.3 m/s$^2$",
+      "C": "2.5 m/s$^2$",
+      "D": "4.9 m/s$^2$",
+      "E": "9.8 m/s$^2$"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "A racing car traveling with constant acceleration increases its speed from 10 m/s to 50 m/s over a distance of 60 m. How long does this take?",
+    "options": {
+      "A": "2.0 s",
+      "B": "4.0 s",
+      "C": "5.0 s",
+      "D": "8.0 s",
+      "E": "The time cannot be calculated since the speed is not constant"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "A car starts from rest and goes down a slope with a constant acceleration of 5 m/s$^2$. After 5 s the car reaches the bottom of the hill. Its speed at the bottom of the hill, in meter per second, is:",
+    "options": {
+      "A": "1",
+      "B": "12.5",
+      "C": "25",
+      "D": "50",
+      "E": "160"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "A car moving with an initial velocity of 25 m/s north has a constant acceleration of 3 m/s$^2$ south. After 6 second its velocity will be:",
+    "options": {
+      "A": "7 m/s north",
+      "B": "7 m/s south",
+      "C": "43 m/s north",
+      "D": "20 m/s north",
+      "E": "20 m/s south"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "An object with an initial velocity of 12 m/s west experiences a constant acceleration of 4 m/s$^2$ west for 3 second. During this time the object travels a distance of:",
+    "options": {
+      "A": "12 m",
+      "B": "24 m",
+      "C": "36 m",
+      "D": "54 m",
+      "E": "144 m"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "How far does a car travel in 6 s if its initial velocity is 2 m/s and its acceleration is 2 m/s$^2$ in the forward direction?",
+    "options": {
+      "A": "12 m",
+      "B": "14 m",
+      "C": "24 m",
+      "D": "36 m",
+      "E": "48 m"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "At a stop light, a truck traveling at 15 m/s passes a car as it starts from rest. The truck travels at constant velocity and the car accelerates at 3 m/s$^2$. How much time does the car take to catch up to the truck?",
+    "options": {
+      "A": "5 s",
+      "B": "10 s",
+      "C": "15 s",
+      "D": "20 s",
+      "E": "25 s"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "A ball is in free fall. Its acceleration is:",
+    "options": {
+      "A": "downward during both ascent and descent",
+      "B": "downward during ascent and upward during descent",
+      "C": "upward during ascent and downward during descent",
+      "D": "upward during both ascent and descent",
+      "E": "downward at all times except at the very top, when it is zero"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "A ball is in free fall. Upward is taken to be the positive direction. The displacement of the ball during a short time interval is:",
+    "options": {
+      "A": "positive during both ascent and descent",
+      "B": "negative during both ascent and descent",
+      "C": "negative during ascent and positive during descent",
+      "D": "positive during ascent and negative during descent",
+      "E": "none of the above"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+ {
+    "question": "An object is shot vertically upward. While it is rising:",
+    "options": {
+      "A": "its velocity and acceleration are both upward",
+      "B": "its velocity is upward and its acceleration is downward",
+      "C": "its velocity and acceleration are both downward",
+      "D": "its velocity is downward and its acceleration is upward",
+      "E": "its velocity and acceleration are both decreasing"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "Which one of the following statements is correct for an object released from rest?",
+    "options": {
+      "A": "The average velocity during the first second of time is 4.9 m/s",
+      "B": "During each second the object falls 9.8 m",
+      "C": "The acceleration changes by 9.8 m/s$^2$ every second ",
+      "D": "The object falls 9.8 m during the first second of time",
+      "E": "The acceleration of the object is proportional to its weight"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "An object is thrown straight up from ground level with a speed of 50 m/s. If g = 10 m/s$^2$ its distance above ground level 1.0 s later is:",
+    "options": {
+      "A": "40 m",
+      "B": "45 m",
+      "C": "50 m",
+      "D": "55 m",
+      "E": "60 m"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "An object is thrown straight up from ground level with a speed of 50 m/s. If g = 10 m/s2 its distance above ground level 6.0 s later is:",
+    "options": {
+      "A": "0.00 m",
+      "B": "270 m",
+      "C": "330 m",
+      "D": "480 m",
+      "E": "none of these"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "At a location where g = 9.80 m/s$^2$, an object is thrown vertically down with an initial speed of 1.00 m/s. After 5.00 s the object will have traveled:",
+    "options": {
+      "A": "125 m",
+      "B": "127.5 m",
+      "C": "245 m",
+      "D": "250 m",
+      "E": "255 m"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "An object is thrown vertically upward at 35 m/s. Taking g = 10 m/s$^2$, the velocity of the object 5 s later is:",
+    "options": {
+      "A": "7.0 m/s up",
+      "B": "15 m/s down",
+      "C": "15 m/s up",
+      "D": "85 m/s down",
+      "E": "85 m/s up"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "A feather, initially at rest, is released in a vacuum 12 m above the surface of the earth. Which of the following statements is correct?",
+    "options": {
+      "A": "The maximum velocity of the feather is 9.8 m/s",
+      "B": "The acceleration of the feather decreases until terminal velocity is reached",
+      "C": "The acceleration of the feather remains constant during the fall",
+      "D": "The acceleration of the feather increases during the fall",
+      "E": "The acceleration of the feather is zero"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "An object is released from rest. How far does it fall during the second second of its fall?",
+    "options": {
+      "A": "4.9 m",
+      "B": "9.8 m",
+      "C": "15 m",
+      "D": "20 m",
+      "E": "25 m"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "A heavy ball falls freely, starting from rest. Between the third and fourth second of time it travels a distance of:",
+    "options": {
+      "A": "4.9 m",
+      "B": "9.8 m",
+      "C": "29.4 m",
+      "D": "34.3 m",
+      "E": "39.8 m"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "As a rocket is accelerating vertically upward at 9.8 m/s$^2$ near Earth's surface, it releases a projectile. Immediately after release the acceleration (in m/s$^2$) of the projectile is:",
+    "options": {
+      "A": "9.8 down"
+      "B": "0",
+      "C": "9.8 up",
+      "D": "19.6 up",
+      "E": "none of the above"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "A stone is released from a balloon that is descending at a constant speed of 10 m/s. Neglecting air resistance, after 20 s the speed of the stone is:",
+    "options": {
+      "A": "2160 m/s",
+      "B": "1760 m/s",
+      "C": "206 m/s",
+      "D": "196 m/s",
+      "E": "186 m/s"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "An object dropped from the window of a tall building hits the ground in 12.0 s. If its acceleration is 9.80 m/s$^2$, the height of the window above the ground is:",
+    "options": {
+      "A": "29.4 m",
+      "B": "58.8 m",
+      "C": "118 m",
+      "D": "353 m",
+      "E": "706 m"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "Neglecting the effect of air resistance a stone dropped off a 175-m high building lands on the ground in:",
+    "options": {
+      "A": "3 s",
+      "B": "4 s",
+      "C": "6 s",
+      "D": "18 s",
+      "E": "36 s"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "A stone is thrown vertically upward with an initial speed of 19.5 m/s. It will rise to a maximum height of:",
+    "options": {
+      "A": "4.9 m",
+      "B": "9.8 m",
+      "C": "19.4 m",
+      "D": "38.8 m",
+      "E": "none of these"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "A baseball is hit straight up and is caught by the catcher 2.0 s later. The maximum height of the ball during this interval is:",
+    "options": {
+      "A": "4.9 m",
+      "B": "7.4 m",
+      "C": "9.8 m",
+      "D": "12.6 m",
+      "E": "19.6 m"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "An object is thrown straight down with an initial speed of 4 m/s from a window which is 8 m above the ground. The time it takes the object to reach the ground is:",
+    "options": {
+      "A": "0.80 s",
+      "B": "0.93 s",
+      "C": "1.3 s",
+      "D": "1.7 s",
+      "E": "2.0 s"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "A stone is released from rest from the edge of a building roof 190 m above the ground. Neglecting air resistance, the speed of the stone, just before striking the ground, is:",
+    "options": {
+      "A": "43 m/s",
+      "B": "61 m/s",
+      "C": "120 m/s",
+      "D": "190 m/s",
+      "E": "1400 m/s"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "An object is thrown vertically upward with a certain initial velocity in a world where the acceleration due to gravity is 19.6 m/s$^2$. The height to which it rises is _______ that to which the object would rise if thrown upward with the same initial velocity on the Earth. Neglect friction.",
+    "options": {
+      "A": "half",
+      "B": "√2 times",
+      "C": "twice",
+      "D": "four times",
+      "E": "cannot be calculated from the given data"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "A projectile is shot vertically upward with a given initial velocity. It reaches a maximum height of 100 m. If, on a second shot, the initial velocity is doubled then the projectile will reach a maximum height of:",
+    "options": {
+      "A": "70.7 m",
+      "B": "141.4 m",
+      "C": "200 m",
+      "D": "241 m",
+      "E": "400 m"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "One object is thrown vertically upward with an initial velocity of 100 m/s and another object with an initial velocity of 10 m/s. The maximum height reached by the first object will be ______ that of the other.",
+    "options": {
+      "A": "10 times",
+      "B": "100 times",
+      "C": "1000 times",
+      "D": "10, 000 times",
+      "E": "none of these"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "The area under a velocity-time graph represents:",
+    "options": {
+      "A": "acceleration",
+      "B": "change in acceleration",
+      "C": "speed",
+      "D": "change in velocity",
+      "E": "displacement"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "Displacement can be obtained from:",
+    "options": {
+      "A": "the slope of an acceleration-time graph",
+      "B": "the slope of a velocity-time graph",
+      "C": "the area under an acceleration-time graph",
+      "D": "the area under a velocity-time graph",
+      "E": "the slope of an acceleration-time graph"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "An object has a constant acceleration of 3 m/s$^2$. The position versus time graph for this object has a slope:",
+    "options": {
+      "A": "that increases with time",
+      "B": "that is constant",
+      "C": "that decreases with time",
+      "D": "of 3 m/s",
+      "E": "of 3 m/s$^2$"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "The position-time graph of an object is a straight line with a positive slope. The object has:",
+    "options": {
+      "A": "constant displacement",
+      "B": "steadily increasing acceleration",
+      "C": "steadily decreasing acceleration",
+      "D": "constant velocity",
+      "E": "steadily increasing velocity"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": " Which of the following five position versus time graphs represents the motion of an object moving with a constant nonzero speed?",
+    "options": {
+      "A": "/quizzes/images/motion_in_one_dimension/position_time_A.png",
+      "B": "/quizzes/images/motion_in_one_dimension/position_time_B.png",
+      "C": "/quizzes/images/motion_in_one_dimension/position_time_C.png",
+      "D": "/quizzes/images/motion_in_one_dimension/position_time_D.png",
+      "E": "/quizzes/images/motion_in_one_dimension/position_time_E.png"
+    },
+    "answer": "B",
+    "type": "image_options"
+  },
+  {
+    "question": " Which of the following five acceleration versus time graphs represents the motion of an object moving in a straight line at a constant velocity of 20 m/s?",
+    "options": {
+      "A": "/quizzes/images/motion_in_one_dimension/a_t_constant_v_A.png",
+      "B": "/quizzes/images/motion_in_one_dimension/a_t_constant_v_B.png",
+      "C": "/quizzes/images/motion_in_one_dimension/a_t_constant_v_C.png",
+      "D": "/quizzes/images/motion_in_one_dimension/a_t_constant_v_D.png",
+      "E": "/quizzes/images/motion_in_one_dimension/a_t_constant_v_E.png"
+    },
+    "answer": "E",
+    "type": "image_options"
+  },
+  {
+    "question": " Which of the following five position versus time graphs represents the motion of an object whose speed is increasing?",
+    "options": {
+      "A": "/quizzes/images/motion_in_one_dimension/position_time_A.png",
+      "B": "/quizzes/images/motion_in_one_dimension/position_time_B.png",
+      "C": "/quizzes/images/motion_in_one_dimension/position_time_v_increasing_C.png",
+      "D": "/quizzes/images/motion_in_one_dimension/position_time_D.png",
+      "E": "/quizzes/images/motion_in_one_dimension/position_time_v_increasing_E.png"
+    },
+    "answer": "A",
+    "type": "image_option"
+  },
+  {
+    "question": "The acceleration of an object, starting from rest, is shown in the graph below. Other than at t = 0, when is the velocity of the object equal to zero?",
+    "question_image": "/quizzes/images/motion_in_one_dimension/a_t_graph.png",
+    "options": {
+      "A": "During the interval from 1.0 s to 3.0 s",
+      "B": "At t = 3.5 s",
+      "C": "At t = 4.0 s",
+      "D": "At t = 5.0 s",
+      "E": "At no other time less than or equal to 5 s"
+    },
+    "answer": "E",
+    "type": "image_question"
+  },
+  {
+    "question": "The diagram shows a velocity-time graph for a car moving in a straight line. At point P the car must be:",
+    "question_image": "/quizzes/images/motion_in_one_dimension/velocity_time_point_P.png",
+    "options": {
+      "A": "moving with zero acceleration ",
+      "B": "climbing the hill",
+      "C": "accelerating",
+      "D": "stationary",
+      "E": "moving at about 45◦ with respect to the $x$ axis"
+    },
+    "answer": "C",
+    "type": "image_question"
+  },
+  {
+    "question": "The graph represents the straight line motion of a car. How far does the car travel between t = 2 s and t = 5 s?",
+    "question_image": "/quizzes/images/motion_in_one_dimension/v_t_graph.png",
+    "options": {
+      "A": "4 m",
+      "B": "12 m",
+      "C": "24 m",
+      "D": "36 m",
+      "E": "60 m"
+    },
+    "answer": "D",
+    "type": "image_question"
+  },
+  {
+    "question": "Consider the following five graphs (note the axes carefully). Which of these represents motion at constant speed?",
+    "question_image": "/quizzes/images/motion_in_one_dimension/various_motion_graphs.png",
+    "options": {
+      "A": "IV only",
+      "B": "IV and V only",
+      "C": "I, II, and III only",
+      "D": "I and II only",
+      "E": "I and IV only"
+    },
+    "answer": "E",
+    "type": "image_question"
+  }
+]

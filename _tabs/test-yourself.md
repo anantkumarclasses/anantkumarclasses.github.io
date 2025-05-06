@@ -12,6 +12,13 @@ Each section below links to a short quiz that helps you revise, apply, and test 
 👉 Click on a topic to begin!
 
 # Physics
+
+---
+
+## Class 11
+1. [Motion in One Dimension](/quiz/motion-in-1-dimension/)
+
+## Class 12
 1.  [Electric Field](/quiz/electric-field/)
 2.  [Gauss's Law](/quiz/gauss-law/)
 

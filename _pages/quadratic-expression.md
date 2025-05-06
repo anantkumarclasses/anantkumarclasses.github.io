@@ -100,7 +100,7 @@ Assigning $$f(x) = y$$, we plot points $$(x,y)$$ in the Cartesian plane. The col
 An example is shown below:
 
 ![Graph of a quadratic expression is a parabola](/assets/img/quadratic-graph.png)
-*Figure 1: The graph of a quadratic expression is a parabola. The graph above is of the expression:
+**Figure 1**: The graph of a quadratic expression is a parabola. The graph above is of the expression:
 
 $$
 f(x) = \dfrac{200}{119} (x^2 - 16x + 39)
