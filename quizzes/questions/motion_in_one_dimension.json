@@ -542,7 +542,7 @@
   {
     "question": "As a rocket is accelerating vertically upward at 9.8 m/s$^2$ near Earth's surface, it releases a projectile. Immediately after release the acceleration (in m/s$^2$) of the projectile is:",
     "options": {
-      "A": "9.8 down"
+      "A": "9.8 down",
       "B": "0",
       "C": "9.8 up",
       "D": "19.6 up",
