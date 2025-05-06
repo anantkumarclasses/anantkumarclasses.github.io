@@ -16,7 +16,7 @@ Each section below links to a short quiz that helps you revise, apply, and test 
 ---
 
 ## Class 11
-1. [Motion in One Dimension](/quiz/motion1d/)
+
 
 ## Class 12
 1.  [Electric Field](/quiz/electric-field/)
