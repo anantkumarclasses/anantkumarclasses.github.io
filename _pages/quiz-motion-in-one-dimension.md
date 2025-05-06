@@ -2,7 +2,7 @@
 title: "Quiz: Motion in One Dimension"
 permalink: /quiz/motion-one-dimension/
 layout: page
-math:true
+math: true
 ---
 
 # 🏃🏼‍♀️‍➡️ Motion in One Dimension
