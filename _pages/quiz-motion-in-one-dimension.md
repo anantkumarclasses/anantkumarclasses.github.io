@@ -1,11 +1,9 @@
 ---
-title: "Quiz: Motion in One Dimension"
+title: "🏃🏼‍♀️‍➡️ Quiz: Motion in One Dimension"
 permalink: /quiz/motion-one-dimension/
 layout: page
 math: true
 ---
-
-# 🏃🏼‍♀️‍➡️ Motion in One Dimension
 
 This quiz is designed to help you assess your understanding of the fundamental concepts of motion along a straight line. It includes questions on displacement, velocity, acceleration, and the equations of uniformly accelerated motion. Attempt each question carefully, and use it as an opportunity to strengthen your grasp of the topic. For your reference, if the position is $$x(t)$$, then 
 
