@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const app = document.getElementById("flashcard-app");
 
   app.innerHTML = `
-    <h1>Flashcards</h1>
     <div id="cards-container"></div>
     <div class="nav-buttons">
       <button id="prev-btn">Previous</button>
