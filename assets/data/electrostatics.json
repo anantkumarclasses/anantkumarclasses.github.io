@@ -1,0 +1,174 @@
+[
+    {
+      "question": "What does Coulomb's law state?",
+      "answer": "It states that the electrostatic force between two point charges is directly proportional to the product of the charges and inversely proportional to the square of their separation."
+    },
+    {
+      "question": "Write the mathematical form of Coulomb's law.",
+      "answer": "$$ F = \\frac{1}{4\pi\epsilon_0} \\frac{|q_1q_2|}{r^2} $$"
+    },
+    {
+      "question": "What is the value of the permittivity of free space in SI units?",
+      "answer": "$$ \\epsilon_0 = 8.85 \\times  10^{-12}\\ C$^2$/N$\\cdot$"
+    },
+    {
+      "question": "What is the unit of charge in SI system?",
+      "answer": "Coulomb (C)"
+    },
+    {
+      "question": "Is Coulomb’s force attractive or repulsive?",
+      "answer": "It is attractive if the charges are opposite, and repulsive if the charges are like."
+    },
+    {
+      "question": "On what factors does the electrostatic force depend?",
+      "answer": "It depends on the magnitude of both charges and the square of the distance between them."
+    },
+    {
+      "question": "Is electrostatic force a contact or non-contact force?",
+      "answer": "It is a non-contact force."
+    },
+    {
+      "question": "Is electrostatic force conservative?",
+      "answer": "Yes, it is a conservative force."
+    },
+    {
+      "question": "What is the nature of the medium's effect in Coulomb's law?",
+      "answer": "Force is inversely proportional to the relative permittivity (dielectric constant) of the medium."
+    },
+    {
+      "question": "Can Coulomb's law be applied to extended bodies?",
+      "answer": "It applies exactly to point charges; for extended bodies, we integrate over charge distributions."
+    },
+  
+    {
+      "question": "Define electric field.",
+      "answer": "Electric field is the force experienced by a unit positive test charge placed at a point."
+    },
+    {
+      "question": "Write the formula for the electric field due to a point charge.",
+      "answer": "$$ E = \\frac{1}{4\pi\epsilon_0} \\frac{q}{r^2} $$"
+    },
+    {
+      "question": "What is the direction of the electric field of a positive point charge?",
+      "answer": "Radially outward from the charge."
+    },
+    {
+      "question": "What is the SI unit of electric field?",
+      "answer": "newton per coulomb (N/C) or volt per meter (V/m)"
+    },
+    {
+      "question": "What does a zero electric field imply?",
+      "answer": "No net force would act on a test charge placed at that point."
+    },
+    {
+      "question": "What is the principle of superposition for electric fields?",
+      "answer": "The total electric field is the vector sum of the fields due to individual charges."
+    },
+    {
+      "question": "What is the electric field at the midpoint of two equal and opposite charges?",
+      "answer": "It is directed from positive to negative and has a finite magnitude."
+    },
+    {
+      "question": "Can electric field lines cross each other?",
+      "answer": "No, because a point cannot have two directions of electric field."
+    },
+    {
+      "question": "What is the shape of electric field lines between two like charges?",
+      "answer": "They repel and bend away from each other."
+    },
+    {
+      "question": "What is the electric field inside a conductor in electrostatic equilibrium?",
+      "answer": "Zero."
+    },
+    
+    {
+      "question": "State Gauss's law.",
+      "answer": "The total electric flux through a closed surface is equal to 1/ε₀ times the total charge enclosed."
+    },
+    {
+      "question": "Write the mathematical expression of Gauss’s law.",
+      "answer": "$$ \\oint \vec{E} \\cdot \\mathrm dA = \frac{q_\\text{enclosed}}{\\epsilon_0}"
+    },
+    {
+      "question": "What is electric flux?",
+      "answer": "The flux of the electric field in the product of the electric field and the area perependicular to the field."
+    },
+    {
+      "question": "What is the direction of the area vector?",
+      "answer": "Perpendicular to the plane area."
+    },
+    {
+      "question": "What is the geometrical significance of the electric flux?",
+      "answer": "The electric flux through a surface is proportional to the number of electric field lines passing through the surface."
+    },
+    {
+      "question": "What is the SI unit of electric flux?",
+      "answer": "newton meter² per coulomb (N·m²/C)"
+    },
+    {
+      "question": "When is Gauss’s law most useful?",
+      "answer": "For systems with high symmetry: spherical, cylindrical, or planar symmetry."
+    },
+    {
+      "question": "What is the electric field due to a uniformly charged spherical shell carrying a total charge Q, outside the shell?",
+      "answer": "$$ E = \\frac{Q}{4\\pi\\epsilon_0 r^2} $$"
+    },
+    {
+      "question": "What is the electric field inside a uniformly charged spherical shell?",
+      "answer": "Zero."
+    },
+    {
+      "question": "How does the electric field vary with distance from an infinite line of charge?",
+      "answer": "E ∝ 1/r"
+    },
+    {
+      "question": "Can Gauss’s law be applied to non-closed surfaces?",
+      "answer": "No, Gauss’s law is only valid for closed surfaces."
+    },
+    {
+      "question": "What is the electric field near an infinite charged plane?",
+      "answer": "$ E = \\dfrac{\\sigma}{2\\epsilon_0} $, where $ \\sigma $ is surface charge density."
+    },
+  
+    {
+      "question": "What is electric potential?",
+      "answer": "It is the work done per unit charge in bringing a test charge from infinity to a point in an electric field, always keeping the charge at equilibrium."
+    },
+    {
+      "question": "What is the SI unit of electric potential?",
+      "answer": "volt (V)"
+    },
+    {
+      "question": "Is electric potential a scalar or vector quantity?",
+      "answer": "Scalar."
+    },
+    {
+      "question": "What is the electric potential due to a point charge?",
+      "answer": "$$ V = \\dfrac{q}{4\\pi\\epsilon_0} $$"
+    },
+    {
+      "question": "How is electric potential related to electric field?",
+      "answer": "$V=- \\int_\\mathcal{P} \\vec{E}\\cdot \\mathrm d \\vec{\ell} $ and $\\vec{E} = -\\nabla V$ "
+    },
+    {
+      "question": "What is the potential at infinity?",
+      "answer": "Zero (by convention)."
+    },
+    {
+      "question": "What is an equipotential surface?",
+      "answer": "A surface where the potential is the same at all points."
+    },
+    {
+      "question": "Can work be done by electric field along an equipotential surface?",
+      "answer": "No, because there is no potential difference."
+    },
+    {
+      "question": "What is electric potential energy of two point charges?",
+      "answer": "$$  U = \\frac{1}{4\\pi\\epsilon_0 } \\frac{q_1q_2}{r} $$"
+    },
+    {
+      "question": "What is the potential difference between two points in an electric field?",
+      "answer": "It is the work done in moving a unit charge between the two points."
+    }
+ ]
+
