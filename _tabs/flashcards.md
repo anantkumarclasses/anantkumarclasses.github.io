@@ -26,3 +26,4 @@ Happy learning!
 ## Physics
 
 - [Units, Measurements and Dimensions](/flashcards/units-measurements/)
+- [Electrostatics] (/flashcards/electrostatics/)
