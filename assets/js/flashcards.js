@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     prevBtn.disabled = index === 0;
     nextBtn.disabled = index === flashcards.length - 1;
     
-    if (window.MathJax) MathJax.typesetPromise();
+    if (window.MathJax) MathJax.typeset();
   }
 
   prevBtn.addEventListener('click', () => {
