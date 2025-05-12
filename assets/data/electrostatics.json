@@ -5,7 +5,7 @@
     },
     {
       "question": "Write the mathematical form of Coulomb's law.",
-      "answer": "$$ F = \\frac{1}{4\pi\epsilon_0} \\frac{|q_1q_2|}{r^2} $$"
+      "answer": "$$ F = \\frac{1}{4\\pi\\epsilon_0} \\frac{|q_1q_2|}{r^2} $$"
     },
     {
       "question": "What is the value of the permittivity of free space in SI units?",
@@ -46,7 +46,7 @@
     },
     {
       "question": "Write the formula for the electric field due to a point charge.",
-      "answer": "$$ E = \\frac{1}{4\pi\epsilon_0} \\frac{q}{r^2} $$"
+      "answer": "$$ E = \\frac{1}{4\\pi\\epsilon_0} \\frac{q}{r^2} $$"
     },
     {
       "question": "What is the direction of the electric field of a positive point charge?",
@@ -87,7 +87,7 @@
     },
     {
       "question": "Write the mathematical expression of Gauss’s law.",
-      "answer": "$$ \\oint \vec{E} \\cdot \\mathrm dA = \frac{q_\\text{enclosed}}{\\epsilon_0}"
+      "answer": "$$ \\oint \\vec{E} \\cdot \\mathrm dA = \\frac{q_\\text{enclosed}}{\\epsilon_0}"
     },
     {
       "question": "What is electric flux?",
@@ -119,7 +119,7 @@
     },
     {
       "question": "How does the electric field vary with distance from an infinite line of charge?",
-      "answer": "E ∝ 1/r"
+      "answer": "$$ E \\propto \\frac{1}{r} $$"
     },
     {
       "question": "Can Gauss’s law be applied to non-closed surfaces?",
