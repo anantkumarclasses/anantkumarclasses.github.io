@@ -148,7 +148,7 @@
     },
     {
       "question": "How is electric potential related to electric field?",
-      "answer": "$V=- \\int_\\mathcal{P} \\vec{E}\\cdot \\mathrm d \\vec{\ell} $ and $\\vec{E} = -\\nabla V$ "
+      "answer": "$V=- \\int_{\\mathcal{P}} \\vec{E}\\cdot \\mathrm d \\vec{\\ell} $ and $\\vec{E} = -\\nabla V$ "
     },
     {
       "question": "What is the potential at infinity?",
