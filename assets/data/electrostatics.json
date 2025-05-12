@@ -9,7 +9,7 @@
     },
     {
       "question": "What is the value of the permittivity of free space in SI units?",
-      "answer": "$$ \\epsilon_0 = 8.85 \\times  10^{-12}\\ C$^2$/N$\\cdot$"
+      "answer": "$$ \\epsilon_0 = 8.85 \\times  10^{-12}\\ \\text{ C}^2/\\text{N}\\cdot\\text{m}^2 $$"
     },
     {
       "question": "What is the unit of charge in SI system?",
