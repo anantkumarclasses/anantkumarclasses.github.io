@@ -2,6 +2,7 @@
 title: "⚡ Flashcards: Electrostatics"
 permalink: /flashcards/electrostatics/
 layout: page
+math: true
 ---
 
 Welcome to the **Electrostatics Flashcards**! This set covers the foundational concepts of electrostatics, including:
