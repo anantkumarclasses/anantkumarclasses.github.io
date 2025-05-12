@@ -46,7 +46,15 @@ document.addEventListener("DOMContentLoaded", function () {
     prevBtn.disabled = index === 0;
     nextBtn.disabled = index === flashcards.length - 1;
     
-    if (window.MathJax) MathJax.typesetPromise();
+    // Re-render LaTeX (MathJax v3)
+    if (window.MathJax && typeof MathJax.typesetPromise === "function") {
+        MathJax.typesetPromise().catch(function (err) {
+       console.error("MathJax typeset failed:", err);
+  });
+  console.log("MathJax:", MathJax);
+
+}
+
   }
 
   prevBtn.addEventListener('click', () => {
