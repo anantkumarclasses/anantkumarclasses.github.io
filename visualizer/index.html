@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Electric Field Visualizer</title>
+  <style>
+    html, body {
+      margin: 0;
+      overflow: hidden;
+      background-color: black;
+    }
+    canvas {
+      display: block;
+    }
+    #ui {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 0.5em;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+    }
+    label {
+      font-size: 0.9em;
+    }
+    select {
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div id="ui">
+    <label for="conductorType">Conductor:
+   <select id="conductor-select">
+    <option value="sphere">Grounded Sphere</option>
+    <option value="plane">Grounded Plane</option>
+  </select>
+  </label>
+  <label><input type="checkbox" id="toggle-field" checked> Show Field</label>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
+
+

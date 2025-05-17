@@ -87,7 +87,7 @@
     },
     {
       "question": "Write the mathematical expression of Gauss’s law.",
-      "answer": "$$ \\oint \\vec{E} \\cdot \\mathrm dA = \\frac{q_\\text{enclosed}}{\\epsilon_0}"
+      "answer": "$$ \\oint \\vec{E} \\cdot \\mathrm dA = \\frac{q_\\text{enclosed}}{\\epsilon_0} $$"
     },
     {
       "question": "What is electric flux?",
@@ -104,6 +104,10 @@
     {
       "question": "What is the SI unit of electric flux?",
       "answer": "newton meter² per coulomb (N·m²/C)"
+    },
+    {
+      "question": "In the Gauss's law, $\\oint \\vec{E}\\cdot \\vec{\\ell} = \\dfrac{q_{\\text{enclosed}}{\\epsilon_0}$, is $\\vec{E}$ necessarily the electric field attributable to the charge $q_{\\text{enclosed}$?",
+      "answer": "No"
     },
     {
       "question": "When is Gauss’s law most useful?",
@@ -127,7 +131,7 @@
     },
     {
       "question": "What is the electric field near an infinite charged plane?",
-      "answer": "$ E = \\dfrac{\\sigma}{2\\epsilon_0} $, where $ \\sigma $ is surface charge density."
+      "answer": "$E = \\dfrac{\\sigma}{2\\epsilon_0}$, where $\\sigma$ is the surface charge density."
     },
   
     {
@@ -144,7 +148,7 @@
     },
     {
       "question": "What is the electric potential due to a point charge?",
-      "answer": "$$ V = \\dfrac{q}{4\\pi\\epsilon_0} $$"
+      "answer": "$$ V = \\dfrac{q}{4\\pi\\epsilon_0 r} $$"
     },
     {
       "question": "How is electric potential related to electric field?",
