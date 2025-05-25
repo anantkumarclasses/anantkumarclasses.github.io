@@ -135,7 +135,7 @@
   {
     "question": "Vectors $\\vec{A}$ and $\\vec{B}$ lie in the $xy$ plane. We can deduce that $\\vec{A} = \\vec{B}$ if:",
     "options": {
-      "A": "$A_x^2 + A_y^2 = B_x^2 + B_y^2",
+      "A": "$A_x^2 + A_y^2 = B_x^2 + B_y^2$",
       "B": "$A_x + A_y = B_x + B_y$",
       "C": "$A_x = B_x$ and $A_y = B_y$",
       "D": "$A_y/A_x = B_y/B_x$",
@@ -217,7 +217,7 @@
     "type": "text"
   },
   {
-    "question": "The angle between $$\\vec{A} = (25 \\text{ m})\\hat{i} + (45 \\text{ m})\\hat{j}$ and the positive x axis is:",
+    "question": "The angle between $\\vec{A} = (25 \\text{ m})\\hat{i} + (45 \\text{ m})\\hat{j}$ and the positive x axis is:",
     "options": {
       "A": "29$^\\circ$",
       "B": "61$^\\circ$",
@@ -389,7 +389,7 @@
     "question": "Vectors $\\vec{A}$ and $\\vec{B}$ each has a magnitude $L$. When drawn with their tails at the same point, the angle between them is 60$^\\circ$. The magnitude of the cross product $\\vec{A} \\times \\vec{B}$ is:",
     "options": {
       "A": "$L^2/2$",
-      "B": "L^2",
+      "B": "$L^2$",
       "C": "$\\sqrt{3} L^2/2$",
       "D": "$2L^2$",
       "E": "none of these"
@@ -436,7 +436,7 @@
   {
     "question": "Let $\\vec{R} = \\vec{S} \\times \\vec{T}$ and θ $\\neq$ 90$\\circ$, where θ is the angle between $\\vec{S}$ and  $\\vec{T}$ when they are drawn with their tails at the same point. Which of the following is NOT true?",
     "options": {
-      "A": "$| \\vec{R} | = |\\vec{S}||\\vec{T}|sin θ",
+      "A": "$| \\vec{R} | = |\\vec{S}||\\vec{T}|sin θ$",
       "B": "$−\\vec{R} = \\vec{T} \\times \\vec{S}$",
       "C": "$\\vec{R} \\cdot \\vec{S} = 0$",
       "D": "$\\vec{R} \\cdot \\vec{T} = 0$",
