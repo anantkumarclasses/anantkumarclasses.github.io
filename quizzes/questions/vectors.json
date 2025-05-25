@@ -124,10 +124,10 @@
     "question_image": "/quizzes/images/vectors/q11_fig_problem.png",
     "options": {
       "A": "$\\vec{A}-\\vec{B}-\\vec{C}+\\vec{D}=0$",
-      "B": "$\\vec{B} + \\vec{D} − \\sqrt{2} \\vec{C} = 0",
+      "B": "$\\vec{B} + \\vec{D} − \\sqrt{2} \\vec{C} = 0$",
       "C": "$\\vec{A}+\\vec{B}=\\vec{C}+\\vec{D}$",
       "D": "$\\vec{A}+\\vec{B}+\\vec{C}+\\vec{D}=0$",
-      "E": "$\\vec{A} + \\vec{C} + \\sqrt{2} \\vec{B} = 0"
+      "E": "$\\vec{A} + \\vec{C} + \\sqrt{2} \\vec{B} = 0$"
     },
     "answer": "B",
     "type": "image_question"
