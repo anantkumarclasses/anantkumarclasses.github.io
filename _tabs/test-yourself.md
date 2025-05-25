@@ -17,6 +17,7 @@ Each section below links to a short quiz that helps you revise, apply, and test 
 
 ## Class 11
 1.  [Motion in One Dimension](/quiz/motion-one-dimension/)
+2.  [Vectors](/quiz/vectors
 
 ## Class 12
 1.  [Electric Field](/quiz/electric-field/)
