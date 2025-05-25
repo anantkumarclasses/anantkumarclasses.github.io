@@ -1,0 +1,472 @@
+[
+  {
+    "question": "We say that the displacement of a particle is a vector quantity. Our best justification for this assertion is:",
+    "options": {
+      "A": "displacement can be specified by a magnitude and a direction",
+      "B": "operating with displacements according to the rules for manipulating vectors leads to results in agreement with experiments",
+      "C": "a displacement is obviously not a scalar",
+      "D": "displacement can be specified by three numbers",
+      "E": "displacement is associated with motion"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "The vectors $\\vec{a}$, $\\vec{b}$, and $\\vec{c}$ are related by $\\vec{c} = \\vec{b} − \\vec{a}$. Which diagram below illustrates this relationship?",
+    "options": {
+      "A": "/quizzes/images/vectors/q2_option_a.png",
+      "B": "/quizzes/images/vectors/q2_option_b.png",
+      "C": "/quizzes/images/vectors/q2_option_c.png",
+      "D": "/quizzes/images/vectors/q2_option_d.png"
+     },
+    "answer": "A",
+    "type": "image_option"
+  },
+  {
+    "question": "A vector of magnitude 3 CANNOT be added to a vector of magnitude 4 so that the magnitude of the resultant is:",
+    "options": {
+      "A": "zero",
+      "B": "1",
+      "C": "3",
+      "D": "5",
+      "E": "7"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "A vector of magnitude 20 is added to a vector of magnitude 25. The magnitude of this sum might be:",
+    "options": {
+      "A": "zero",
+      "B": "3",
+      "C": "12",
+      "D": "47",
+      "E": "50"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "A vector $\\vec{S}$ of magnitude 6 and another vector $\\vec{T}$ have a sum of magnitude 12. The vector $\\vec{T}$:",
+    "options": {
+      "A": "must have a magnitude of at least 6 but no more than 18",
+      "B": "may have a magnitude of 20",
+      "C": "cannot have a magnitude greater than 12",
+      "D": "must be perpendicular to S",
+      "E": "must be perpendicular to the vector sum"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "The vector $−\\vec{A}$  is:",
+    "options": {
+      "A": "greater than $\\vec{A}$ in magnitude",
+      "B": "less than $\\vec{A}$ in magnitude",
+      "C": "in the same direction as $\\vec{A}$",
+      "D": "in the direction opposite to $\\vec{A}$",
+      "E": "perpendicular to $\\vec{A}$"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "The vector $\\vec{V}_3$ in the diagram is equal to:",
+    "question_image": "/quizzes/images/vectors/q7_fig_problem.png",
+    "options": {
+      "A": "$\\vec{V}_1-\\vec{V}_2$",
+      "B": "$\\vec{V}_1+\\vec{V}_2$",
+      "C": "$\\vec{V}_2-\\vec{V}_1$",
+      "D": "$\\vec{V}_1\\cos\\theta$",
+      "E": "$\\vec{V}_1/\\cos\\theta$"
+    },
+    "answer": "C",
+    "type": "image_question"
+  },
+  {
+    "question": "If $\\vert \\vec{A} + \\vec{B}\\vert  = A + B$ and neither $\\vec{A}$ nor $\\vec{B}$ vanish, then:",
+    "options": {
+      "A": "$\\vec{A}$ and $\\vec{B}$ are parallel and in the same direction",
+      "B": "$\\vec{A}$ and $\\vec{B}$ are parallel and in opposite directions",
+      "C": "the angle between $\\vec{A}$ and $\\vec{B}$ is 45$^\\circ$",
+      "D": "the angle between $\\vec{A}$ and $\\vec{B}$ is 60$^\\circ$",
+      "E": "$\\vec{A}$ is perpendicular to $\\vec{A}$"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "If $\\vert \\vec{A} + \\vec{B}\\vert^2 = A^2 + B^2$, then:",
+    "options": {
+      "A": "$\\vec{A}$ and $\\vec{B}$ are parallel and in the same direction",
+      "B": "$\\vec{A}$ and $\\vec{B}$ are parallel and in opposite directions",
+      "C": "either $\\vec{A}$ or $\\vec{B}$ must be zero",
+      "D": "the angle between $\\vec{A}$ and $\\vec{B}$ is 60$^\\circ$",
+      "E": "none of the above is true"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "If $\\vert \\vec{A} - \\vec{B}\\vert  = A + B$ and neither $\\vec{A}$ nor $\\vec{B}$ vanish, then:",
+    "options": {
+      "A": "$\\vec{A}$ and $\\vec{B}$ are parallel and in the same direction",
+      "B": "$\\vec{A}$ and $\\vec{B}$ are parallel and in opposite directions",
+      "C": "the angle between $\\vec{A}$ and $\\vec{B}$ is 45$^\\circ$",
+      "D": "the angle between $\\vec{A}$ and $\\vec{B}$ is 60$^\\circ$",
+      "E": "$\\vec{A}$ is perpendicular to $\\vec{A}$"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "Four vectors ($\\vec{A}$, $\\vec{B}$, $\\vec{C}$, $\\vec{D}$) all have the same magnitude. The angle θ between adjacent vectors is 45$^\\circ$ as shown. The correct vector equation is:",
+    "question_image": "/quizzes/images/vectors/q11_fig_problem.png",
+    "options": {
+      "A": "$\\vec{A}-\\vec{B}-\\vec{C}+\\vec{D}=0$",
+      "B": "$\\vec{B} + \\vec{D} − \\sqrt{2} \\vec{C} = 0",
+      "C": "$\\vec{A}+\\vec{B}=\\vec{C}+\\vec{D}$",
+      "D": "$\\vec{A}+\\vec{B}+\\vec{C}+\\vec{D}=0$",
+      "E": "$\\vec{A} + \\vec{C} + \\sqrt{2} \\vec{B} = 0"
+    },
+    "answer": "B",
+    "type": "image_question"
+  },
+  {
+    "question": "Vectors $\\vec{A}$ and $\\vec{B}$ lie in the $xy$ plane. We can deduce that $\\vec{A} = \\vec{B}$ if:",
+    "options": {
+      "A": "$A_x^2 + A_y^2 = B_x^2 + B_y^2",
+      "B": "$A_x + A_y = B_x + B_y$",
+      "C": "$A_x = B_x$ and $A_y = B_y$",
+      "D": "$A_y/A_x = B_y/B_x$",
+      "E": "$A_x = A_y$ and $B_x = B_y$"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "A vector has a magnitude of 12. When its tail is at the origin it lies between the positive $x$ axis and the negative $y$ axis and makes an angle of 30$^\\circ$ with the $x$ axis. Its $y$ component is:",
+    "options": {
+      "A": "6/√3",
+      "B": "−6√3",
+      "C": "6",
+      "D": "−6",
+      "E": "12"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "If the $x$ component of a vector $\\vec{A}$, in the $xy$ plane, is half as large as the magnitude of the vector, the tangent of the angle between the vector and the $x$ axis is:",
+    "options": {
+      "A": "√3",
+      "B": "1/2",
+      "C": "√3/2",
+      "D": "3/2",
+      "E": "3"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "If $\\vec{A} = (6 \\text{ m})\\hat{i} − (8 \\text{ m})\\hat{j}$ then $4\\vec{A}$ has magnitude:",
+    "options": {
+      "A": "10 m",
+      "B": "20 m",
+      "C": "30 m",
+      "D": "40 m",
+      "E": "50 m"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "A vector has a component of 10 m in the +x direction, a component of 10 m in the +y direction, and a component of 5 m in the +z direction. The magnitude of this vector is:",
+    "options": {
+      "A": "zero",
+      "B": "15 m",
+      "C": "20 m",
+      "D": "25 m",
+      "E": "225 m"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "Let $\\vec{V} = (2.00 \\text{ m})\\hat{i} + (6.00 \\text{ m})\\hat{j} − (3.00 \\text{ m}) \\hat{k}$. The magnitude of $\\vec{V}$ is:",
+    "options": {
+      "A": "5.00 m",
+      "B": "5.57 m",
+      "C": "7.00 m",
+      "D": "7.42 m",
+      "E": "8.54 m"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "A vector in the xy plane has a magnitude of 25 m and an x component of 12 m. The angle it makes with the positive x axis is:",
+    "options": {
+      "A": "26$^\\circ$",
+      "B": "29$^\\circ$",
+      "C": "61$^\\circ$",
+      "D": "64$^\\circ$",
+      "E": "241$^\\circ$"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "The angle between $$\\vec{A} = (25 \\text{ m})\\hat{i} + (45 \\text{ m})\\hat{j}$ and the positive x axis is:",
+    "options": {
+      "A": "29$^\\circ$",
+      "B": "61$^\\circ$",
+      "C": "151$^\\circ$",
+      "D": "209$^\\circ$",
+      "E": "241$^\\circ$"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "The angle between $$\\vec{A} = (-25 \\text{ m})\\hat{i} + (45 \\text{ m})\\hat{j}$ and the positive x axis is:",
+    "options": {
+      "A": "29$^\\circ$",
+      "B": "61$^\\circ$",
+      "C": "119$^\\circ$",
+      "D": "151$^\\circ$",
+      "E": "209$^\\circ$"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "Let $\\vec{A} = (2 \\text{ m})\\hat{i}+ (6 \\text{ m})\\hat{j}−(3 \\text{ m}) \\hat{k}$ and $\\vec{B} = (4 \\text{ m})\\hat{i}+ (2 \\text{ m})\\hat{j}+ (1 \\text{ m}) \\hat{k}$. The vector sum $\\vec{S} = \\vec{A} +\\vec{B}$ is:",
+    "options": {
+      "A": "$(6 \\text{ m})\\hat{i} + (8 \\text{ m})\\hat{j} − (2 \\text{ m}) \\hat{k}$",
+      "B": "$(−2 \\text{ m})\\hat{i} + (4 \\text{ m})\\hat{j} − (4 \\text{ m}) \\hat{k}$",
+      "C": "$(2\\text{ m})\\hat{i} − (4\\text{ m})\\hat{j} + (4\\text{ m}) \\hat{k}$",
+      "D": "$(8\\text{ m})\\hat{i} + (12\\text{ m})\\hat{j} − (3\\text{ m}) \\hat{k}$",
+      "E": "none of these"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "Let $\\vec{A} = (2\\text{ m})\\hat{i}+ (6\\text{ m})\\hat{j}−(3\\text{ m}) \\hat{k}$ and $\\vec{B} = (4\\text{ m})\\hat{i}+ (2\\text{ m})\\hat{j}+ (1\\text{ m}) \\hat{k}$. The vector sum $\\vec{D} = \\vec{A} -\\vec{B}$ is:",
+    "options": {
+      "A": "$(6\\text{ m})\\hat{i} + (8\\text{ m})\\hat{j} − (2\\text{ m}) \\hat{k}$",
+      "B": "$(−2\\text{ m})\\hat{i} + (4\\text{ m})\\hat{j} − (4\\text{ m}) \\hat{k}$",
+      "C": "$(2\\text{ m})\\hat{i} − (4\\text{ m})\\hat{j} + (4\\text{ m}) \\hat{k}$",
+      "D": "$(8\\text{ m})\\hat{i} + (12\\text{ m})\\hat{j} − (3\\text{ m}) \\hat{k}$",
+      "E": "none of these"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "If $\\vec{A} = (2\\text{ m})\\hat{i} − (3\\text{ m})\\hat{j}$ and $\\vec{B} = (1\\text{ m})\\hat{i} − (2\\text{ m})\\hat{j}$, then $\\vec{A} − 2\\vec{B} =$",
+    "options": {
+      "A": "(1 m)$\\hat{j}$",
+      "B": "(−1 m)$\\hat{j}$",
+      "C": "(4 m)$\\hat{i}$ − (7 m)$\\hat{j}$",
+      "D": "(4 m)$\\hat{i}$ + (1 m)$\\hat{j}$",
+      "E": "(−4 m)$\\hat{i}$ + (7 m)$\\hat{j}$"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "In the diagram, $\\vec{A}$ has magnitude 12~m, and $\\vec{B}$ has magnitude 8m. The $x$ component of $\\vec{A}+\\vec{B}$ is about",
+    "question_image": "/quizzes/images/vectors/q24_fig_problem.png",
+    "options": {
+      "A": "5.5 m",
+      "B": "7.6 m",
+      "C": "12 m",
+      "D": "14 m",
+      "E": "15 m"
+    },
+    "answer": "C",
+    "type": "image_question"
+  },
+  {
+    "question": "A certain vector in the xy plane has an x component of 4 m and a y component of 10 m. It is then rotated in the xy plane so its x component is doubled. Its new y component is about:",
+    "options": {
+      "A": "20 m",
+      "B": "7.2 m",
+      "C": "5.0 m",
+      "D": "4.5 m",
+      "E": "2.2 m"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "Vectors $\\vec{A}$ and $\\vec{B}$ each have magnitude $L$. When drawn with their tails at the same point, the angle between them is 30$^\\circ$. The value of $\\vec{A}\\cdot\\vec{B}$ is:",
+    "options": {
+      "A": "zero",
+      "B": "$L^2$",
+      "C": "$\\sqrt{3} L^2/2$",
+      "D": "$2L^2$",
+      "E": "none of these"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "Let $\\vec{A} = (2\\text{ m})\\hat{i}+ (6\\text{ m})\\hat{j}−(3\\text{ m}) \\hat{k}$ and $\\vec{B} = (4\\text{ m})\\hat{i}+ (2\\text{ m})\\hat{j}+ (1\\text{ m}) \\hat{k}$. Then $\\vec{A}\\cdot\\vec{B}=$",
+    "options": {
+      "A": "$ (8\\text{ m})\\hat{i}+ (12\\text{ m})\\hat{j}−(3\\text{ m}) \\hat{k}$",
+      "B": "$ (12\\text{ m})\\hat{i}- (14\\text{ m})\\hat{j}−(20\\text{ m}) \\hat{k}$",
+      "C": "23 m$^2$",
+      "D": "17 m$^2$",
+      "E": "none of these"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "Two vectors have magnitudes of 10 m and 15 m. The angle between them when they are drawn with their tails at the same point is 65$^\\circ$. The component of the longer vector along the line of the shorter is:",
+    "options": {
+      "A": "0",
+      "B": "4.2 m",
+      "C": "6.3 m",
+      "D": "9.1 m",
+      "E": "14 m"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "Let $\\vec{S} = (1\\text{ m})\\hat{i}+ (2\\text{ m})\\hat{j}+(2\\text{ m}) \\hat{k}$ and $\\vec{T} = (3\\text{ m})\\hat{i} + (4\\text{ m}) \\hat{k}$. The angle between these two vectors is given by:",
+    "options": {
+      "A": "$\\cos^{-1}(14/15)$",
+      "B": "$\\cos^{-1}(11/225)$",
+      "C": "$\\cos^{-1}(104/225)$",
+      "D": "$\\cos^{-1}(11/15)$",
+      "E": "cannot be found since $\\vec{S}$ and $\\vec{T}$ do not lie in the same plane"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "Two vectors lie with their tails at the same point. When the angle between them is increased by 20$^\\circ$ their dot product has the same magnitude but changes from positive to negative. The original angle between them was:",
+    "options": {
+      "A": "0",
+      "B": "60$^\\circ$",
+      "C": "70$^\\circ$",
+      "D": "80$^\\circ$",
+      "E": "90$^\\circ$"
+    },
+    "answer": "D",
+    "type": "text"
+  },
+  {
+    "question": "If the magnitude of the sum of two vectors is less than the magnitude of either vector, then:",
+    "options": {
+      "A": "the dot product of the vectors must be nagative",
+      "B": "the dot product of the vectors must be positive",
+      "C": "the vectors must be parallel and in opposite directions",
+      "D": "the vectors must be parallel and in the same direction",
+      "E": "none of the above"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "If the magnitude of the sum of two vectors is greater than the magnitude of either vector, then:",
+    "options": {
+      "A": "the dot product of the vectors must be nagative",
+      "B": "the dot product of the vectors must be positive",
+      "C": "the vectors must be parallel and in opposite directions",
+      "D": "the vectors must be parallel and in the same direction",
+      "E": "none of the above"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "Vectors $\\vec{A}$ and $\\vec{B}$ each has a magnitude $L$. When drawn with their tails at the same point, the angle between them is 60$^\\circ$. The magnitude of the cross product $\\vec{A} \\times \\vec{B}$ is:",
+    "options": {
+      "A": "$L^2/2$",
+      "B": "L^2",
+      "C": "$\\sqrt{3} L^2/2$",
+      "D": "$2L^2$",
+      "E": "none of these"
+    },
+    "answer": "C",
+    "type": "text"
+  },
+  {
+    "question": "Two vectors lie with their tails at the same point. When the angle between them is increased by 20$^\\circ$ the magnitude of their cross product doubles. The original angle between them was about:",
+    "options": {
+      "A": "0",
+      "B": "18$^\\circ$",
+      "C": "25$^\\circ$",
+      "D": "45$^\\circ$",
+      "E": "90$^\\circ$"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "Two vectors have magnitudes of 10 m and 15 m. The angle between them when they are drawn with their tails at the same point is 65$^\\circ$. The component of the longer vector along the line perpendicular to the shorter vector, in the plane of the vectors, is:",
+    "options": {
+      "A": "0",
+      "B": "4.2 m",
+      "C": "6.3 m",
+      "D": "9.1 m",
+      "E": "14 m"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "The two vectors $ 3 \\hat{i} − 2 \\hat{j}$ and $2\\hat{i} + 3\\hat{j} − 2\\hat{k}$ define a plane. It is the plane of the triangle with both tails at one vertex and each head at one of the other vertices. Which of the following vectors is perpendicular to the plane?",
+    "options": {
+      "A": "$4 \\hat{i} + 6 \\hat{j} + 13\\hat{k}$",
+      "B": "$-4 \\hat{i} + 6 \\hat{j} + 13\\hat{k}$",
+      "C": "$4 \\hat{i} - 6 \\hat{j} + 13\\hat{k}$",
+      "D": "$4 \\hat{i} + 6 \\hat{j} - 13\\hat{k}$",
+      "E": "$4 \\hat{i} + 6 \\hat{j} $"
+    },
+    "answer": "A",
+    "type": "text"
+  },
+  {
+    "question": "Let $\\vec{R} = \\vec{S} \\times \\vec{T}$ and θ $\\neq$ 90$\\circ$, where θ is the angle between $\\vec{S}$ and  $\\vec{T}$ when they are drawn with their tails at the same point. Which of the following is NOT true?",
+    "options": {
+      "A": "$| \\vec{R} | = |\\vec{S}||\\vec{T}|sin θ",
+      "B": "$−\\vec{R} = \\vec{T} \\times \\vec{S}$",
+      "C": "$\\vec{R} \\cdot \\vec{S} = 0$",
+      "D": "$\\vec{R} \\cdot \\vec{T} = 0$",
+      "E": "$\\vec{S} \\cdot \\vec{T} = 0$"
+    },
+    "answer": "E",
+    "type": "text"
+  },
+  {
+    "question": "The value of $\\hat{i}\\cdot (\\hat{j} \\times \\hat{k})$ is:",
+    "options": {
+      "A": "zero",
+      "B": "+1",
+      "C": "−1",
+      "D": "3",
+      "E": "√3"
+    },
+    "answer": "B",
+    "type": "text"
+  },
+  {
+    "question": "The value of $\\hat{k}\\cdot (\\hat{k} \\times \\hat{i})$ is:",
+    "options": {
+      "A": "zero",
+      "B": "+1",
+      "C": "−1",
+      "D": "3",
+      "E": "√3"
+    },
+    "answer": "A",
+    "type": "text"
+  }
+]
