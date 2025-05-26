@@ -19,7 +19,7 @@
       "C": "/quizzes/images/vectors/q2_option_c.png",
       "D": "/quizzes/images/vectors/q2_option_d.png"
      },
-    "answer": "A",
+    "answer": "D",
     "type": "image_option"
   },
   {
@@ -165,7 +165,7 @@
       "D": "3/2",
       "E": "3"
     },
-    "answer": "D",
+    "answer": "A",
     "type": "text"
   },
   {
@@ -229,7 +229,7 @@
     "type": "text"
   },
   {
-    "question": "The angle between $$\\vec{A} = (-25 \\text{ m})\\hat{i} + (45 \\text{ m})\\hat{j}$ and the positive x axis is:",
+    "question": "The angle between $\\vec{A} = (-25 \\text{ m})\\hat{i} + (45 \\text{ m})\\hat{j}$ and the positive x axis is:",
     "options": {
       "A": "29$^\\circ$",
       "B": "61$^\\circ$",
@@ -277,7 +277,7 @@
     "type": "text"
   },
   {
-    "question": "In the diagram, $\\vec{A}$ has magnitude 12~m, and $\\vec{B}$ has magnitude 8m. The $x$ component of $\\vec{A}+\\vec{B}$ is about",
+    "question": "In the diagram, $\\vec{A}$ has magnitude 12 m, and $\\vec{B}$ has magnitude 8 m. The $x$ component of $\\vec{A}+\\vec{B}$ is about",
     "question_image": "/quizzes/images/vectors/q24_fig_problem.png",
     "options": {
       "A": "5.5 m",
@@ -364,7 +364,7 @@
   {
     "question": "If the magnitude of the sum of two vectors is less than the magnitude of either vector, then:",
     "options": {
-      "A": "the dot product of the vectors must be nagative",
+      "A": "the dot product of the vectors must be negative",
       "B": "the dot product of the vectors must be positive",
       "C": "the vectors must be parallel and in opposite directions",
       "D": "the vectors must be parallel and in the same direction",
@@ -376,7 +376,7 @@
   {
     "question": "If the magnitude of the sum of two vectors is greater than the magnitude of either vector, then:",
     "options": {
-      "A": "the dot product of the vectors must be nagative",
+      "A": "the dot product of the vectors must be negative",
       "B": "the dot product of the vectors must be positive",
       "C": "the vectors must be parallel and in opposite directions",
       "D": "the vectors must be parallel and in the same direction",
