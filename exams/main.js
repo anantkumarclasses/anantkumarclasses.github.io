@@ -86,7 +86,7 @@
             e.preventDefault();
             
             // Validate that all questions are answered
-            const questions = ['q1', 'q2', 'q3', 'q4', 'q5'];
+            const questions = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10', 'q11', 'q12', 'q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20'];
             //const unanswered = questions.filter(q => !document.querySelector(`input[name="${q}"]:checked`));
             
             //if (unanswered.length > 0) {
@@ -141,8 +141,9 @@
         });
 
         function showResult(score, total, message) {
-            const percentage = Math.round((score / total) * 100);
-            document.getElementById('scoreDisplay').textContent = `${score}/${total} (${percentage}%)`;
+            const percentage = Math.round((score / (3* total)) * 100);
+            const full_marks = 3 * total;
+            document.getElementById('scoreDisplay').textContent = `${score}/${full_marks} (${percentage}%)`;
             document.getElementById('resultMessage').textContent = message || getScoreMessage(percentage);
             document.getElementById('result').classList.add('show');
         }

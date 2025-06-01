@@ -20,7 +20,7 @@
     ]
   },
   {
-    "question": "An object starts from rest at $x = 0$ when $t = 0$ The object moves along the $x$-axis with positive velocity after $t = 0$ The instantanears velocity $v_,$ and the average velocity $v_{x,av}$ are related by",
+    "question": "An object starts from rest at $x = 0$ when $t = 0$ The object moves along the $x$-axis with positive velocity after $t = 0$ The instantaneous velocity $v_,$ and the average velocity $v_{x,av}$ are related by",
     "name": "q3",
     "options": [
       { "value": "option_a", "text": "$v_x$ can be more than, equal to, or less that $v_{x,av}$" },
@@ -70,7 +70,7 @@
     ]
   },
   {
-    "question": " Two particles move in a straight line towards wach other at initial velocities $v_1$ and $v_2$ and with acceleratiums $a_1$ and $a_2$, respectiesdy, directed against the corresponding initial velocities. The maximum initial separation hetween the particles, so that they meet subsequently, is",
+    "question": " Two particles move in a straight line towards wach other at initial velocities $v_1$ and $v_2$ and with accelerations $a_1$ and $a_2$, respectively, directed against the corresponding initial velocities. The maximum initial separation between the particles, so that they meet subsequently, is",
     "name": "q8",
     "options": [
       { "value": "option_a", "text": "$\\dfrac{(v_1+v_2)^2}{2(a_1+a_2)}$" },
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "question": " A ball is dropped from a certain height from the floor. Each time it hits the floor, it rises to half its original height. Take the vertically upward direction as the $+y$ direction and the floor as the origin of the $x$ coordinate. Which of the following graphs CANNOT represent the motion of the ball?",
+    "question": " A ball is dropped from a certain height from the floor. Each time it hits the floor, it rises to half its original height. Take the vertically upward direction as the $+y$ direction and the floor as the origin of the $y$ coordinate. Which of the following graphs CANNOT represent the motion of the ball?",
     "name": "q10",
     "options": [
       { "value": "option_a", "text":"", "image": "vy-t.png" },
@@ -110,7 +110,7 @@
     ]
   },
   {
-    "question": " An object is moving in the $x$ direction with velocity $v_x$, and $\\mathrm d v_x/\\mathrm dt$ is a non zero constant. If $v_x=0$ when $t=0$, then for $t > 0$, the quantity $v_x \\dfrac{\\mathrm d v_x}{\\mathrm d t}$ is",
+    "question": " An object is moving in the $x$ direction with velocity $v_x$ and $\\mathrm d v_x/\\mathrm dt$ is a non zero constant. If $v_x=0$ when $t=0$, then for $t > 0$, the quantity $v_x \\dfrac{\\mathrm d v_x}{\\mathrm d t}$ is",
     "name": "q12",
     "options": [
       { "value": "option_a", "text":"positive" },
@@ -144,7 +144,7 @@
     "name": "q15",
     "options": [
       { "value": "option_a", "text":"The average velocity during the first second of time is 4.9 m/s" },
-      { "value": "option_b", "text":"During mach second the object falls 9.8 m" },
+      { "value": "option_b", "text":"During each second the object falls 9.8 m" },
       { "value": "option_c", "text":"The object falls 9.8 m during the first second of motion" },
       { "value": "option_d", "text":"The acceleration changes by 9.8 m/s² every second" }
     ]
@@ -181,7 +181,7 @@
     ]
   },
   {
-    "question": " Each of the particles move along the $x$ axis. Their coordinates (in m) as function of time (in s) are given by:   (i) particle 1: $x(t)=3.5 - 2.7t^3$, (ii) particle 2: $x(t)=3.5+2.7t^3$, (iii) particle 3: $x(t)=3.5+2.7t^2$, (iv) particle 4: $x(t)=3.5-3.4t-2.7t^2$. Which of these particles have constant acceleration?",
+    "question": " Each of the four particles move along the $x$ axis. Their coordinates (in m) as function of time (in s) are given by:   (i) particle 1: $x(t)=3.5 - 2.7t^3$, (ii) particle 2: $x(t)=3.5+2.7t^3$, (iii) particle 3: $x(t)=3.5+2.7t^2$, (iv) particle 4: $x(t)=3.5-3.4t-2.7t^2$. Which of these particles have constant acceleration?",
     "name": "q19",
     "options": [
       { "value": "option_a", "text":"only 3 and 4" },
