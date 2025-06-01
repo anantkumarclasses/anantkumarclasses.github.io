@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test: Motion in 1D</title>
+    <script>
+      window.MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        svg: { fontCache: 'global' }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="primary_style.css">
+
+</head>
+<body>
+   <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+  </div>
+    <div class="container">
+    
+        <div class="header">
+            <h1>📚 P - 11 - Test 02</h1>
+            <p>Motion in One Dimension</p>
+        </div>
+        
+        <div class="quiz-content">
+            <form id="quizForm">
+                <div class="user-info">
+                    <h3>👤 Personal Information</h3>
+                    <div class="form-group">
+                        <label for="studentName">Full Name:</label>
+                        <input type="text" id="studentName" name="studentName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="studentEmail">Email Address:</label>
+                        <input type="email" id="studentEmail" name="studentEmail" required>
+                    </div>
+                </div>
+
+                
+
+                <div id="questionContainer"></div>
+                
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    🚀 Submit Quiz
+                </button>
+            </form>
+
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Grading your quiz...</p>
+            </div>
+
+            <div class="error" id="errorMsg"></div>
+
+            <div class="result" id="result">
+                <div class="score" id="scoreDisplay"></div>
+                <p id="resultMessage"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"> </script>
+</body>
+</html>

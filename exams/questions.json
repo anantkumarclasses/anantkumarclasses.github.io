@@ -1,0 +1,205 @@
+[
+  {
+    "question": "Throughout a time interval, while the speed of a particle increases as it moves along the $x$ axis, its velocity and acceleration might be",
+    "name": "q1",
+    "options": [
+      { "value": "option_a", "text": "positive and zero, respectively" },
+      { "value": "option_b", "text": "negative and negative, respectively" },
+      { "value": "option_c", "text": "positive and negative, respectively" },
+      { "value": "option_d", "text": "negative and positive, respectively" }
+    ]
+  },
+  {
+    "question": "An object is shot vertically upward. While it is rising",
+    "name": "q2",
+    "options": [
+      { "value": "option_a", "text": "its velocity is upward and its acceleration is downward" },
+      { "value": "option_b", "text": "its velocity and acceleration are both upward" },
+      { "value": "option_c", "text": "its velocity and accoleration are both downward" },
+      { "value": "option_d", "text": "its velocity and acceleration are both decreasing" }
+    ]
+  },
+  {
+    "question": "An object starts from rest at $x = 0$ when $t = 0$ The object moves along the $x$-axis with positive velocity after $t = 0$ The instantanears velocity $v_,$ and the average velocity $v_{x,av}$ are related by",
+    "name": "q3",
+    "options": [
+      { "value": "option_a", "text": "$v_x$ can be more than, equal to, or less that $v_{x,av}$" },
+      { "value": "option_b", "text": "$v_x < v_{x,av}$" },
+      { "value": "option_c", "text": "$v_x = v_{x,av}$" },
+      { "value": "option_d", "text": "$v_x > v_{x,av}$" }
+    ]
+  },
+  {
+    "question": "As a rocket is accelerating vertically upward at 9.8 m/s$^2$ near Earth's surface, it releases a projectile. Immediately after release the acceleration (in m/s$^2$) of the projectile is",
+    "name": "q4",
+    "options": [
+      { "value": "option_a", "text": "9.8 up" },
+      { "value": "option_b", "text": "9.8 down" },
+      { "value": "option_c", "text": "19.6 up" },
+      { "value": "option_d", "text": "0" }
+    ]
+  },
+  {
+    "question": " A particle is at rest. At $t=0$, it is given an acceleration that beginning with 3.0 m/s$^2$ at $t = 0$, decreases linearly to zero in 8.0 s and then remains zero. What will be the maximum speed of particle?",
+    "name": "q5",
+    "options": [
+      { "value": "option_a", "text": "24 m/s" },
+      { "value": "option_b", "text": "14 m/s" },
+      { "value": "option_c", "text": "12 m/s" },
+      { "value": "option_d", "text": "16 m/s" }
+    ]
+  },
+  {
+    "question": " A feather, initially at rest, is released in a vacuum 12 m above the surface of the Earth. Which of the following statments is correct?",
+    "name": "q6",
+    "options": [
+      { "value": "option_a", "text": "The maximum velocity of the feather is 9.8 m/s" },
+      { "value": "option_b", "text": "The acceleration of the feather remains constant during the fall." },
+      { "value": "option_c", "text": "The acceleration of the feather increases during the fall." },
+      { "value": "option_d", "text": "The acceleration of the feather is zero." }
+    ]
+  },
+  {
+    "question": " An object has an acceleration of 3 m/s$^2$. The position versus time graph for this object has a slope",
+    "name": "q7",
+    "options": [
+      { "value": "option_a", "text": "that increases with time" },
+      { "value": "option_b", "text": "of 3 m/s" },
+      { "value": "option_c", "text": "of 3 m/s$^2$" },
+      { "value": "option_d", "text": "that is constant" }
+    ]
+  },
+  {
+    "question": " Two particles move in a straight line towards wach other at initial velocities $v_1$ and $v_2$ and with acceleratiums $a_1$ and $a_2$, respectiesdy, directed against the corresponding initial velocities. The maximum initial separation hetween the particles, so that they meet subsequently, is",
+    "name": "q8",
+    "options": [
+      { "value": "option_a", "text": "$\\dfrac{(v_1+v_2)^2}{2(a_1+a_2)}$" },
+      { "value": "option_b", "text": "$\\dfrac{2(v_1+v_2)^2}{(a_1+a_2)}$" },
+      { "value": "option_c", "text": "$\\dfrac{(v_1+v_2)^2}{(a_1+a_2)}$" },
+      { "value": "option_d", "text": "$\\dfrac{3(v_1+v_2)^2}{2(a_1+a_2)}$" }
+    ]
+  },
+  {
+    "question": " An object is moving along the $x$-axis with its position as a function of time given by $x=x(t)$. Point $O$ is at $x=0$. The object is $definitely$ moving towards $O$ when ",
+    "name": "q9",
+    "options": [
+      { "value": "option_a", "text": "$v_x<0$" },
+      { "value": "option_b", "text": "$v_x>0$" },
+      { "value": "option_c", "text": "$xv_x>0$" },
+      { "value": "option_d", "text": "$xv_x<0$" }
+    ]
+  },
+  {
+    "question": " A ball is dropped from a certain height from the floor. Each time it hits the floor, it rises to half its original height. Take the vertically upward direction as the $+y$ direction and the floor as the origin of the $x$ coordinate. Which of the following graphs CANNOT represent the motion of the ball?",
+    "name": "q10",
+    "options": [
+      { "value": "option_a", "text":"", "image": "vy-t.png" },
+      { "value": "option_b", "text":"", "image": "vy-y.png" },
+      { "value": "option_c", "text":"", "image": "y-t.png" },
+      { "value": "option_d", "text":"", "image": "speed-t.png" }
+    ]
+  },
+  {
+    "question": " A baseball is thrown vertically into the air. The acceleration of the ball at its highest point is",
+    "name": "q11",
+    "options": [
+      { "value": "option_a", "text":"zero" },
+      { "value": "option_b", "text":"$2g$, down" },
+      { "value": "option_c", "text":"$g$, down" },
+      { "value": "option_d", "text":"$g$, up" }
+    ]
+  },
+  {
+    "question": " An object is moving in the $x$ direction with velocity $v_x$, and $\\mathrm d v_x/\\mathrm dt$ is a non zero constant. If $v_x=0$ when $t=0$, then for $t > 0$, the quantity $v_x \\dfrac{\\mathrm d v_x}{\\mathrm d t}$ is",
+    "name": "q12",
+    "options": [
+      { "value": "option_a", "text":"positive" },
+      { "value": "option_b", "text":"negative" },
+      { "value": "option_c", "text":"not determined" },
+      { "value": "option_d", "text":"zero" }
+    ]
+  },
+  {
+    "question": " At a stop light, a truck travelling at 15 m/s passes a car as it starts from rest. The track travels at constant velocity and the car accelerates at 3 m/s² How much time (in second) does the car take to catch up to the truck?",
+    "name": "q13",
+    "options": [
+      { "value": "option_a", "text":"10" },
+      { "value": "option_b", "text":"5" },
+      { "value": "option_c", "text":"25" },
+      { "value": "option_d", "text":"15" }
+    ]
+  },
+  {
+    "question": " The coordinate of an object is given as a function of time by x=7t-3t², where x is in meter and t is in second. Its average velocity over the interval from t=0 to t=4s is",
+    "name": "q14",
+    "options": [
+      { "value": "option_a", "text":"-17 m/s" },
+      { "value": "option_b", "text":"-5 m/s" },
+      { "value": "option_c", "text":"5 m/s" },
+      { "value": "option_d", "text":"17 m/s" }
+    ]
+  },
+  {
+    "question": " Which one of the following statements is correct for an object released from rest near the surface of the Earth?",
+    "name": "q15",
+    "options": [
+      { "value": "option_a", "text":"The average velocity during the first second of time is 4.9 m/s" },
+      { "value": "option_b", "text":"During mach second the object falls 9.8 m" },
+      { "value": "option_c", "text":"The object falls 9.8 m during the first second of motion" },
+      { "value": "option_d", "text":"The acceleration changes by 9.8 m/s² every second" }
+    ]
+  },
+  {
+    "question": " A car moving on a straight highway travelled the first one third of its journey at a speed of 10 km/h, the second one third at 20 km/h and the final one third at 60 km/h. The magnitude of the average velocity of the car is",
+    "name": "q16",
+    "options": [
+      { "value": "option_a", "text":"14 km/h" },
+      { "value": "option_b", "text":"18 km/h" },
+      { "value": "option_c", "text":"16 km/h" },
+      { "value": "option_d", "text":"12 km/h" }
+    ]
+  },
+  {
+    "question": " A heavy ball falls freely, starting from rest at t=0. If g = 10 m/s² then in the interval t=3 s to t=4 s, it travels a distance of",
+    "name": "q17",
+    "options": [
+      { "value": "option_a", "text":"30 m" },
+      { "value": "option_b", "text":"10 m" },
+      { "value": "option_c", "text":"35 m" },
+      { "value": "option_d", "text":"5 m" }
+    ]
+  },
+  {
+    "question": " Which of the following graphs CANNOT possibly represent the motion of a particle moving along the $x$ axis? ($x$: position, $v_x$: velocity, $v$: speed, $s$: distance, $t$: time)",
+    "name": "q18",
+    "questionImage": "four_graphs.png",
+    "options": [
+      { "value": "option_a", "text":"only (b), (c), (d)" },
+      { "value": "option_b", "text":"only (a), (d)" },
+      { "value": "option_c", "text":"only (a), (b), (c)" },
+      { "value": "option_d", "text":"(a), (b), (c), (d)" }
+    ]
+  },
+  {
+    "question": " Each of the particles move along the $x$ axis. Their coordinates (in m) as function of time (in s) are given by:   (i) particle 1: $x(t)=3.5 - 2.7t^3$, (ii) particle 2: $x(t)=3.5+2.7t^3$, (iii) particle 3: $x(t)=3.5+2.7t^2$, (iv) particle 4: $x(t)=3.5-3.4t-2.7t^2$. Which of these particles have constant acceleration?",
+    "name": "q19",
+    "options": [
+      { "value": "option_a", "text":"only 3 and 4" },
+      { "value": "option_b", "text":"all four" },
+      { "value": "option_c", "text":"none" },
+      { "value": "option_d", "text":"only 1 and 2" }
+    ]
+  },
+  {
+    "question": " The acceleration of an object, starting from rest, is shown in the graph below. Other than at $t=0$, when is the velocity of the object equal to zero?",
+    "name": "q20",
+    "questionImage": "a-t.png",
+    "options": [
+      { "value": "option_a", "text":"At t=3.5 s" },
+      { "value": "option_b", "text":"At t=4 s" },
+      { "value": "option_c", "text":"At t=5 s" },
+      { "value": "option_d", "text":"At no other time less than or equal to 5 s" }
+    ]
+  }
+]
+
