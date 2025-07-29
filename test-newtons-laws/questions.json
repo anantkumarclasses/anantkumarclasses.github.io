@@ -182,9 +182,9 @@
     "name": "q18",
     "options": [
       { "value": "option_a", "text":"0" },
-      { "value": "option_b", "text":"$g\\, \\uparrow" },
-      { "value": "option_c", "text":"$g\\, \\downarrow" },
-      { "value": "option_d", "text":"$2g\\, \\downarrow" }
+      { "value": "option_b", "text":"$g\\, \\uparrow$" },
+      { "value": "option_c", "text":"$g\\, \\downarrow$" },
+      { "value": "option_d", "text":"$2g\\, \\downarrow$" }
     ]
   },
   {
