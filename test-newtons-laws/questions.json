@@ -1,0 +1,258 @@
+[ 
+  {
+    "question": "A circus performer of weight $W$ is walking along a \"high wire\" as shown. The tension in the wire:",
+    "name": "q1",
+    "questionImage": "high_wire.png",
+    "options": [
+      { "value": "option_a", "text":"is approximately $W$" },
+      { "value": "option_b", "text":"is approximately $\\dfrac{W}{2}$" },
+      { "value": "option_c", "text":"is much less than $W$" },
+      { "value": "option_d", "text":"is much more than $W$" }
+    ]
+  },
+  {
+    "question": "A 5-kg block is suspended by a rope from the ceiling of an elevator as the elevator accelerates downwards at 3.0 m/s$^2$. Taking the acceleration due to gravity as $g=10$ m/s$^2$, the tension force of the rope on the block is:",
+    "name": "q2",
+    "options": [
+      { "value": "option_a", "text": "15 N, up" },
+      { "value": "option_b", "text": "35 N, up" },
+      { "value": "option_c", "text": "35 N, down" },
+      { "value": "option_d", "text": "65 N, up" }
+    ]
+  },
+  {
+    "question": "You stand on a spring scale on the floor of an elevator. Of the following, the scale shows the highest reading when the elevator:",
+    "name": "q3",
+    "options": [
+      { "value": "option_a", "text": "moves downward with increasing speed" },
+      { "value": "option_b", "text": "moves downward with decreasing speed" },
+      { "value": "option_c", "text": "moves upward with decreasing speed" },
+      { "value": "option_d", "text": "moves upward at constant speed" }
+    ]
+  },
+  {
+    "question": "A lead block is suspended from your hand by a string. The reaction to the force of gravity on the block is the force exerted by:",
+    "name": "q4",
+    "options": [
+      { "value": "option_a", "text": "the string on the block" },
+      { "value": "option_b", "text": "the string on the hand" },
+      { "value": "option_c", "text": "the block on the string" },
+      { "value": "option_d", "text": "the block on the Earth" }
+    ]
+  },
+  
+  {
+    "question": "Two blocks, weighing 250 N and 350 N, respectively, are connected by a string that passes over a massless pulley as shown. The tension in the string (rounded to two significant figures) is:",
+    "name": "q5",
+    "questionImage": "atwoods_01.png",
+    "options": [
+      { "value": "option_a", "text": "210 N" },
+      { "value": "option_b", "text": "290 N" },
+      { "value": "option_c", "text": "410 N" },
+      { "value": "option_d", "text": "600 N" }
+    ]
+  },
+  {
+    "question": "Two blocks (A and B) are in contact on a horizontal frictionless surface. A 36-N constant force is applied to A as shown. The magnitude of the force of A on B is:",
+    "name": "q6",
+    "questionImage": "blocks_01.png",
+    "options": [
+      { "value": "option_a", "text": "1.5 N" },
+      { "value": "option_b", "text": "6.0 N" },
+      { "value": "option_c", "text": "36 N" },
+      { "value": "option_d", "text": "30 N" }
+    ]
+  },
+  {
+    "question": "A crate with a weight of 50 N rests on a horizontal surface. A person pulls horizontally on it with a force of 10 N and it does not move. To start it moving, a second person pulls vertically upward on the crate. If the coefficient of static friction is 0.4, what is the smallest vertical force for which the crate moves?",
+    "name": "q7",
+    "questionImage": "block_friction.png",
+    "options": [
+      { "value": "option_a", "text": "4 N" },
+      { "value": "option_b", "text": "25 N" },
+      { "value": "option_c", "text": "10 N" },
+      { "value": "option_d", "text": "35 N" }
+    ]
+  },
+  {
+    "question": "A 50-N force is applied to a crate on a horizontal rough floor, causing it to move horizontally. If the coeﬃcient of kinetic friction is $\\dfrac{1}{\\sqrt{3}}$, in what direction should the force be applied to obtain the greatest acceleration?",
+    "name": "q8",
+    "options": [
+      { "value": "option_a", "text": "$60^\circ$ above the horizontal" },
+      { "value": "option_b", "text": "$30^\circ$ above the horizontal" },
+      { "value": "option_c", "text": "$60^\circ$ below the horizontal" },
+      { "value": "option_d", "text": "$30^\circ$ below the horizontal" }
+    ]
+  },
+  {
+    "question": "A professor holds an eraser against a vertical chalkboard by pushing horizontally on it. He pushes with a force that is much greater than is required to hold the eraser. The force of friction exerted by the board on the eraser increases if he:",
+    "name": "q9",
+    "options": [
+      { "value": "option_a", "text": "pushes with slightly greater force" },
+      { "value": "option_b", "text": "pushes with slightly less force" },
+      { "value": "option_c", "text": "pushes so his force is slightly upward but has the same magnitude" },
+      { "value": "option_d", "text": "pushes so his force is slightly downward but has the same magnitude" }
+    ]
+  },
+  {
+    "question": " A horizontal force of 5.0 N pushes a 0.50-kg block against a vertical wall. The block is initially at rest. If $\\mu_s = 0.80$ and $\\mu_k = 0.60$, the acceleration of the block in m/s$^2$ is:",
+    "name": "q10",
+    "options": [
+      { "value": "option_a", "text":"4 m/s$^2$" },
+      { "value": "option_b", "text":"2 m/s$^2$" },
+      { "value": "option_c", "text":"8 m/s$^2$" },
+      { "value": "option_d", "text":"10 m/s$^2$" }
+    ]
+  },
+  {
+    "question": " An object moves in a circle. If the mass is tripled and both the speed and radius halved, then the magnitude of the centripetal force must be multiplied by a factor of:",
+    "name": "q11",
+    "options": [
+      { "value": "option_a", "text":"3/4" },
+      { "value": "option_b", "text":"3/2" },
+      { "value": "option_c", "text":"9/4" },
+      { "value": "option_d", "text":"6" }
+    ]
+  },
+  {
+    "question": " A 800-N passenger in a car presses against the car door with a 200 N force when the car makes a left turn at 13 m/s. The (faulty) door will pop open under a force of 800 N. Of the following, the least speed for which the passenger is thrown out of the car is:",
+    "name": "q12",
+    "options": [
+      { "value": "option_a", "text":"14 m/s" },
+      { "value": "option_b", "text":"20 m/s" },
+      { "value": "option_c", "text":"52 m/s" },
+      { "value": "option_d", "text":"26 m/s" }
+    ]
+  },
+  {
+    "question": " A giant wheel, having a diameter of 45 m, is fitted with a cage and platform on which a man of mass $m$ stands. The wheel is rotated in a vertical plane at such a speed that the force exerted by the man on the platform is equal to his weight when the cage is at X, as shown. The speed of the man is:",
+    "name": "q13",
+    "questionImage": "giant_wheel.png",
+    "options": [
+      { "value": "option_a", "text":"20 m/s" },
+      { "value": "option_b", "text":"30 m/s" },
+      { "value": "option_c", "text":"25 m/s" },
+      { "value": "option_d", "text":"40 m/s" }
+    ]
+  },
+  {
+    "question": " A coin is placed on a horizontal phonograph turntable. Let $N$ be the magnitude of the normal force exerted by the turntable on the coin, $f$ be the magnitude of the frictional force exerted by the turntable on the coin, and $f_\\text{s, max}$ be the maximum possible force of static friction. The speed of the turntable is increased in small steps. If the coin does not slide, then",
+    "name": "q14",
+    "options": [
+      { "value": "option_a", "text":"$N$ increases, $f$ increases, and $f_\\text{s, max}$ stays the same" },
+      { "value": "option_b", "text":"$N$ increases, $f$ increases, and $f_\\text{s, max}$ increases" },
+      { "value": "option_c", "text":"$f$ increases, and both $N$ and $f_\\text{s, max}$ stay the same" },
+      { "value": "option_d", "text":"$N$, $f$  and $f_\\text{s, max}$ all stay the same" }
+    ]
+  },
+  {
+    "question": " Two blocks are suspended by two massless elastic strings to the ceiling as shown in the figure. The masses of the upper and lower block are $m_1 = 2$ kg and $m_2 = 4$ kg respectively. If the upper string is cut just above the top block, the accelerations of $m_1$ and $m_2$ immediately after are found to be $a_1$ and $a_2$ respectively. Then",
+    "name": "q15",
+    "questionImage": "suspended_blocks.png",
+    "options": [
+      { "value": "option_a", "text":"$a_1=g$, $a_2=g$" },
+      { "value": "option_b", "text":"$a_1=3g$, $a_2=3g$" },
+      { "value": "option_c", "text":"$a_1=3g$, $a_2=0$" },
+      { "value": "option_d", "text":"$a_1=g$, $a_2=3g$" }
+    ]
+  },
+  {
+    "question": " A small ice cube slides in a bowl with negligible friction. You release the ice cube from rest near the top edge of the bowl. At the bottom of the bowl the acceleration of the ice cube is",
+    "name": "q16",
+    "options": [
+      { "value": "option_a", "text":"zero" },
+      { "value": "option_b", "text":"directed at 45$^\circ$ with the vertical" },
+      { "value": "option_c", "text":"directed horizontally" },
+      { "value": "option_d", "text":"directed vertically" }
+    ]
+  },
+  {
+    "question": " You are a passenger in a car and not wearing your seat belt. Without increasing or decreasing its speed, the car makes a sharp left turn, and you find yourself colliding with the right–hand door. Which is the correct analysis of the situation?",
+    "name": "q17",
+    "options": [
+      { "value": "option_a", "text":"Before and after the collision, there is a rightward force pushing you into the door." },
+      { "value": "option_b", "text":"Starting at the time of collision, the door exerts a leftward force on you." },
+      { "value": "option_c", "text":"Both of the above." },
+      { "value": "option_d", "text":"Neither of the above." }
+    ]
+  },
+  
+  {
+    "question": " A small ball is released from a great height so that it acquires a constant velocity called the terminal velocity before it strikes the ground. At the ground it rebounds with the same speed. If the resistive force exerted by the air is directed opposite the velocity and is proportional to the speed, the acceleration of the ball immediately after it rebounds, is",
+    "name": "q18",
+    "options": [
+      { "value": "option_a", "text":"0" },
+      { "value": "option_b", "text":"$g\\, \\uparrow" },
+      { "value": "option_c", "text":"$g\\, \\downarrow" },
+      { "value": "option_d", "text":"$2g\\, \\downarrow" }
+    ]
+  },
+  {
+    "question": " In the set up shown below, the threads and the pulleys are massless and there is no fiction anywhere. The force $F$ is constant both in magnitude and direction. The acceleration of the free end $P$ is",
+    "name": "q19",
+    "questionImage": "two_blocks_pulled.png",
+    "options": [
+      { "value": "option_a", "text":"$\\dfrac{F}{5m}$" },
+      { "value": "option_b", "text":"$\\dfrac{3F}{m}$" },
+      { "value": "option_c", "text":"$\\dfrac{5F}{m}$" },
+      { "value": "option_d", "text":"$\\dfrac{2F}{m}$" }
+    ]
+  },
+  {
+    "question": " When forces with magnitudes $F_1$, $F_2$, and $F_3$ are acting on a particle of mass $m$ such that $F_2$ and $F_3$ are perpendicular, then the particle remains stationary. If the force $F_1$ is now removed, the acceleration of the particle is",
+    "name": "q20",
+    
+    "options": [
+      { "value": "option_a", "text":"$\\dfrac{F_2+F_3}{m}$" },
+      { "value": "option_b", "text":"$\\dfrac{F_2F_3}{mF_1}$" },
+      { "value": "option_c", "text":"$\\dfrac{|F_2-F_3|}{m}$" },
+      { "value": "option_d", "text":"$\\dfrac{F_1}{m}$" }
+    ]
+  },
+  {
+    "question": " If a block is pulled up an inclined plane with a force of 20 N along the line of greatest slope, the block slides up with a constant velocity. If the block is pulled down the plane with a force of 8 N along the line of greatest slope, it slides down with a constant velocity. The force of kinetic friction between the blocks is",
+    "name": "q21",
+    
+    "options": [
+      { "value": "option_a", "text":"8 N" },
+      { "value": "option_b", "text":"16 N" },
+      { "value": "option_c", "text":"14 N" },
+      { "value": "option_d", "text":"12 N" }
+    ]
+  },
+  {
+    "question": " Two pans with weights each equal to 30 N are suspended from the ends of a string passed over two stationary pulleys. The string between the pulleys is cut and the free ends are connected to a spring balance. Take $g = 10$ m/s$^2$ and disregard the masses of the pans, pulleys, thread and spring balance. What additional weight should be added to one of the pans for the reading of the spring balance not to change after a weight of 10 N is taken off the other pan?",
+    "name": "q22",
+    "questionImage": "beam_balance.png",
+    "options": [
+      { "value": "option_a", "text":"30 N" },
+      { "value": "option_b", "text":"10 N" },
+      { "value": "option_c", "text":"15 N" },
+      { "value": "option_d", "text":"20 N" }
+    ]
+  },
+  {
+    "question": " The force acting on a particle of mass 10 kg is $(2 \\hat{i} + \\hat{j} − \\hat{k})$ N. If the particle is initially at rest, its speed after 20 s will be",
+    "name": "q23",
+    
+    "options": [
+      { "value": "option_a", "text":"$2\\sqrt{6}$ m/s" },
+      { "value": "option_b", "text":"$2\\sqrt{3}$ m/s" },
+      { "value": "option_c", "text":"$3\\sqrt{2}$ m/s" },
+      { "value": "option_d", "text":"$6\\sqrt{2}$ m/s" }
+    ]
+  },
+  {
+    "question": " A racing car is moving around the circular track of radius 300 meters shown above. At the instant when the car's velocity is directed due east, its acceleration is directed due south and has a magnitude of 3 m/s$^2$. When viewed from above, the car is moving",
+    "name": "q24",
+    "questionImage": "circular_track.png",
+    "options": [
+      { "value": "option_a", "text":"clockwise at 30 m/s" },
+      { "value": "option_b", "text":"clockwise at 10 m/s" },
+      { "value": "option_c", "text":"counterclockwise at 30 m/s" },
+      { "value": "option_d", "text":"counterclockwise at 10 m/s" }
+    ]
+  }
+  
+]
+
