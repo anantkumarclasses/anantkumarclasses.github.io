@@ -78,10 +78,10 @@
     "question": "A 50-N force is applied to a crate on a horizontal rough floor, causing it to move horizontally. If the coeﬃcient of kinetic friction is $\\dfrac{1}{\\sqrt{3}}$, in what direction should the force be applied to obtain the greatest acceleration?",
     "name": "q8",
     "options": [
-      { "value": "option_a", "text": "$60^\circ$ above the horizontal" },
-      { "value": "option_b", "text": "$30^\circ$ above the horizontal" },
-      { "value": "option_c", "text": "$60^\circ$ below the horizontal" },
-      { "value": "option_d", "text": "$30^\circ$ below the horizontal" }
+      { "value": "option_a", "text": "$60^\\circ$ above the horizontal" },
+      { "value": "option_b", "text": "$30^\\circ$ above the horizontal" },
+      { "value": "option_c", "text": "$60^\\circ$ below the horizontal" },
+      { "value": "option_d", "text": "$30^\\circ$ below the horizontal" }
     ]
   },
   {
@@ -161,7 +161,7 @@
     "name": "q16",
     "options": [
       { "value": "option_a", "text":"zero" },
-      { "value": "option_b", "text":"directed at 45$^\circ$ with the vertical" },
+      { "value": "option_b", "text":"directed at 45$^\\circ$ with the vertical" },
       { "value": "option_c", "text":"directed horizontally" },
       { "value": "option_d", "text":"directed vertically" }
     ]
