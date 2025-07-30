@@ -259,6 +259,24 @@
             max-height: 200px;
             margin-left: 10px;
           }
+         
+         label.correct {
+         background-color: #d4edda;
+         border-left: 5px solid #28a745;
+         padding: 4px;
+         }
+
+         label.wrong {
+         background-color: #f8d7da;
+         border-left: 5px solid #dc3545;
+         padding: 4px;
+         }
+
+         label.missed {
+         background-color: #fff3cd;
+         border-left: 5px solid #ffc107;
+         padding: 4px;
+         }
 
 
         @media (max-width: 768px) {

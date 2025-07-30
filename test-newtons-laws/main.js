@@ -121,7 +121,7 @@
                 const result = await response.json();
 
                 if (result.success === true) {
-                     showResult(result.score, result.totalQuestions, result.message);
+                     showResult(result.score, result.totalQuestions, result.message, result.correctAnswers);
                 } else if (result.error && result.error === "Duplicate submission detected.") {
                    showError("🚫 You can only attempt the quiz once. If you think this is a mistake, contact the instructor.");
                    return;
@@ -141,13 +141,44 @@
             }
         });
 
-        function showResult(score, total, message) {
+        function showResult(score, total, message, correctAnswers) {
             const percentage = Math.round((score / (3* total)) * 100);
             const full_marks = 3 * total;
             document.getElementById('scoreDisplay').textContent = `${score}/${full_marks} (${percentage}%)`;
             document.getElementById('resultMessage').textContent = message || getScoreMessage(percentage);
             document.getElementById('result').classList.add('show');
+            if (correctAnswers) showFeedback(correctAnswers);
         }
+        
+        function showFeedback(correctAnswers) {
+            Object.keys(correctAnswers).forEach(qname => {
+            const correctValue = correctAnswers[qname];
+            const selectedInput = document.querySelector(`input[name="${qname}"]:checked`);
+            const inputs = document.querySelectorAll(`input[name="${qname}"]`);
+
+            inputs.forEach(input => {
+               const parentLabel = input.closest("label");
+               if (!parentLabel) return;
+
+              // Remove previous feedback classes
+              parentLabel.classList.remove("correct", "wrong", "missed");
+
+              if (input.value === correctValue) {
+                parentLabel.classList.add("correct");
+              } 
+              if (selectedInput && input === selectedInput && input.value !== correctValue) {
+                parentLabel.classList.add("wrong");
+              }
+              if (!selectedInput && input.value === correctValue) {
+                parentLabel.classList.add("missed");
+              }
+
+           // Optionally disable all after submission
+           input.disabled = true;
+           });
+           });
+        }
+
 
         function showError(message) {
             const errorDiv = document.getElementById('errorMsg');
