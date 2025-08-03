@@ -241,31 +241,6 @@
             transition: width 0.3s ease;
         }
         
-        #timerBar {
-            position: sticky;
-            top: 10px;
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            font-size: 1.1em;
-            font-weight: bold;
-            z-index: 999;
-            text-align: center;
-            border-bottom: 2px solid #666;
-       }
-       
-       #timerBar.warning {
-            background-color: #a94442; /* Bootstrap danger red */
-            color: white;
-            animation: blink 1s step-start 0s infinite;
-       }
-
-      @keyframes blink {
-        50% {
-         opacity: 0.5;
-        }
-      }
-        
         .question img {
             max-height: 400px;
             object-fit: contain;
