@@ -91,7 +91,7 @@
                 const seconds = remaining % 60;
                 timerDisplay.textContent = `Time left: ${minutes}:${seconds.toString().padStart(2, '0')}`;
 
-                if (remaining >=0 && remaining <= 60) {
+                if (remaining <= 60) {
                   timerDisplay.parentElement.classList.add('warning');
                 } else {
                   timerDisplay.parentElement.classList.remove('warning');
@@ -100,6 +100,7 @@
                 if (--remaining < 0) {
                      clearInterval(timerInterval);
                      timerDisplay.textContent = "⏰ Time's up!";
+                     timerDisplay.parentElement.classList.remove('warning');
                      handleQuizSubmission(true);
                 }
            }, 1000);
@@ -131,7 +132,7 @@
             inputs.forEach(input => input.disabled = true);
 
             // Proceed to submit
-            alert("Submitting your quiz...");
+            //alert("Submitting your quiz...");
             submitQuizForm();
          }
 
