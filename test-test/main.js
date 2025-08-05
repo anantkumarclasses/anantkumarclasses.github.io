@@ -1,13 +1,17 @@
 // Replace this URL with your Google Apps Script web app URL
         const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbybArZyKRT_yCtZWPKPmVaTylDEVTRcDyHNh1ZoEvaUtYuKRvORpFD5c5iCSQXWj0Ktog/exec';
        
-        
+        let questionNames = [];
+        let timerInterval;
+        let timeLimit = 5 * 60; // 10 minutes in seconds
+
         document.addEventListener("DOMContentLoaded", () => {
             fetch("questions.json")
             .then((res) => res.json())
             .then((questions) => {
       const container = document.getElementById("questionContainer");
       questions.forEach((q, index) => {
+        questionNames.push(q.name);
         const div = document.createElement("div");
         div.className = "question";
         const heading = document.createElement("h3");
@@ -60,6 +64,7 @@
         radio.addEventListener('change', updateProgress);
     });
      updateProgress();
+     startTimer(timeLimit);
     })
     .catch((err) => {
       console.error("Failed to load quiz questions:", err);
@@ -76,7 +81,24 @@
             const progress = (answeredQuestions / totalQuestions) * 100;
             document.getElementById('progressFill').style.width = progress + '%';
         }
+        
+        function startTimer(duration) {
+           let remaining = duration;
+           const timerDisplay = document.getElementById("timer");
+           
+           timerInterval = setInterval(() => {
+                const minutes = Math.floor(remaining / 60);
+                const seconds = remaining % 60;
+                timerDisplay.textContent = `Time left: ${minutes}:${seconds.toString().padStart(2, '0')}`;
 
+                if (--remaining < 0) {
+                     clearInterval(timerInterval);
+                     timerDisplay.textContent = "Time's up!";
+                     autoSubmitQuiz();
+                }
+           }, 1000);
+        }
+        
         // Add event listeners to radio buttons for progress tracking
         document.querySelectorAll('input[type="radio"]').forEach(radio => {
             radio.addEventListener('change', updateProgress);
@@ -87,7 +109,7 @@
             e.preventDefault();
             
             // Validate that all questions are answered
-            const questions = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10', 'q11', 'q12', 'q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'q24'];
+            //const questions = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10', 'q11', 'q12', 'q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'q24'];
             //const unanswered = questions.filter(q => !document.querySelector(`input[name="${q}"]:checked`));
             
             //if (unanswered.length > 0) {
@@ -107,7 +129,7 @@
                 formData.append('studentName', document.getElementById('studentName').value);
                 formData.append('studentEmail', document.getElementById('studentEmail').value);
                 
-                questions.forEach(q => {
+                questionNames.forEach(q => {
                     const answer = document.querySelector(`input[name="${q}"]:checked`);
                     formData.append(q, answer ? answer.value : '');
                 });
