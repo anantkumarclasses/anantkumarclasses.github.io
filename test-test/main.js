@@ -91,10 +91,16 @@
                 const seconds = remaining % 60;
                 timerDisplay.textContent = `Time left: ${minutes}:${seconds.toString().padStart(2, '0')}`;
 
+                if (remaining <= 60) {
+                  timerDisplay.parentElement.classList.add('warning');
+                } else {
+                  timerDisplay.parentElement.classList.remove('warning');
+                }
+
                 if (--remaining < 0) {
                      clearInterval(timerInterval);
-                     timerDisplay.textContent = "Time's up!";
-                     autoSubmitQuiz();
+                     timerDisplay.textContent = "⏰ Time's up!";
+                     handleQuizSubmission(true);
                 }
            }, 1000);
         }
@@ -105,17 +111,33 @@
         });
 
         // Form submission
-        document.getElementById('quizForm').addEventListener('submit', async function(e) {
-            e.preventDefault();
-            
-            // Validate that all questions are answered
-            //const questions = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10', 'q11', 'q12', 'q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'q24'];
-            //const unanswered = questions.filter(q => !document.querySelector(`input[name="${q}"]:checked`));
-            
-            //if (unanswered.length > 0) {
-             //   showError(`Please answer all questions. Missing: Question ${unanswered.map(q => q.charAt(1)).join(', ')}`);
-             //   return;
-           // }
+        function handleQuizSubmission(fromTimer = false) {
+           const submitBtn = document.getElementById('submitBtn');
+
+           if (submitBtn.disabled) return; // prevent double submissions
+
+           // Ask for confirmation only if not auto-submitting
+           if (!fromTimer) {
+              const confirmed = confirm("Are you sure you want to submit your responses?");
+              if (!confirmed) return;
+            }
+
+            // Disable button to prevent multiple submissions
+            submitBtn.disabled = true;
+            submitBtn.style.display = "none"; // Hide the button after submission
+
+            // Disable all form inputs
+            const inputs = document.querySelectorAll('input[type="radio"]');
+            inputs.forEach(input => input.disabled = true);
+
+            // Proceed to submit
+            alert("Submitting your quiz...");
+            submitQuizForm();
+         }
+
+               
+        async function submitQuizForm() {
+
 
             // Show loading state
             document.getElementById('submitBtn').disabled = true;
@@ -161,8 +183,8 @@
                 document.getElementById('loading').style.display = 'none';
                 document.getElementById('submitBtn').disabled = false;
             }
-        });
-
+        }
+        
         function showResult(score, total, message, correctAnswers) {
             const percentage = Math.round((score / (3* total)) * 100);
             const full_marks = 3 * total;
