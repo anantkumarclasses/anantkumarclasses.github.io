@@ -15,7 +15,11 @@ Presenting the <a href="/path-simulator">Lorentz force path simulator!</a>
 <a href="/path-simulator">
   <img src="/assets/img/teaser_path_simulator.png" alt="3D Lorentz Force Simulator" style="max-width:100%; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.15);">
 </a>
-
+<div>
+<a href="/path-simulator" style="display:inline-block; padding:10px 20px; background-color:#007acc; color:white; text-decoration:none; border-radius:8px; font-weight:bold;">
+    🚀 Launch Simulator
+  </a>
+</div>
 ### 🎯 What you can do:
 - **Tweak the fields** — change **E** and **B** in real time and watch the magic.  
 - **Add resistance** — toggle a viscous drag force to see how motion changes in a viscous medium like inside a bubble chamber.  
@@ -25,8 +29,8 @@ Presenting the <a href="/path-simulator">Lorentz force path simulator!</a>
 
 This isn’t just a simulator — it’s your personal **physics sandbox** to explore the **Lorentz force** and discover patterns like cyclotron orbits, spirals, and drifts.  
 
-🔗 <p style="text-align:center; margin-top:10px;">
-  <a href="/path-simulator" style="display:inline-block; padding:10px 20px; background-color:#007acc; color:white; text-decoration:none; border-radius:8px; font-weight:bold;">
+<div>
+<a href="/path-simulator" style="display:inline-block; padding:10px 20px; background-color:#007acc; color:white; text-decoration:none; border-radius:8px; font-weight:bold;">
     🚀 Launch Simulator
   </a>
-</p>
+</div>
