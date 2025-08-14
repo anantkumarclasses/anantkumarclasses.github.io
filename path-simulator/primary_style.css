@@ -1,0 +1,110 @@
+html,body {
+    height:100%;
+    margin:0;
+    font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial
+}
+
+#app {
+    display:flex;
+    height:100vh;
+    overflow:hidden
+}
+
+#canvas-wrap {
+    flex:1;
+    position:relative;
+    background:#0b1020
+}
+
+#ui {
+    width:380px;
+    padding:12px;
+    border-left:1px solid rgba(255,255,255,0.04);
+    background:linear-gradient(180deg,#0f1724,#071024);
+    color:#dbeafe;
+    box-sizing:border-box
+}
+
+
+h1 {
+    font-size:16px;
+    margin:6px 0 12px
+}
+    
+    
+label {
+    display:block;
+    font-size:12px;
+    color:#90a4c4;
+    margin-top:8px
+}
+
+
+.row {
+    display:flex;
+    gap:8px
+}
+
+
+input[type=number],button,select {
+    padding:6px;
+    border-radius:6px;
+    border:1px solid rgba(255,255,255,0.06);
+    background:rgba(255,255,255,0.02);
+    color:inherit;
+    width:100%
+}
+
+
+.vector-input {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:6px;
+    margin-top:6px
+}
+
+
+.small { 
+    font-size:12px;
+    padding:6px
+}
+
+
+.controls { 
+    margin-top:12px;
+    display:flex;
+    gap:8px
+}
+    
+    
+.stat { 
+    font-size:13px;
+    margin-top:10px
+}
+
+
+
+footer {
+    position:absolute;
+    left:12px;
+    bottom:12px;
+    color:#718096;
+    font-size:12px
+}
+
+@media (max-width: 768px) {
+  #app {
+    flex-direction: column; /* Stack vertically instead of side-by-side */
+  }
+  #ui {
+    width: 100%; /* UI takes full width */
+    border-left: none; /* Remove left border */
+    border-top: 1px solid rgba(255,255,255,0.04); /* Optional top border */
+    height: auto; /* Let it size based on content */
+  }
+  #canvas-wrap {
+    height: 60vh; /* Give canvas half the viewport height */
+  }
+}
+
+

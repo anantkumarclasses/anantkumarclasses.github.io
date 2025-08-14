@@ -89,7 +89,7 @@
            timerInterval = setInterval(() => {
                 const minutes = Math.floor(remaining / 60);
                 const seconds = remaining % 60;
-                timerDisplay.textContent = `Time left: ${minutes}:${seconds.toString().padStart(2, '0')}`;
+                timerDisplay.textContent = `Time left: ${minutes}:${seconds.toString().padStart(2, '0')} min`;
 
                 if (remaining <= 60) {
                   timerDisplay.parentElement.classList.add('warning');
