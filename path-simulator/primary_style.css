@@ -103,7 +103,7 @@ footer {
     height: auto; /* Let it size based on content */
   }
   #canvas-wrap {
-    height: 60vh; /* Give canvas half the viewport height */
+    height: 50vh; /* Give canvas half the viewport height */
   }
 }
 
