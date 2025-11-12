@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blocks World State Space Visualization</title>
+    
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        #network {
+            width: 100%;
+            height: 800px; 
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+        }
+        .legend div { display: flex; align-items: center; margin-bottom: 5px; }
+        .legend-color { width: 20px; height: 20px; border-radius: 50%; margin-right: 10px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>Blocks World State Space</h1>
+    <p>Initial State: [[D, C, B, A], [F, E]] | Goal State: [[D, C, B, E, A], [F]]</p>
+
+    <div id="network"></div>
+
+    <div class="legend">
+        <div><span class="legend-color" style="background-color: #FFC0CB;"></span> Initial State</div>
+        <div><span class="legend-color" style="background-color: #90EE90;"></span> Goal State</div>
+        <div><span class="legend-color" style="background-color: #ADD8E6;"></span> Intermediate State</div>
+    </div>
+
+    <script type="text/javascript">
+        // The Blocks World Problem Definition
+        
+        // Initial State: [[D, C, B, A], [F, E]]
+        const INITIAL_STATE_DATA = [["D", "C", "B", "A"], ["F", "E"]]; 
+        
+        // Goal State: [[D, C, B, E, A], [F]] (Based on the figure: A-E-B-C-D stack, F alone)
+        // Let's analyze the goal figure:
+        // Pile 1 (left): D (bottom) -> C -> B -> E -> A (top)
+        // Pile 2 (right): F
+        const GOAL_STATE_DATA = [["D", "C", "B", "E", "A"], ["F"]];
+
+
+        // --- State Manipulation Functions ---
+
+        /**
+         * Normalizes and converts a state (array of piles) to a unique string key.
+         * Normalization ensures that the order of piles doesn't matter for the key.
+         * @param {Array<Array<string>>} piles - e.g., [["D", "C"], ["A"]]
+         * @returns {string} - e.g., "[[A],[C,D]]"
+         */
+        const getStateKey = (piles) => {
+            // 1. Sort the piles alphabetically based on their content string
+            const normalizedPiles = piles.map(p => p.join(":")).sort();
+            // 2. Return the JSON string of the sorted array
+            return JSON.stringify(normalizedPiles);
+        };
+
+        const isGoal = (piles) => {
+            return getStateKey(piles) === getStateKey(GOAL_STATE_DATA);
+        };
+        
+        // --- Successor Function (as defined in the text above) ---
+        function successorFunction(piles) {
+            const successors = [];
+            
+            // 1. Iterate over every pile 'i' to find a block to lift
+            for (let i = 0; i < piles.length; i++) {
+                const sourcePile = piles[i];
+
+                if (sourcePile.length === 0) continue; 
+
+                const liftedBlock = sourcePile[sourcePile.length - 1]; 
+
+                // --- 1A. Move to Table (Start a new pile) ---
+
+                // Create the state after lifting the block:
+                const remainingSource = sourcePile.slice(0, -1);
+                
+                // Deep copy all piles, update the source pile
+                const pilesAfterLift = piles.map((p, index) => index === i ? remainingSource : [...p]);
+                
+                // Add the new pile (the block on the table)
+                const nextState_ToTable = pilesAfterLift.concat([[liftedBlock]]).filter(p => p.length > 0);
+                
+                successors.push({ 
+                    action: `Move ${liftedBlock} to Table`, 
+                    nextState: nextState_ToTable
+                });
+
+                // --- 1B. Move onto another pile 'j' ---
+                for (let j = 0; j < piles.length; j++) {
+                    if (i === j) continue; // Cannot place it back on its own source pile
+
+                    const targetPile = piles[j];
+                    const topOfTarget = targetPile[targetPile.length - 1];
+
+                    // Create the next state
+                    const nextPiles = piles.map(p => [...p]); // Deep copy all piles
+
+                    // Remove block from source
+                    nextPiles[i].pop();
+                    
+                    // Add block to target
+                    nextPiles[j].push(liftedBlock);
+
+                    const nextState_OnPile = nextPiles.filter(p => p.length > 0);
+                    
+                    successors.push({ 
+                        action: `Move ${liftedBlock} onto ${topOfTarget}`, 
+                        nextState: nextState_OnPile
+                    });
+                }
+            }
+            return successors;
+        }
+
+        // --- State Space Generation (BFS) ---
+
+        function generateStateSpace(initialState, successorFn) {
+            const exploredStates = {}; 
+            const queue = [initialState];
+            const visited = new Set(); 
+
+            const initialKey = getStateKey(initialState);
+            visited.add(initialKey);
+            exploredStates[initialKey] = { state: initialState, transitions: [] }; 
+
+            let head = 0; 
+            while (head < queue.length) {
+                const currentState = queue[head++]; 
+                const currentKey = getStateKey(currentState);
+
+                const successors = successorFn(currentState);
+
+                for (const { action, nextState } of successors) {
+                    const nextKey = getStateKey(nextState);
+
+                    if (!exploredStates[currentKey]) {
+                        exploredStates[currentKey] = { state: currentState, transitions: [] };
+                    }
+                    exploredStates[currentKey].transitions.push({
+                        to: nextKey,
+                        action: action
+                    });
+
+                    if (!visited.has(nextKey)) {
+                        visited.add(nextKey);
+                        queue.push(nextState);
+                        exploredStates[nextKey] = { state: nextState, transitions: [] };
+                    }
+                }
+            }
+            return exploredStates;
+        }
+
+        // --- Visualization ---
+
+        function visualizeStateSpace() {
+            const stateSpace = generateStateSpace(INITIAL_STATE_DATA, successorFunction);
+            
+            const nodes = [];
+            const edges = [];
+
+            const initialKey = getStateKey(INITIAL_STATE_DATA);
+
+            for (const key in stateSpace) {
+                const stateData = stateSpace[key];
+                const isGoalNode = isGoal(stateData.state);
+                const isInitialNode = key === initialKey;
+
+                // Create a readable label by joining the piles
+                const readableLabel = stateData.state.map(p => p.join("")).join(" | ");
+
+                nodes.push({
+                    id: key,
+                    label: readableLabel,
+                    font: { size: 12 },
+                    color: {
+                        background: isGoalNode ? '#90EE90' : (isInitialNode ? '#FFC0CB' : '#ADD8E6'),
+                        border: '#2B7CE9'
+                    },
+                    borderWidth: isInitialNode ? 3 : 1,
+                    shape: 'box', // Using box shape for better text fit
+                });
+
+                stateData.transitions.forEach(transition => {
+                    edges.push({
+                        from: key,
+                        to: transition.to,
+                        label: transition.action,
+                        arrows: 'to',
+                        font: { align: 'middle', size: 9 },
+                        color: { color: '#848484', highlight: '#7D26CD' },
+                    });
+                });
+            }
+
+            const container = document.getElementById('network');
+            const data = {
+                nodes: new vis.DataSet(nodes),
+                edges: new vis.DataSet(edges)
+            };
+            const options = {
+                nodes: { shadow: true },
+                edges: { shadow: true, smooth: { enabled: true, type: "continuous" } },
+                physics: {
+                    enabled: true,
+                    barnesHut: { gravitationalConstant: -2000, springLength: 100, springConstant: 0.05 },
+                    solver: 'barnesHut' 
+                },
+                layout: { randomSeed: 42, improvedLayout: true }
+            };
+
+            new vis.Network(container, data, options);
+        }
+
+        document.addEventListener('DOMContentLoaded', visualizeStateSpace);
+    </script>
+</body>
+</html>
