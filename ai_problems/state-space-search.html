@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Search </title>
+    
+    <script type="text/javascript" src="vis-network.min.js"></script>
+    
+    <style>
+        
+        body { font-family: Arial, sans-serif; margin: 0; padding: 10px; }
+    h1 { color: #333; font-size: 1.5em; margin-bottom: 10px; }
+    
+    /* Main Control Layout (Flexbox for rows) */
+    .controls { 
+        margin-bottom: 15px; 
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 10px; /* Space between items */
+        align-items: center;
+    }
+    
+    /* Input/Label Grouping */
+    .controls label {
+        display: flex;
+        align-items: center;
+        white-space: nowrap; /* Prevent labels from breaking */
+    }
+    
+    .controls input, .controls select {
+        padding: 6px; /* Slightly smaller padding for controls */
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+
+    /* Status Box (Should take up available space) */
+    .status-box { 
+        padding: 8px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        flex-grow: 1; /* Allows it to expand to fill space */
+        min-width: 250px; /* Ensures it has a minimum size on small screens */
+        font-size: 0.9em;
+    }
+    
+    /* Graph Container */
+    #network { 
+        width: 100%; /* **Crucial:** Always take full width */
+        height: 600px; /* Default height */
+        border: 1px solid #ddd; 
+        background-color: #f9f9f9; 
+        margin-top: 10px; 
+    }
+    
+    /* Media Query for Mobile Devices */
+    @media (max-width: 600px) {
+        h1 { font-size: 1.2em; }
+        
+        /* Make all buttons and controls full width on very small screens */
+        .controls > * {
+            flex: 1 1 45%; /* Allow wrapping and set minimum size */
+        }
+        
+        /* Give control buttons more vertical space */
+        .controls button, .controls select {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        /* Adjust graph height for better viewing on phones */
+        #network {
+            height: 400px; 
+        }
+    }
+        #network { width: 100%; height: 600px; border: 1px solid #ddd; background-color: #f9f9f9; margin-top: 10px; }
+        .controls { margin-bottom: 15px; display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .controls button { padding: 8px 12px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        .controls button:hover { opacity: 0.9; }
+        
+        #btnGenerate { background-color: #007bff; color: white; }
+        #btnPlay { background-color: #28a745; color: white; }
+        #btnPause { background-color: #ffc107; color: #333; }
+        #btnStop, #btnReset { background-color: #dc3545; color: white; }
+
+        .status-box { padding: 8px; border: 1px solid #ccc; border-radius: 4px; flex-grow: 1; }
+        .legend div { display: flex; align-items: center; margin-bottom: 5px; }
+        .legend-color { width: 15px; height: 15px; border-radius: 50%; margin-right: 5px; border: 1px solid #ccc; }
+        .highlighted { color: #007bff; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1> AI Search Visualizer</h1>
+
+    <div class="controls">
+        <label>States (N): <input type="number" id="numStates" value="30" min="10" max="100" style="width: 50px;"></label>
+        <label>Degree: <input type="number" id="maxDegree" value="4" min="2" max="10" style="width: 50px;"></label>
+        <label>Speed (ms): <input type="number" id="animSpeed" value="100" min="10" max="1000" style="width: 50px;"></label>
+
+        <button id="btnGenerate" onclick="generateAndSetup()">Generate Graph</button>
+        <select id="algorithmSelect" style="padding: 8px; border-radius: 4px;">
+            <option value="BFS">Breadth-First Search (BFS)</option>
+            <option value="DFS">Depth-First Search (DFS)</option>
+            </select>
+    </div>
+
+    <div class="controls">
+        <button id="btnPlay" onclick="searchController.play()"> Play</button>
+        <button id="btnPause" onclick="searchController.pause()"> Pause</button>
+        <button id="btnStop" onclick="searchController.stop()"> Stop</button>
+        <button id="btnReset" onclick="searchController.reset()"> Reset Colors</button>
+
+        <div class="status-box">
+            Status: <span id="statusMessage">Click "Generate Graph" to begin.</span>
+            | Start: <span id="startNodeKey" class="highlighted">N/A</span>
+            | Goals: <span id="goalNodeKeys" class="highlighted">N/A</span>
+        </div>
+    </div>
+
+    <div id="network"></div>
+
+    <div class="legend">
+        <div><span class="legend-color" style="background-color: #FFC0CB;"></span> Start</div>
+        <div><span class="legend-color" style="background-color: #90EE90;"></span> Goal</div>
+        <div><span class="legend-color" style="background-color: #FFA07A;"></span> Solution Path</div>
+        <div><span class="legend-color" style="background-color: #FFFF99;"></span> Frontier</div>
+        <div><span class="legend-color" style="background-color: #ADD8E6;"></span> Explored</div>
+    </div>
+
+    <script type="text/javascript">
+    
+        // --- JAVASCRIPT: Dynamic Height ---
+
+  function setResponsiveCanvasHeight() {
+    const headerHeight = document.querySelector('h1').offsetHeight;
+    const controlsHeight = document.querySelectorAll('.controls').reduce((sum, el) => sum + el.offsetHeight, 0);
+    const padding = 60; // Total padding/margins/legend space
+
+    // Calculate height based on 90% of the viewport height minus header and controls
+    const desiredHeight = window.innerHeight * 0.9 - headerHeight - controlsHeight - padding;
+    
+    const networkElement = document.getElementById('network');
+    // Ensure height is reasonable (min 300px)
+    networkElement.style.height = `${Math.max(300, desiredHeight)}px`;
+    
+    // Vis.js needs to be told to redraw if the container size changes
+    if (network) {
+        network.redraw(); 
+    }
+}
+        // --- GLOBAL STATE & CONSTANTS ---
+        let randomGraph = {};
+        let network = null;
+        let dsNodes = new vis.DataSet();
+        let dsEdges = new vis.DataSet();
+
+        let currentStartKey = null;
+        let currentGoalKeys = new Set();
+        
+        const NODE_COLORS = {
+            DEFAULT: '#ADD8E6',
+            START: '#FFC0CB',
+            GOAL: '#90EE90',
+            EXPLORED: '#ADD8E6',
+            FRONTIER: '#FFFF99',
+            PATH: '#FFA07A'
+        };
+
+        // --- 1. RANDOM GRAPH GENERATION ---
+        
+        function generateRandomStateSpace(numStates, maxDegree) {
+            const states = {};
+            const stateKeys = Array.from({ length: numStates }, (_, i) => `S${i}`);
+            
+            stateKeys.forEach(key => {
+                states[key] = { state: key, transitions: [] };
+            });
+
+            stateKeys.forEach(sourceKey => {
+                const numTransitions = Math.floor(Math.random() * maxDegree) + 1;
+                const sourceState = states[sourceKey];
+                const availableTargets = [...stateKeys];
+                
+                for (let i = 0; i < numTransitions; i++) {
+                    const targetIndex = Math.floor(Math.random() * availableTargets.length);
+                    const targetKey = availableTargets[targetIndex];
+
+                    if (sourceKey === targetKey) continue; 
+                    
+                    sourceState.transitions.push({ to: targetKey, action: `A-${Math.floor(Math.random() * 100)}` });
+                    
+                    availableTargets.splice(targetIndex, 1);
+                    if (availableTargets.length === 0) break;
+                }
+            });
+            return states;
+        }
+
+        // --- 2. SEARCH CONTROLLER (STATE MANAGEMENT & ANIMATION) ---
+
+        const searchController = {
+            isRunning: false,
+            isPaused: false,
+            timerId: null,
+            searchState: { queue: [], visited: new Set(), parentMap: {}, targetNode: null },
+            
+            // --- CORE BFS/DFS STEP FUNCTION ---
+            step: function() {
+                if (!this.isRunning || this.isPaused) return;
+
+                const state = this.searchState;
+                let currentKey;
+                
+                // Implement search strategy based on the selected algorithm
+                const algorithm = document.getElementById('algorithmSelect').value;
+                
+                if (state.queue.length === 0) {
+                    this.stop(false);
+                    document.getElementById('statusMessage').textContent = "Search complete. Goal not reachable.";
+                    return;
+                }
+                
+                if (algorithm === 'BFS') {
+                    currentKey = state.queue.shift(); // FIFO
+                } else if (algorithm === 'DFS') {
+                    currentKey = state.queue.pop();  // LIFO (Treating queue as a stack)
+                }
+
+                // Update UI: Mark current node as EXPLORED
+                if (currentKey !== currentStartKey) {
+                    this.updateNode(currentKey, NODE_COLORS.EXPLORED);
+                }
+
+                document.getElementById('statusMessage').textContent = `Exploring: ${currentKey} | Frontier: ${state.queue.length}`;
+
+                // CHECK GOAL
+                if (currentGoalKeys.has(currentKey)) {
+                    this.stop(true, currentKey); // Stop and trigger path highlight
+                    return;
+                }
+
+                // Add successors to frontier
+                const transitions = randomGraph[currentKey] ? randomGraph[currentKey].transitions : [];
+                
+                // Get neighbors that haven't been visited
+                const neighbors = transitions.filter(t => !state.visited.has(t.to));
+
+                // DFS: Reverse neighbors to process the correct one first (simulating stack)
+                if (algorithm === 'DFS') {
+                    neighbors.reverse();
+                }
+
+                for (const transition of neighbors) {
+                    const nextKey = transition.to;
+                    state.visited.add(nextKey);
+                    state.parentMap[nextKey] = currentKey; 
+                    state.queue.push(nextKey);
+                    
+                    // Update UI: Mark new node as FRONTIER
+                    if (!currentGoalKeys.has(nextKey)) {
+                        this.updateNode(nextKey, NODE_COLORS.FRONTIER);
+                    }
+                }
+
+                // Schedule the next step
+                this.timerId = setTimeout(() => this.step(), parseInt(document.getElementById('animSpeed').value));
+            },
+            
+            // --- CONTROL METHODS ---
+            play: function() {
+                if (!currentStartKey || currentGoalKeys.size === 0) {
+                    alert("Please select a Start Node (Alt+Click) and at least one Goal Node (Shift+Click).");
+                    return;
+                }
+                if (this.isRunning && !this.isPaused) return; // Already running
+
+                this.isPaused = false;
+                
+                if (!this.isRunning) {
+                    // Initial setup (only run once)
+                    this.isRunning = true;
+                    this.searchState = { queue: [currentStartKey], visited: new Set([currentStartKey]), parentMap: {} };
+                    document.getElementById('statusMessage').textContent = `Starting ${document.getElementById('algorithmSelect').value}...`;
+                } else {
+                    document.getElementById('statusMessage').textContent += " (Resumed)";
+                }
+
+                this.step();
+            },
+            pause: function() {
+                if (!this.isRunning || this.isPaused) return;
+                clearTimeout(this.timerId);
+                this.isPaused = true;
+                document.getElementById('statusMessage').textContent = "Paused.";
+            },
+            stop: function(foundGoal = false, goalKey = null) {
+                clearTimeout(this.timerId);
+                this.isRunning = false;
+                this.isPaused = false;
+
+                if (foundGoal) {
+                    this.highlightPath(goalKey);
+                    document.getElementById('statusMessage').textContent = `Goal ${goalKey} found! Path highlighted.`;
+                }
+            },
+            reset: function() {
+                this.stop();
+                this.searchState = { queue: [], visited: new Set(), parentMap: {} };
+                this.resetColors();
+                document.getElementById('statusMessage').textContent = "Ready to start search.";
+            },
+            
+            // --- UI METHODS ---
+            updateNode: function(key, color, borderWidth) {
+                dsNodes.update({ id: key, color: color, borderWidth: borderWidth || 1 });
+            },
+            highlightPath: function(goalKey) {
+                const path = [];
+                let node = goalKey;
+                
+                while (node) {
+                    path.push(node);
+                    const parentKey = this.searchState.parentMap[node];
+                    
+                    // Highlight edge from parent to node
+                    if (parentKey) {
+                        const edgeId = `${parentKey}-${node}`;
+                        dsEdges.update({ 
+                            id: edgeId, 
+                            color: { color: NODE_COLORS.PATH, highlight: '#FF8C00' },
+                            width: 3 
+                        });
+                    }
+                    node = parentKey;
+                }
+
+                // Highlight nodes on the path
+                path.forEach(key => this.updateNode(key, NODE_COLORS.PATH, 3));
+            },
+            resetColors: function() {
+                dsNodes.forEach(node => {
+                    let color = NODE_COLORS.DEFAULT;
+                    if (node.id === currentStartKey) color = NODE_COLORS.START;
+                    if (currentGoalKeys.has(node.id)) color = NODE_COLORS.GOAL;
+
+                    dsNodes.update({ 
+                        id: node.id, 
+                        color: color, 
+                        borderWidth: (node.id === currentStartKey || currentGoalKeys.has(node.id)) ? 3 : 1 
+                    });
+                });
+                dsEdges.forEach(edge => {
+                    dsEdges.update({ id: edge.id, color: { color: '#848484' }, width: 1 });
+                });
+            }
+        };
+
+        // --- 3. VISUALIZATION AND INTERACTIVITY SETUP ---
+
+        function getNodeColor(key) {
+            if (key === currentStartKey) return NODE_COLORS.START;
+            if (currentGoalKeys.has(key)) return NODE_COLORS.GOAL;
+            return NODE_COLORS.DEFAULT;
+        }
+
+        function createVisData(graph) {
+            const nodes = [];
+            const edges = [];
+            
+            for (const key in graph) {
+                nodes.push({
+                    id: key,
+                    label: key,
+                    color: getNodeColor(key),
+                    borderWidth: (key === currentStartKey || currentGoalKeys.has(key)) ? 3 : 1,
+                    shape: 'dot', size: 15
+                });
+
+                graph[key].transitions.forEach(transition => {
+                    edges.push({
+                        id: `${key}-${transition.to}`,
+                        from: key,
+                        to: transition.to,
+                        //label: transition.action,
+                        //arrows: 'to',
+                        font: { size: 8 },
+                        color: { color: '#848484' }
+                    });
+                });
+            }
+
+            dsNodes = new vis.DataSet(nodes);
+            dsEdges = new vis.DataSet(edges);
+        }
+
+        function setupInteractivity() {
+            network.off("click"); // Remove previous listener if exists
+
+            network.on("click", function (properties) {
+                const nodeId = properties.nodes[0];
+                if (!nodeId || searchController.isRunning) return;
+
+                // Alt key for setting Start node
+                if (properties.event.srcEvent.altKey) {
+                    currentStartKey = nodeId;
+                    currentGoalKeys.delete(nodeId); 
+                    searchController.resetColors();
+                    updateUI();
+                } 
+                // Shift key for setting/toggling Goal node
+                else if (properties.event.srcEvent.shiftKey) {
+                    if (currentGoalKeys.has(nodeId)) {
+                        currentGoalKeys.delete(nodeId);
+                    } else if (nodeId !== currentStartKey) {
+                        currentGoalKeys.add(nodeId);
+                    }
+                    searchController.resetColors();
+                    updateUI();
+                }
+            });
+        }
+
+        function updateUI() {
+            document.getElementById('startNodeKey').textContent = currentStartKey || 'N/A';
+            document.getElementById('goalNodeKeys').textContent = Array.from(currentGoalKeys).join(', ') || 'N/A';
+        }
+        
+        function getVisOptions() {
+            return {
+                physics: {
+                    enabled: true,
+                    barnesHut: { gravitationalConstant: -3000, springLength: 150, springConstant: 0.04 },
+                    solver: 'barnesHut' 
+                },
+                layout: { randomSeed: 42, improvedLayout: true }
+            };
+        }
+
+        function generateAndSetup() {
+            const numStates = parseInt(document.getElementById('numStates').value);
+            const maxDegree = parseInt(document.getElementById('maxDegree').value);
+            
+            if (isNaN(numStates) || isNaN(maxDegree)) return;
+
+            searchController.stop(); // Stop any ongoing animation
+
+            randomGraph = generateRandomStateSpace(numStates, maxDegree);
+            
+            // Reset start/goal to default S0 and last node
+            currentStartKey = 'S0';
+            currentGoalKeys = new Set([`S${numStates - 1}`]);
+            
+            // Create data and render
+            createVisData(randomGraph);
+            if (network !== null) network.destroy();
+            network = new vis.Network(document.getElementById('network'), { nodes: dsNodes, edges: dsEdges }, getVisOptions());
+            
+            setupInteractivity();
+            searchController.resetColors();
+            updateUI();
+            document.getElementById('statusMessage').textContent = "Graph generated. Use Alt+Click (Start) and Shift+Click (Goal) to select nodes.";
+        }
+        
+        // Initial setup on load
+        document.addEventListener('DOMContentLoaded', generateAndSetup);
+        window.addEventListener('resize', setResponsiveCanvasHeight);
+        window.addEventListener('DOMContentLoaded', setResponsiveCanvasHeight);
+    </script>
+</body>
+</html>
