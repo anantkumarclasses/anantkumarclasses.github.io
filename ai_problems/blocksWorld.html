@@ -20,7 +20,7 @@
 </head>
 <body>
     <h1>Blocks World State Space</h1>
-    <p>Initial State: [[D, C, B, A], [F, E]] | Goal State: [[D, C, B, E, A], [F]]</p>
+    <p>Initial State: [[D, C, B, A]] | Goal State: [[A], [B], [C], [D]]</p>
 
     <div id="network"></div>
 
@@ -34,13 +34,29 @@
         // The Blocks World Problem Definition
         
         // Initial State: [[D, C, B, A], [F, E]]
-        const INITIAL_STATE_DATA = [["D", "C", "B", "A"], ["F", "E"]]; 
+        //const INITIAL_STATE_DATA = [["D", "C", "B", "A"], ["F", "E"]]; 
         
         // Goal State: [[D, C, B, E, A], [F]] (Based on the figure: A-E-B-C-D stack, F alone)
         // Let's analyze the goal figure:
         // Pile 1 (left): D (bottom) -> C -> B -> E -> A (top)
         // Pile 2 (right): F
-        const GOAL_STATE_DATA = [["D", "C", "B", "E", "A"], ["F"]];
+        //const GOAL_STATE_DATA = [["D", "C", "B", "E", "A"], ["F"]];
+
+        // --- Modified State Definitions (Replace the old ones in your code) ---
+
+// Initial State: One pile (D bottom, A top)
+const INITIAL_STATE_DATA = [
+    ["D", "C", "B", "A"] 
+]; 
+
+// Goal State: All blocks separate on the table
+// Note: The order of the inner arrays doesn't matter due to the getStateKey normalization.
+const GOAL_STATE_DATA = [
+    ["A"],
+    ["B"],
+    ["C"],
+    ["D"]
+];
 
 
         // --- State Manipulation Functions ---
