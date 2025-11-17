@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicons/favicon.ico">
+    <title>Search Algorithms Visualizer in State Space</title>
+    <script type="text/javascript" src="vis-network.min.js"></script>
+    
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 10px; }
+        h1 { color: #333; font-size: 1.5em; margin-bottom: 10px; }
+        
+        /* Main Control Layout (Flexbox) */
+        .controls { 
+            margin-bottom: 15px; 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .controls label, .controls input, .controls select { padding: 6px; border-radius: 4px; border: 1px solid #ccc; }
+        .controls button { padding: 8px 12px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        .controls button:hover { opacity: 0.9; }
+        
+        #btnGenerate { background-color: #007bff; color: white; }
+        #btnPlay { background-color: #28a745; color: white; }
+        #btnPause { background-color: #ffc107; color: #333; }
+        #btnStop, #btnReset { background-color: #dc3545; color: white; }
+
+        /* Status Box */
+        .status-box { padding: 8px; border: 1px solid #ccc; border-radius: 4px; flex-grow: 1; min-width: 250px; font-size: 0.9em; }
+        #network { width: 100%; height: 600px; border: 1px solid #ddd; background-color: #f9f9f9; margin-top: 10px; }
+        
+        /* Legend */
+        .legend div { display: flex; align-items: center; margin-bottom: 5px; }
+        .legend-color { width: 15px; height: 15px; border-radius: 50%; margin-right: 5px; border: 1px solid #ccc; }
+        .highlighted { color: #007bff; font-weight: bold; }
+        
+        /* Responsive Fixes */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.2em; }
+            .controls > * { flex: 1 1 45%; }
+            .controls button, .controls select { width: 100%; margin-top: 5px; }
+        }
+    </style>
+</head>
+<body>
+    <h1> Informed Search Algorithms Visualizer</h1>
+
+    <div class="controls">
+        <label>States (N): <input type="number" id="numStates" value="30" min="10" max="100" style="width: 50px;"></label>
+        <label>Degree: <input type="number" id="maxDegree" value="4" min="2" max="10" style="width: 50px;"></label>
+        <label>Speed (ms): <input type="number" id="animSpeed" value="100" min="10" max="1000" style="width: 50px;"></label>
+
+        <button id="btnGenerate" onclick="generateAndSetup()">Generate Graph</button>
+        <select id="algorithmSelect" style="padding: 8px; border-radius: 4px;">
+            <option value="A_STAR">A* Search</option>
+            <option value="GBFS">Greedy Best-First Search (GBFS)</option>
+        </select>
+    </div>
+
+    <div class="controls">
+        <button id="btnPlay" onclick="searchController.play()"> Play</button>
+        <button id="btnPause" onclick="searchController.pause()"> Pause</button>
+        <button id="btnStop" onclick="searchController.stop()"> Stop</button>
+        <button id="btnReset" onclick="searchController.reset()"> Reset Colors</button>
+
+        <div class="status-box">
+            Status: <span id="statusMessage">Click "Generate Graph" to begin.</span>
+            | Start: <span id="startNodeKey" class="highlighted">N/A</span>
+            | Goals: <span id="goalNodeKeys" class="highlighted">N/A</span>
+        </div>
+    </div>
+
+    <div id="network"></div>
+
+    <div class="legend">
+        <div><span class="legend-color" style="background-color: #FFC0CB;"></span> Start</div>
+        <div><span class="legend-color" style="background-color: #90EE90;"></span> Goal</div>
+        <div><span class="legend-color" style="background-color: #FFA07A;"></span> Solution Path</div>
+        <div><span class="legend-color" style="background-color: #FFFF99;"></span> Frontier (To be processed)</div>
+        <div><span class="legend-color" style="background-color: #EFEFEF;"></span> Unexplored State</div> 
+        <div><span class="legend-color" style="background-color: #87CEFA;"></span> Explored State (Processed)</div>
+    </div>
+
+    <script type="text/javascript">
+    
+        // --- RESPONSIVE HEIGHT FUNCTION ---
+        function setResponsiveCanvasHeight() {
+            const headerHeight = document.querySelector('h1').offsetHeight;
+            const controlsHeight = Array.from(document.querySelectorAll('.controls')).reduce((sum, el) => sum + el.offsetHeight, 0);
+            const padding = 60;
+            const desiredHeight = window.innerHeight * 0.9 - headerHeight - controlsHeight - padding;
+            
+            const networkElement = document.getElementById('network');
+            networkElement.style.height = `${Math.max(300, desiredHeight)}px`;
+            
+            if (network) network.redraw();
+        }
+        
+        // --- GLOBAL STATE & CONSTANTS ---
+        let randomGraph = {};
+        let network = null;
+        let dsNodes = new vis.DataSet();
+        let dsEdges = new vis.DataSet();
+
+        let currentStartKey = null;
+        let currentGoalKeys = new Set();
+        
+        const NODE_COLORS = {
+            DEFAULT: '#EFEFEF',
+            START: '#FFC0CB',
+            GOAL: '#90EE90',
+            EXPLORED: '#87CEFA', 
+            FRONTIER: '#FFFF99',
+            PATH: '#FFA07A'
+        };
+
+        // --- PRIORITY QUEUE CLASS (FOR A* and GBFS) ---
+        class PriorityQueue {
+            constructor() {
+                this.elements = [];
+            }
+
+            enqueue(key, priority) {
+                this.elements.push({ key, priority });
+                this.elements.sort((a, b) => a.priority - b.priority); 
+            }
+
+            dequeue() {
+                // Returns the key of the element with the lowest priority (best f(n))
+                return this.elements.shift().key;
+            }
+
+            isEmpty() {
+                return this.elements.length === 0;
+            }
+
+            updatePriority(key, newPriority) {
+                const element = this.elements.find(e => e.key === key);
+                if (element) {
+                    element.priority = newPriority;
+                    this.elements.sort((a, b) => a.priority - b.priority);
+                } else {
+                    this.enqueue(key, newPriority);
+                }
+            }
+        }
+        
+        // --- 1. RANDOM GRAPH GENERATION ---
+        
+        function generateRandomStateSpace(numStates, maxDegree) {
+            const states = {};
+            const stateKeys = Array.from({ length: numStates }, (_, i) => `S${i}`);
+            const connectedPairs = new Set(); 
+            const adj = {}; // Adjacency List for fast neighbor lookup
+
+            // Initialize all states
+            stateKeys.forEach(key => {
+                states[key] = { 
+                    state: key, 
+                    transitions: [],
+                    // Heuristic h(n)
+                    heuristic: Math.floor(Math.random() * 50) + 1 
+                };
+                adj[key] = []; // Initialize adjacency list entry
+            });
+
+            // Generate undirected connections
+            stateKeys.forEach(sourceKey => {
+                const numTransitions = Math.floor(Math.random() * maxDegree) + 1;
+                const availableTargets = [...stateKeys];
+                
+                for (let i = 0; i < numTransitions; i++) {
+                    const targetIndex = Math.floor(Math.random() * availableTargets.length);
+                    const targetKey = availableTargets[targetIndex];
+
+                    if (sourceKey === targetKey) continue;
+                    
+                    const pairKey = [sourceKey, targetKey].sort().join('|');
+
+                    if (connectedPairs.has(pairKey)) {
+                        availableTargets.splice(targetIndex, 1);
+                        continue;
+                    }
+                    
+                    const edgeCost = Math.floor(Math.random() * 10) + 1;
+                    
+                    // Store transition in the data structure for one direction
+                    states[sourceKey].transitions.push({ 
+                        to: targetKey, 
+                        action: `A${Math.floor(Math.random() * 100)}`, 
+                        bidirectional: true,
+                        cost: edgeCost
+                    });
+                    
+                    // Populate the Adjacency List for BOTH directions
+                    adj[sourceKey].push({ neighbor: targetKey, cost: edgeCost });
+                    adj[targetKey].push({ neighbor: sourceKey, cost: edgeCost }); 
+                    
+                    connectedPairs.add(pairKey);
+                    availableTargets.splice(targetIndex, 1);
+                    if (availableTargets.length === 0) break;
+                }
+            });
+
+            // Add the fast adjacency list to the graph object
+            states.adj = adj; 
+            return states;
+        }
+
+        // --- 2. SEARCH HELPER FUNCTIONS ---
+        
+        function getNeighbors(key) {
+            // Uses the pre-calculated Adjacency List (O(1) lookup)
+            return randomGraph.adj[key] || []; // Returns array of {neighbor: key, cost: cost}
+        }
+
+        // --- 3. SEARCH CONTROLLER (A* & GBFS Logic) ---
+        
+        const searchController = {
+            isRunning: false,
+            isPaused: false,
+            timerId: null,
+            searchState: { queue: null, visited: new Set(), parentMap: {}, gScore: {} },
+            
+            step: function() {
+                if (!this.isRunning || this.isPaused) return;
+
+                const state = this.searchState;
+                const algorithm = document.getElementById('algorithmSelect').value;
+                let currentKey;
+                
+                // --- DEQUEUE/POP LOGIC (Priority Queue) ---
+                if (state.queue.isEmpty()) { this.stop(false); return; }
+                currentKey = state.queue.dequeue();
+                
+                // CRITICAL A* CHECK: If the node is already in the closed list, skip it.
+                if (state.visited.has(currentKey)) return this.step(); 
+                state.visited.add(currentKey); // Mark node as fully processed/closed
+
+                // --- UI UPDATE AND GOAL CHECK ---
+                if (currentKey !== currentStartKey) {
+                    this.updateNode(currentKey, NODE_COLORS.EXPLORED);
+                }
+                
+                let frontierSize = state.queue ? state.queue.elements.length : 0;
+                document.getElementById('statusMessage').textContent = `Exploring: ${currentKey} | Frontier size: ${frontierSize}`;
+
+                if (currentGoalKeys.has(currentKey)) {
+                    this.stop(true, currentKey);
+                    return;
+                }
+
+                // --- EXPANSION ---
+                const neighbors = getNeighbors(currentKey); 
+
+                for (const neighbor of neighbors) {
+                    const nextKey = neighbor.neighbor;
+                    
+                    // Only process neighbors not already in the closed list
+                    if (state.visited.has(nextKey)) continue;
+
+                    const costToNeighbor = neighbor.cost;
+                    const gScoreNew = (state.gScore[currentKey] || 0) + costToNeighbor;
+                    const hScore = randomGraph[nextKey].heuristic || 0;
+                    
+                    let fScore;
+                    if (algorithm === 'GBFS') {
+                        fScore = hScore; // f(n) = h(n)
+                    } else { // A_STAR
+                        fScore = gScoreNew + hScore; // f(n) = g(n) + h(n)
+                    }
+                    
+                    // Check if this is a better path (A*)
+                    if (gScoreNew < (state.gScore[nextKey] || Infinity)) {
+                        
+                        // Update gScore and parent pointer
+                        state.gScore[nextKey] = gScoreNew;
+                        state.parentMap[nextKey] = currentKey;
+
+                        // Update or enqueue in the Priority Queue
+                        state.queue.updatePriority(nextKey, fScore);
+
+                        // Update UI
+                        if (!currentGoalKeys.has(nextKey)) {
+                            this.updateNode(nextKey, NODE_COLORS.FRONTIER);
+                        }
+                    }
+                }
+
+                this.timerId = setTimeout(() => this.step(), parseInt(document.getElementById('animSpeed').value));
+            },
+            
+            // --- CONTROL METHODS ---
+            play: function() {
+                if (!currentStartKey || currentGoalKeys.size === 0) {
+                    alert("Please select Start (Alt+Click) and Goal(s) (Shift+Click).");
+                    return;
+                }
+                if (this.isRunning && !this.isPaused) return;
+
+                this.isPaused = false;
+                
+                if (!this.isRunning) {
+                    const algorithm = document.getElementById('algorithmSelect').value;
+                    const hStart = randomGraph[currentStartKey].heuristic || 0;
+                    
+                    let queueData = new PriorityQueue();
+                    const fStart = (algorithm === 'A_STAR') ? hStart : hStart;
+                    queueData.enqueue(currentStartKey, fStart);
+                    
+                    this.isRunning = true;
+                    this.searchState = { 
+                        queue: queueData, 
+                        visited: new Set(), // Visited/Closed set always starts empty
+                        parentMap: {},
+                        gScore: { [currentStartKey]: 0 }
+                    };
+                    document.getElementById('statusMessage').textContent = `Starting ${algorithm}...`;
+                } else {
+                    document.getElementById('statusMessage').textContent += " (Resumed)";
+                }
+
+                this.step();
+            },
+            pause: function() {
+                if (!this.isRunning || this.isPaused) return;
+                clearTimeout(this.timerId);
+                this.isPaused = true;
+                document.getElementById('statusMessage').textContent = "Paused.";
+            },
+            stop: function(foundGoal = false, goalKey = null) {
+                clearTimeout(this.timerId);
+                this.isRunning = false;
+                this.isPaused = false;
+
+                if (foundGoal) {
+                    this.highlightPath(goalKey);
+                    document.getElementById('statusMessage').textContent = ` Goal ${goalKey} found! Path highlighted.`;
+                }
+            },
+            reset: function() {
+                this.stop();
+                this.searchState = { queue: null, visited: new Set(), parentMap: {} };
+                this.resetColors();
+                document.getElementById('statusMessage').textContent = "Ready to start search.";
+            },
+            
+            // --- UI METHODS ---
+            updateNode: function(key, color, borderWidth) {
+                dsNodes.update({ id: key, color: color, borderWidth: borderWidth || 1 });
+            },
+            highlightPath: function(goalKey) {
+                const path = [];
+                let node = goalKey;
+                
+                while (node) {
+                    path.push(node);
+                    const parentKey = this.searchState.parentMap[node];
+                    
+                    if (parentKey) {
+                        const edgeId = [parentKey, node].sort().join('-');
+                        dsEdges.update({ 
+                            id: edgeId, 
+                            color: { color: NODE_COLORS.PATH, highlight: '#FF8C00' },
+                            width: 3 
+                        });
+                    }
+                    node = parentKey;
+                }
+                path.forEach(key => this.updateNode(key, NODE_COLORS.PATH, 3));
+            },
+            resetColors: function() {
+                dsNodes.forEach(node => {
+                    let color = getNodeColor(node.id);
+                    dsNodes.update({ 
+                        id: node.id, 
+                        color: color, 
+                        borderWidth: (node.id === currentStartKey || currentGoalKeys.has(node.id)) ? 3 : 1 
+                    });
+                });
+                dsEdges.forEach(edge => {
+                    dsEdges.update({ id: edge.id, color: { color: '#848484' }, width: 1 });
+                });
+            }
+        };
+
+        // --- 4. VISUALIZATION AND INTERACTIVITY SETUP ---
+
+        function getNodeColor(key) {
+            if (key === currentStartKey) return NODE_COLORS.START;
+            if (currentGoalKeys.has(key)) return NODE_COLORS.GOAL;
+            return NODE_COLORS.DEFAULT;
+        }
+
+        function createVisData(graph) {
+            const nodes = [];
+            const edges = [];
+            const addedEdges = new Set(); 
+
+            for (const key in graph) {
+                if (key === 'adj') continue;
+
+                nodes.push({
+                    id: key,
+                    label: `${key}\nH: ${graph[key].heuristic || 0}`,
+                    color: getNodeColor(key),
+                    borderWidth: (key === currentStartKey || currentGoalKeys.has(key)) ? 3 : 1,
+                    shape: 'dot', size: 20,
+                    font: { multi: 'html', size: 12 }
+                });
+
+                graph[key].transitions.forEach(transition => {
+                    const sourceKey = key;
+                    const targetKey = transition.to;
+                    const edgeCost = transition.cost || 1;
+                    const isBidirectional = transition.bidirectional || false;
+
+                    const edgeId = [sourceKey, targetKey].sort().join('-');
+                    
+                    if (addedEdges.has(edgeId)) return;
+                    addedEdges.add(edgeId);
+
+                    edges.push({
+                        id: edgeId,
+                        from: sourceKey,
+                        to: targetKey,
+                        label: `C: ${edgeCost}`,
+                        arrows: isBidirectional ? '' : 'to',
+                        font: { size: 9, align: 'middle' },
+                        color: { color: '#848484' }
+                    });
+                });
+            }
+
+            dsNodes = new vis.DataSet(nodes);
+            dsEdges = new vis.DataSet(edges);
+        }
+
+        function setupInteractivity() {
+            network.off("click");
+
+            network.on("click", function (properties) {
+                const nodeId = properties.nodes[0];
+                if (!nodeId || searchController.isRunning) return;
+
+                if (properties.event.srcEvent.altKey) {
+                    currentStartKey = nodeId;
+                    currentGoalKeys.delete(nodeId);
+                    searchController.resetColors();
+                    updateUI();
+                } else if (properties.event.srcEvent.shiftKey) {
+                    if (currentGoalKeys.has(nodeId)) {
+                        currentGoalKeys.delete(nodeId);
+                    } else if (nodeId !== currentStartKey) {
+                        currentGoalKeys.add(nodeId);
+                    }
+                    searchController.resetColors();
+                    updateUI();
+                }
+            });
+        }
+
+        function updateUI() {
+            document.getElementById('startNodeKey').textContent = currentStartKey || 'N/A';
+            document.getElementById('goalNodeKeys').textContent = Array.from(currentGoalKeys).join(', ') || 'N/A';
+        }
+        
+        function getVisOptions() {
+            return {
+                physics: {
+                    enabled: true,
+                    barnesHut: { gravitationalConstant: -3000, springLength: 150, springConstant: 0.04 },
+                    solver: 'barnesHut' 
+                },
+                layout: { randomSeed: 42, improvedLayout: true }
+            };
+        }
+
+        function generateAndSetup() {
+            const numStates = parseInt(document.getElementById('numStates').value);
+            const maxDegree = parseInt(document.getElementById('maxDegree').value);
+            
+            if (isNaN(numStates) || isNaN(maxDegree)) return;
+
+            searchController.stop();
+
+            randomGraph = generateRandomStateSpace(numStates, maxDegree);
+            
+            currentStartKey = 'S0';
+            currentGoalKeys = new Set([`S${numStates - 1}`]);
+            
+            createVisData(randomGraph);
+            if (network !== null) network.destroy();
+            network = new vis.Network(document.getElementById('network'), { nodes: dsNodes, edges: dsEdges }, getVisOptions());
+            
+            setupInteractivity();
+            searchController.resetColors();
+            updateUI();
+            setResponsiveCanvasHeight();
+            document.getElementById('statusMessage').textContent = "Graph generated. Heuristics (H) and Costs (C) assigned. Select nodes and Play.";
+        }
+        
+        // Initial setup on load
+        document.addEventListener('DOMContentLoaded', generateAndSetup);
+        window.addEventListener('resize', setResponsiveCanvasHeight);
+        window.addEventListener('DOMContentLoaded', setResponsiveCanvasHeight);
+    </script>
+</body>
+</html>
